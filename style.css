@@ -361,7 +361,7 @@ section .section__title--txt-2l {
   height: 1px;
   background: #333;
   top: 50%;
-  left: -100%;
+  left: calc(-100% - 10px);
   display: block;
 }
 
@@ -372,7 +372,7 @@ section .section__title--txt-2l {
   height: 1px;
   background: #333;
   top: 50%;
-  right: -100%;
+  right: calc(-100% - 10px);
   display: block;
 }
 
@@ -518,7 +518,7 @@ section .section__title--txt-2l {
   display: block;
   font-size: 140px;
   font-weight: bold;
-  text-shadow: #999 1px 1px 0px, #999 -1px 1px 0px, #999 1px -1px 0px, #999 -1px -1px 0px;
+  text-shadow: #333 1px 1px 0px, #333 -1px 1px 0px, #333 1px -1px 0px, #333 -1px -1px 0px;
   color: rgba(255, 255, 255, 0);
   z-index: -1;
 }

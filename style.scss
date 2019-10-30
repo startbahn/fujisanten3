@@ -318,7 +318,7 @@ section {
       text-shadow: #333 1px 1px 0px, #333 -1px 1px 0px, #333 1px -1px 0px, #333 -1px -1px 0px;
       overflow: hidden;
       span {
-      position: relative;
+        position: relative;
       }
       span::before {
         content: "";
@@ -327,7 +327,7 @@ section {
         height: 1px;
         background: #333;
         top: 50%;
-        left: -100%;
+        left: calc(-100% - 10px);
         display: block;
       }
       span::after {
@@ -337,7 +337,7 @@ section {
         height: 1px;
         background: #333;
         top: 50%;
-        right: -100%;
+        right: calc(-100% - 10px);
         display: block;
       }
     }
@@ -406,7 +406,6 @@ section {
           display:none;
       }
     }
-
   }
   &__picker--wrap {
     display: flex;
@@ -451,8 +450,8 @@ section {
         display: block;
         font-size: 140px;
         font-weight: bold;
-        text-shadow: #999 1px 1px 0px, #999 -1px 1px 0px, #999 1px -1px 0px, #999 -1px -1px 0px;
-        color:rgba(255,255,255,.0);
+        text-shadow: #333 1px 1px 0px, #333 -1px 1px 0px, #333 1px -1px 0px, #333 -1px -1px 0px;
+        color:rgba(255,255,255, 0.0);
         z-index: -1;
       }
     }
@@ -467,7 +466,7 @@ section {
         font-size: 140px;
         font-weight: bold;
         text-shadow: #999 1px 1px 0px, #999 -1px 1px 0px, #999 1px -1px 0px, #999 -1px -1px 0px;
-        color:rgba(255,255,255,.0);
+        color:rgba(255,255,255, 0);
         z-index: -1;
       }     
     }

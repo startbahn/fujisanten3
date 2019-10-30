@@ -300,6 +300,16 @@ section .section__title--txt-2l {
   padding-top: 540px;
 }
 
+.section__about .section__about--read {
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+
+.section__about .section__about--txt {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
 .section__news--list li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -312,12 +322,11 @@ section .section__title--txt-2l {
           align-items: center;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #d0d0d0;
 }
 
 .section__news--list li time {
   width: 180px;
-  color: #999;
   display: block;
   font-size: 14px;
 }
@@ -383,16 +392,16 @@ section .section__title--txt-2l {
 }
 
 .section__space--list3-details li:nth-child(1) {
-  background: url(images/icom_ca.png) top left no-repeat;
+  background: url(images/icom_ca.png) left 6px no-repeat;
 }
 
 .section__space--list3-details li:nth-child(2) {
-  background: url(images/icon_time.png) top left no-repeat;
+  background: url(images/icon_time.png) left 6px no-repeat;
 }
 
 .section__space--list3-details li:nth-child(3) {
   margin-top: 10px;
-  background: url(images/icon_map.png) top left no-repeat;
+  background: url(images/icon_map.png) left 6px no-repeat;
 }
 
 .section__picker .section__inr {

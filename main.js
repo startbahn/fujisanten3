@@ -52,10 +52,12 @@ function init() {
   });
 
   // model
-  var loader = new THREE.OBJLoader(manager);
-  loader.load('./objects/fuji.obj', function(object) {
+  var loader2 = new THREE.OBJLoader(manager);
+  loader2.load('./objects/fuji.obj', function(object) {
 
     object.traverse(function(child) {
+
+      console.log(child.material, texture);
 
       if (child instanceof THREE.Mesh) {
 

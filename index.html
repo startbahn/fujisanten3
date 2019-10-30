@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<title>FUJISANTEN | 富士山展</title>
 
   <link rel=“stylesheet” href=“https://use.typekit.net/gis2gkz.css”>
@@ -11,60 +10,59 @@
   <link rel='stylesheet' id='abn-style-css'  href='style.css' type='text/css' media='all' />
   <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
 
-<meta property="og:title" content="Art Blockchain Network" />
+<meta property="og:title" content="FUJISANTEN | 富士山展" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />                                                                  
 <meta property="og:url" content="https://artblockchainnetwork.com/" />
 <meta property="og:image" content="https://artblockchainnetwork.com/images/ogp.png" />
-<meta property="og:site_name" content="Art Blockchain Network" />
+<meta property="og:site_name" content="FUJISANTEN | 富士山展" />
 
 <meta property="og:locale" content="ja_JP" />
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="https://artblockchainnetwork.com/">
 <meta name="twitter:image" content="https://artblockchainnetwork.com/images/ogp.png" />
-<meta name="twitter:title" content="Art Blockchain Network">
+<meta name="twitter:title" content="FUJISANTEN | 富士山展">
 <meta name="twitter:description" content="">
 </head>
 
-<body class="home page front-ph3 ja">
+<body class="ja">
 <main class="">
 
   <header class="header">
     <h1 class="header__title"><img src="images/logo.png" alt="FUJISANTEN"></h1>
-    <nav>
+
+    <p id="js-show-popup-btn" class="header__menu--btn" onClick=”ga(‘send’, ‘event’, ‘button’, ‘click’,’wpbottom’);” >MENU</p>  
+    <nav class="header__nav popup" id="js-popup">
       <ul class="header__nav--list">
         <li><a href="#about">About</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#space">Space</a></li>
         <li><a href="#picker">Picker</a></li>
-        <li><a href="" target="_blanc"><img src="images/startbahn.png" alt=""></a></li>
+        <li><a href="" target="_blank"><img src="images/startbahn.png" alt=""></a></li>
       </ul>
       <ul class="header__sns--list">
           <li><a href=""><img src="images/icon_facebook.png" alt=""></a></li>
           <li><a href=""><img src="images/icon_twitter.png" alt=""></a></li>
           <li><a href=""><img src="images/icon_youtube.png" alt=""></a></li>
-        </ul>
-    </nav>
+      </ul>
+        <div class="close-btn" id="js-close-btn">CLOSE</div>
+        <div class="black-background" id="js-black-bg"></div>
+    </nav>   
   </header>
   <div class="info">
     <div class="info__inr">
-      <h2 class="info__inr--title">FUJISANTEN 3.0</h2>
-      <ul>
-        <li>1st------- 2020.January  5 SUN >> 19 SUN</li>
-        <li>2nd------- 2020.February 8  SUN >> 8 SAT</li>
-    
-      </ul>
-    </div></div>
+      <h2 class="info__inr--title"><img src="images/info__txt.png" alt=""></h2>
+    </div>
+  </div>
 
-    <section class="section__top" id="top">
-        <div class="section__title"><h2 class="section__title--txt">富士山展3.0<br>「冨嶽二〇二〇景」</h2></div>
-    
+  <section class="section__top" id="top">
+    <div class="section__title"><h2 class="section__title--txt-2l">富士山展3.0<br>「冨嶽二〇二〇景」</h2></div>  
   </section>
 
 
   <section class="section__about" id="about">
-    <div class="section__title"><h2 class="section__title"--txt>About</h2></div>
+    <div class="section__title"><h2 class="section__title--txt">About</h2></div>
       <div class="section__inr">
         <p>年に一度。新年に「富士」をテーマとした多様な表現が集い、価値ある作品が売買され、
           未来に向けた芸術のあり方を問いかけるのが〈富士山展〉。<br>
@@ -80,7 +78,7 @@
 
     <section class="section__news" id="news">
         <div class="section__title">
-          <h2 class="section__title--txt">NEWS</h2></div>
+          <h2 class="section__title--txt">News</h2></div>
 
         <div class="section__inr">
         <ul class="section__news--list">
@@ -110,7 +108,7 @@
         </li>    
       </ul>
 
-        </div>
+      </div>
         
       </section>
 
@@ -121,6 +119,7 @@
           <div class="section__inr">
           <h3 class="section__space--titleh3">TOKYO</h3>
           <ul class="section__space--list3">
+
             <li>
               <img src="images/twinsliondo.png">
               <h4>双子のライオン堂</h4>
@@ -133,6 +132,7 @@
                 <li>Google Map</li>
               </ul>
             </li>
+
             <li>
               <img src="images/msb.png">
               <h4>三井住友銀行〜〜〜〜</h4>
@@ -159,50 +159,7 @@
               </ul>
             </li>
 
-          
-          </ul>
-          <h3 class="section__space--titleh3">KYOTO</h3>
-          <ul class="section__space--list3">
-            <li>
-              <img src="images/twinsliondo.png">
-              <h4>双子のライオン堂</h4>
-              <address>&#12306;107-0052<br>
-                東京都港区赤坂6丁目5-21-101
-              </address>
-              <ul class="section__space--list3-details">
-                <li>1月6日～1月26日</li>
-                <li>15:00ー21:00<br>【休】日曜、不定期</li>
-                <li>Google Map</li>
-              </ul>
-            </li>
-            <li>
-              <img src="images/msb.png">
-              <h4>三井住友銀行〜〜〜〜</h4>
-              <address>&#12306;107-0005<br>
-                東京都千代田区丸の内1丁目3-2
-              </address>
-              <ul class="section__space--list3-details">
-                <li>1月11日～1月22日</li>
-                <li>09:00ー13:00<br>【休】なし</li>
-                <li>Google Map</li>
-              </ul>
-            </li>
-
-            <li>
-              <img src="images/hammock.png">
-              <h4>HAMMOCK</h4>
-              <address>&#12306;530-0001<br>
-                大阪府大阪市北区梅田3-1-1
-              </address>
-              <ul class="section__space--list3-details">
-                <li>1月6日～1月26日</li>
-                <li>15:00ー21:00<br>【休】日曜、不定期</li>
-                <li>Google Map</li>
-              </ul>
-            </li>
-
-          
-          </ul>
+         </ul>
          </div> 
         </section>
 
@@ -213,28 +170,115 @@
             <div class="section__inr">
               <div class="section__picker--wrap">
               <div class="section__picker--person">
-                <img src="images/hitaka.png" alt="飛鷹全法(高野山高疎員)">
-                <div>
-                <h3>飛鷹全法(高野山高疎員)<br>
-                高野山別格本山三宝院副住職。</h3>
+                <div class="section__picker--person-img 01"><img src="images/hitaka.png" alt="飛鷹全法(高野山高疎員)"><p>飛鷹全法</p></div>
+                <div class="section__picker--person-txt">
+                <h3>飛鷹全法(高野山高疎員)</h3>
+                <p>高野山別格本山三宝院副住職。
+                    東京大学法学部卒同大学院博士課程中退（比較日本文化論、南方熊楠研究）。
+                    大学院在学中より、ITベンチャーの立ち上げに参画、ソフトウェア開発に携わる。
+                    その後、国際交流基金の事業で、中央アジア・中東・カナダ等で津軽三味線や沖縄音楽を始めとする伝統芸能の舞をプロデュース。2007年より経済産業省主催の海外富裕層誘客事業）の検討委員に就任。</p>
+            </div>
+            </div>
+
+            <div class="section__picker--person">
+                <div class="section__picker--person-img 02"><img src="images/sawaragi.png" alt="椹木野衣"><p>椹木野衣</p></div>
+                <div class="section__picker--person-txt">
+                <h3>椹木野衣</h3>
                 <p>東京大学法学部卒同大学院博士課程中退（比較日本文化論、南方熊楠研究）。
                 大学院在学中より、ITベンチャーの立ち上げに参画、ソフトウェア開発に携わる。
                 その後、国際交流基金の事業で、中央アジア・中東・カナダ等で津軽三味線や沖縄音楽を始めとする伝統芸能の舞をプロデュース。2007年より経済産業省主催の海外富裕層誘客事業）の検討委員に就任。
-              </p></div></div>
-              <div class="section__picker--person">
-                    <img src="images/hitaka.png" alt="飛鷹全法(高野山高疎員)">
-                    <p>>飛鷹全法(高野山高疎員)
-                    高野山別格本山三宝院副住職。
+              </p>
+              </div>
+            </div>
+
+
+            <div class="section__picker--person">
+                <div class="section__picker--person-img"><img src="images/yomo.png" alt="四方幸子"><p>四方幸子</p></div>
+                <div class="section__picker--person-txt">
+                <h3>四方幸子</h3>
+                <p>高野山別格本山三宝院副住職。
                     東京大学法学部卒同大学院博士課程中退（比較日本文化論、南方熊楠研究）。
                     大学院在学中より、ITベンチャーの立ち上げに参画、ソフトウェア開発に携わる。
-                    その後、国際交流基金の事業で、中央アジア・中東・カナダ等で津軽三味線や沖縄音楽を始めとする伝統芸能の舞をプロデュース。2007年より経済産業省主催の海外富裕層誘客事業）の検討委員に就任。
-                    </p>
-                </div>
+                    その後、国際交流基金の事業で、中央アジア・中東・カナダ等で津軽三味線や沖縄音楽を始めとする伝統芸能の舞をプロデュース。2007年より経済産業省主催の海外富裕層誘客事業）の検討委員に就任。              </p>
               </div>
+            </div>
+
+
+            <div class="section__picker--person">
+                <div class="section__picker--person-img"><img src="images/miyazu.png" alt="宮津大輔"><p>宮津大輔</p></div>
+                <div class="section__picker--person-txt">
+                <h3>宮津大輔</h3>
+                <p>高野山別格本山三宝院副住職。
+                    東京大学法学部卒同大学院博士課程中退（比較日本文化論、南方熊楠研究）。
+                    大学院在学中より、ITベンチャーの立ち上げに参画、ソフトウェア開発に携わる。
+                    その後、国際交流基金の事業で、中央アジア・中東・カナダ等で津軽三味線や沖縄音楽を始めとする伝統芸能の舞をプロデュース。2007年より経済産業省主催の海外富裕層誘客事業）の検討委員に就任。           </p>
+              </div>
+            </div>
+
+
+            <div class="section__picker--person">
+                <div class="section__picker--person-img"><img src="images/ito.png" alt="伊藤亜紗"><p>伊藤亜紗</p></div>
+                <div class="section__picker--person-txt">
+                <h3>伊藤亜紗</h3>
+                <p>東京工業大学リベラルアーツ研究教育院准教授
+                    東京工業大学環境・社会理工学院社会・人間科学コース准教授
+                    MIT 客員研究員（2019.3-8）
+                    2010年に東京大学大学院人文社会系研究科基礎文化研究美学芸術学専門分野を単位取得のうえ、退学。同年、同大学にて博士号を取得（文学）。学術振興会特別研究員をへて、2013年に東京工業大学リベラルアーツセンター准教授に着任。2016年４月より現職。主な著書に『ヴァレリーの芸術哲学、あるいは身体の解剖』（水声社、2013年）、『目の見えない人は世界をどう見ているのか』（光文社、2015年）、『눈이 보이지 않는 사람은 세상을 어떻게 보는가 』（2016年）、『目の見えないアスリートの身体論』（潮出版、2016年）、『どもる体』（医学書院、2018年）。同時並行して、作品の制作にもたずさわる。             </p>
+              </div>
+            </div>
+
+
+            <div class="section__picker--person">
+                <div class="section__picker--person-img"><img src="images/takeda.png" alt="武田 秀樹"><p>武田 秀樹</p></div>
+                <div class="section__picker--person-txt">
+                <h3>武田 秀樹</h3>
+                <p>高野山別格本山三宝院副住職。
+                    東京大学法学部卒同大学院博士課程中退（比較日本文化論、南方熊楠研究）。
+                    大学院在学中より、ITベンチャーの立ち上げに参画、ソフトウェア開発に携わる。
+                    その後、国際交流基金の事業で、中央アジア・中東・カナダ等で津軽三味線や沖縄音楽を始めとする伝統芸能の舞をプロデュース。2007年より経済産業省主催の海外富裕層誘客事業）の検討委員に就任。          </p>
+              </div>
+            </div>
+
+            <div class="section__picker--person">
+                <div class="section__picker--person-img"><img src="images/yamashita.png" alt="山下有佳子"><p>山下有佳子</p></div>
+                <div class="section__picker--person-txt">
+                <h3>山下有佳子</h3>
+                <p>東京工業大学リベラルアーツ研究教育院准教授<br>
+                    東京工業大学環境・社会理工学院社会・人間科学コース准教授<br>
+                    MIT 客員研究員（2019.3-8）<br>
+                    2010年に東京大学大学院人文社会系研究科基礎文化研究美学芸術学専門分野を単位取得のうえ、退学。同年、同大学にて博士号を取得（文学）。学術振興会特別研究員をへて、2013年に東京工業大学リベラルアーツセンター准教授に着任。2016年４月より現職。主な著書に『ヴァレリーの芸術哲学、あるいは身体の解剖』（水声社、2013年）、『目の見えない人は世界をどう見ているのか』（光文社、2015年）、『눈이 보이지 않는 사람은 세상을 어떻게 보는가 』（2016年）、『目の見えないアスリートの身体論』（潮出版、2016年）、『どもる体』（医学書院、2018年）。同時並行して、作品の制作にもたずさわる。
+              </p>
+              </div>
+            </div>
+
             </div>
           </section>
 
 </main>
 </body>
+
+<script>
+  function popupImage() {
+    var popup = document.getElementById('js-popup');
+    if(!popup) return;
+  
+    var blackBg = document.getElementById('js-black-bg');
+  
+    var blackBg = document.getElementById('js-black-bg');
+    var closeBtn = document.getElementById('js-close-btn');
+    var showBtn1 = document.getElementById('js-show-popup-btn');
+  
+    closePopUp(blackBg);
+    closePopUp(closeBtn);
+    closePopUp(showBtn1);
+    function closePopUp(elem) {
+      if(!elem) return;
+      elem.addEventListener('click', function() {
+        popup.classList.toggle('is-show');
+      });
+    }
+  }
+  popupImage();
+ </script>
 </html>
 

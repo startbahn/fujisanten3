@@ -229,12 +229,9 @@ body {
   }
 }
 
-
-
 /* ================================== 
 7 content
 ================================== */
-
 
 section {
   padding: 100px 0;
@@ -317,18 +314,44 @@ section {
       text-align: center;
       color: #fff;
       font-size: 90px;
-      text-shadow: 0 0 1px #000;
       margin-bottom: 36px;
+      text-shadow: #333 1px 1px 0px, #333 -1px 1px 0px, #333 1px -1px 0px, #333 -1px -1px 0px;
+      overflow: hidden;
+      span {
+      position: relative;
+      }
+      span::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: #333;
+        top: 50%;
+        left: -100%;
+        display: block;
+      }
+      span::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: #333;
+        top: 50%;
+        right: -100%;
+        display: block;
+      }
     }
     &--list3 {
       width: 100%;
-      padding: 0 75px;
+      padding: 0;
       list-style-type: none;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: flex-start;
-      li {
+      flex-wrap: wrap;
+      > li {
         width: 252px;
+        margin: 0 40px 80px 40px;
         img {
           width:100%;
           padding-bottom: 17px;
@@ -336,11 +359,14 @@ section {
           border-bottom: 1px solid #ccc;
         }
         h4 {
+          font-size: 17px;
+          line-height: 1.64;
 
         }
         address {
           margin-top: 26px;
           font-style: normal;
+          line-height: 1.64;
         }
       }
       &-details {
@@ -349,21 +375,17 @@ section {
           width: 100%;
           padding-left: 20px;
           margin-bottom: 5px;
-          line-height: 1.54;
-          
+          line-height: 1.54;         
         }
         li:nth-child(1) {
           background: url(images/icom_ca.png) left 6px no-repeat;
-
         }
         li:nth-child(2) {
           background: url(images/icon_time.png) left 6px  no-repeat;
-
         }
         li:nth-child(3) {
           margin-top: 10px;
           background: url(images/icon_map.png) left 6px  no-repeat;
-
         }
       }
     } 
@@ -390,7 +412,6 @@ section {
     display: flex;
     width: calc(75% * 7); /* 人数　*/
     padding-right: 150px;
-    
   }
   &__picker--person {
     display: flex;
@@ -402,7 +423,6 @@ section {
       margin-right: 30px;
       position: relative;
       display: inline-block;
-      
       // デザインできたら背景画像にするかも
       img {
         width: 100%;
@@ -431,8 +451,8 @@ section {
         display: block;
         font-size: 140px;
         font-weight: bold;
-        text-shadow: 0 0 2px #666;
-        color: #fff;
+        text-shadow: #999 1px 1px 0px, #999 -1px 1px 0px, #999 1px -1px 0px, #999 -1px -1px 0px;
+        color:rgba(255,255,255,.0);
         z-index: -1;
       }
     }
@@ -446,8 +466,8 @@ section {
         display: block;
         font-size: 140px;
         font-weight: bold;
-        text-shadow: 0 0 2px #666;
-        color: #fff;
+        text-shadow: #999 1px 1px 0px, #999 -1px 1px 0px, #999 1px -1px 0px, #999 -1px -1px 0px;
+        color:rgba(255,255,255,.0);
         z-index: -1;
       }     
     }
@@ -496,7 +516,6 @@ section {
           }
         }
       }
-
     &__picker--person-img{
       &:nth-child(odd),
       &:nth-child(even) {
@@ -510,8 +529,6 @@ section {
 }
 
 @media only screen and (max-width: 768px){
-
-
   .header {
     position: fixed;
     width: 100%;
@@ -537,7 +554,6 @@ section {
       display: none;  
       padding-left: 20px;
       height: 100vh;
-
     }
     .is-show {
       display: block; 
@@ -564,7 +580,6 @@ section {
     }
   }
 }
-
   .info {
     position: absolute;
   }
@@ -595,7 +610,6 @@ section {
       width: 100%;
       padding-right: 0;
     }
-
     &__picker--person{
       display: block;
       padding: 30px 50px 0 50px;

@@ -345,39 +345,75 @@ section .section__title--txt-2l {
   text-align: center;
   color: #fff;
   font-size: 90px;
-  text-shadow: 0 0 1px #000;
   margin-bottom: 36px;
+  text-shadow: #333 1px 1px 0px, #333 -1px 1px 0px, #333 1px -1px 0px, #333 -1px -1px 0px;
+  overflow: hidden;
+}
+
+.section__space--titleh3 span {
+  position: relative;
+}
+
+.section__space--titleh3 span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #333;
+  top: 50%;
+  left: -100%;
+  display: block;
+}
+
+.section__space--titleh3 span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #333;
+  top: 50%;
+  right: -100%;
+  display: block;
 }
 
 .section__space--list3 {
   width: 100%;
-  padding: 0 75px;
+  padding: 0;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.section__space--list3 li {
+.section__space--list3 > li {
   width: 252px;
+  margin: 0 40px 80px 40px;
 }
 
-.section__space--list3 li img {
+.section__space--list3 > li img {
   width: 100%;
   padding-bottom: 17px;
   margin-bottom: 17px;
   border-bottom: 1px solid #ccc;
 }
 
-.section__space--list3 li address {
+.section__space--list3 > li h4 {
+  font-size: 17px;
+  line-height: 1.64;
+}
+
+.section__space--list3 > li address {
   margin-top: 26px;
   font-style: normal;
+  line-height: 1.64;
 }
 
 .section__space--list3-details {
@@ -482,8 +518,8 @@ section .section__title--txt-2l {
   display: block;
   font-size: 140px;
   font-weight: bold;
-  text-shadow: 0 0 2px #666;
-  color: #fff;
+  text-shadow: #999 1px 1px 0px, #999 -1px 1px 0px, #999 1px -1px 0px, #999 -1px -1px 0px;
+  color: rgba(255, 255, 255, 0);
   z-index: -1;
 }
 
@@ -499,8 +535,8 @@ section .section__title--txt-2l {
   display: block;
   font-size: 140px;
   font-weight: bold;
-  text-shadow: 0 0 2px #666;
-  color: #fff;
+  text-shadow: #999 1px 1px 0px, #999 -1px 1px 0px, #999 1px -1px 0px, #999 -1px -1px 0px;
+  color: rgba(255, 255, 255, 0);
   z-index: -1;
 }
 

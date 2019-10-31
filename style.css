@@ -758,5 +758,22 @@ section .section__title--txt-2l {
   section .section__title--txt-2l {
     font-size: 30px;
   }
+  .section__space--list3:before {
+    width: 100%;
+  }
+  .section__space--list3:after {
+    width: 100%;
+  }
+  .section__space--list3 > li {
+    width: 48%;
+  }
+  .section__space--list3 > li .section__space--list3-inr {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .section__space--list3 > li .section__space--list3-img {
+    width: 100%;
+    height: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */

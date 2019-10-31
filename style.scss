@@ -366,8 +366,13 @@ section {
       }
 
       > li {
-        width: 252px;
+        width: 33%;
         margin: 0 0 80px 0;
+        .section__space--list3-inr {
+          width: 252px;
+          margin: 0 auto;
+
+        }
         .section__space--list3-img {
           width: 252px;
           height: 202px;
@@ -404,6 +409,7 @@ section {
       &-details {
         margin-top: 26px;
         li {
+          display: block;
           width: 100%;
           padding-left: 20px;
           margin-bottom: 5px;
@@ -487,7 +493,7 @@ section {
         display: block;
         font-size: 140px;
         font-weight: bold;
-        text-shadow: #333 1px 1px 0px, #333 -1px 1px 0px, #333 1px -1px 0px, #333 -1px -1px 0px;
+        text-shadow: #ddd 1px 1px 0px, #ddd -1px 1px 0px, #ddd 1px -1px 0px, #ddd -1px -1px 0px;
         color: #fff;
         z-index: -1;
       }
@@ -502,7 +508,7 @@ section {
         display: block;
         font-size: 140px;
         font-weight: bold;
-        text-shadow: #999 1px 1px 0px, #999 -1px 1px 0px, #999 1px -1px 0px, #999 -1px -1px 0px;
+        text-shadow: #ddd 1px 1px 0px, #ddd -1px 1px 0px, #ddd 1px -1px 0px, #ddd -1px -1px 0px;
         color: #fff;
         z-index: -1;
       }     
@@ -512,16 +518,11 @@ section {
 
 @media only screen and (max-width: 1310px){
   .section {
-    &__space--list3 {
+    &-details {
       li {
-        width: 32%;
+        width: 100%;
       }
-      &-details {
-        li {
-          width: 100%;
-        }
-      }
-    }
+    }Q
     &__picker--person{
       &:nth-child(odd),
       &:nth-child(even) {
@@ -537,42 +538,35 @@ section {
 @media only screen and (max-width: 1110px){
   .section {
     &__space--list3 {
-         padding: 0;
-          flex-wrap: wrap;
-          > li {
-             width: 48%;
-             max-width: 252px;
+      padding: 0;
+      flex-wrap: wrap;
+      > li {
+          width: 50%;
+      }
+    }
+    &__picker--person {
+      &:nth-child(odd),
+      &:nth-child(even) {
+        .section__picker--person-img p {
+          bottom: -10px;
+          font-size: 100px;
+          left: 100px; 
+        }
       }
     }
   } 
-} 
+}
+
+
 @media only screen and (max-width: 900px){
+  
   section {
     .section__title--txt,
     .section__title--txt-2l {
       font-size: 50px;
     }
   }
-  .section {
-    
-     &__space {
-        &--titleh3 {
-          font-size: 50px;
-        }
-      }
-    &__picker--person-img{
-      &:nth-child(odd),
-      &:nth-child(even) {
-        .section__picker--person-img p {
-          font-size: 90px; 
-          left: 100px;       
-        }     
-      }
-    }
-  }
-}
 
-@media only screen and (max-width: 768px){
   .header {
     position: fixed;
     width: 100%;
@@ -631,7 +625,9 @@ section {
   .section__title--txt-2l {
     font-size: 40px;
   }
+
   .section {
+
     &__inr {
       padding: 0 20px;
       max-width: 100%;
@@ -639,21 +635,43 @@ section {
         font-size: 14px;
       }
     }
+
     &__space {
       &--titleh3 {
-        font-size: 35px;
+        font-size: 45px;
       }
     }
+
     &-details {
       li {
         font-size: 11px;
       }
     }
+
+    &__picker--person {
+      &:nth-child(odd),
+      &:nth-child(even) {
+        .section__picker--person-img p {
+          bottom: -60px;
+          font-size: 90px;
+          left: 90px; 
+        }
+      }
+    }
+
+  }
+}
+
+
+@media only screen and (max-width: 768px){
+  .section {
+
     &__picker--wrap{
       flex-wrap: wrap;
       width: 100%;
       padding-right: 0;
     }
+
     &__picker--person{
       display: block;
       padding: 30px 50px 0 50px;
@@ -661,6 +679,7 @@ section {
       width: 100%;
       overflow: hidden;
       padding-top: 100px; 
+
       &:nth-child(odd) {
         padding-top: 100px;
         padding-bottom: 0;
@@ -670,11 +689,12 @@ section {
           bottom: auto;
           left: -50px;
           margin-right: 0;
-          font-size: 80px;
-          width: 80px;
-          line-height: 1;
+          font-size: 90px;
+          width: 90px;
+          line-height: 1.2;
         }
       }
+
       &:nth-child(even) {
         padding-top: 100px;
         .section__picker--person-img p {
@@ -684,16 +704,19 @@ section {
           right: -50px;
           margin-right: 0;
           display: block;
-          font-size: 80px;
-          width: 80px;
-          line-height: 1;
+          font-size: 90px;
+          width: 90px;
+          line-height: 1.2;
         }     
       }
+      
     }
+
     &__picker--person-img {
       width: 80%;
       margin: 0 10%;
     }
+
     &__picker--person-txt {
       width: 100%;
       font-size: 12px;
@@ -703,8 +726,14 @@ section {
         margin: 40px 0 20px;
       }
     }
+
   }
 }
+
+
+
+
+
 
 @media only screen and (max-width: 568px){
  section {

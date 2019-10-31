@@ -308,6 +308,10 @@ section .section__title--txt-2l {
   margin-top: 30px;
 }
 
+.section__news {
+  padding-top: 400px;
+}
+
 .section__news--list li {
   display: -webkit-box;
   display: -ms-flexbox;

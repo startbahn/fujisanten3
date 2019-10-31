@@ -533,8 +533,11 @@ section {
   }
 }
 
-@media only screen and (max-width: 1110px){
+@media only screen and (max-width: 1160px){
   .section {
+    &__space--titleh3 {
+      font-size: 70px;
+    }
     &__space--list3 {
       padding: 0;
       flex-wrap: wrap;
@@ -656,7 +659,6 @@ section {
         }
       }
     }
-
   }
 }
 
@@ -706,8 +708,7 @@ section {
           width: 90px;
           line-height: 1.2;
         }     
-      }
-      
+      }     
     }
 
     &__picker--person-img {
@@ -724,13 +725,8 @@ section {
         margin: 40px 0 20px;
       }
     }
-
   }
 }
-
-
-
-
 
 
 @media only screen and (max-width: 568px){
@@ -741,12 +737,15 @@ section {
     }
   }
   .section {
+    &__space--titleh3 {
+        font-size: 40px;
+    }
     &__space--list3 {
         &:before{
-          width: 100%;
+          width: 48%;
         }
         &:after{
-          width: 100%;
+          width: 48%;
         }
         > li {
           width: 48%;

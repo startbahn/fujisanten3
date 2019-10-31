@@ -598,7 +598,10 @@ section .section__title--txt-2l {
   }
 }
 
-@media only screen and (max-width: 1110px) {
+@media only screen and (max-width: 1160px) {
+  .section__space--titleh3 {
+    font-size: 70px;
+  }
   .section__space--list3 {
     padding: 0;
     -ms-flex-wrap: wrap;
@@ -758,11 +761,14 @@ section .section__title--txt-2l {
   section .section__title--txt-2l {
     font-size: 30px;
   }
+  .section__space--titleh3 {
+    font-size: 40px;
+  }
   .section__space--list3:before {
-    width: 100%;
+    width: 48%;
   }
   .section__space--list3:after {
-    width: 100%;
+    width: 48%;
   }
   .section__space--list3 > li {
     width: 48%;

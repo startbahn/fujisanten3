@@ -173,13 +173,20 @@ body {
   margin: 30px 0 60px 40px;
 }
 
+.header__title a {
+  color: #000;
+  text-align: justify;
+  text-decoration: none;
+}
+
 .header__menu--btn {
   text-align: center;
   z-index: 200;
   position: fixed;
+  width: 80px;
   top: 20px;
   left: 50%;
-  margin-left: -2em;
+  margin-left: -40px;
   display: none;
 }
 
@@ -189,6 +196,7 @@ body {
 
 .header__nav--list {
   font-size: 18px;
+  font-weight: 100;
   margin-bottom: 20px;
 }
 
@@ -213,6 +221,12 @@ body {
 
 .header__sns--list li {
   margin-right: 16px;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.header__sns--list li a {
+  color: #000;
 }
 
 .header__sns--list li:last-child {
@@ -222,9 +236,11 @@ body {
 .header .close-btn {
   display: none;
   text-align: center;
-  margin-top: 10px;
+  width: 80px;
+  position: fixed;
   left: 50%;
-  margin-left: -2.5em;
+  margin-left: -40px;
+  bottom: 60px;
 }
 
 .info {
@@ -235,7 +251,7 @@ body {
 }
 
 .info__inr--title img {
-  height: calc(100vh - 30px);
+  height: calc(100vh - 60px);
   width: auto;
 }
 
@@ -250,7 +266,7 @@ section {
       scroll-snap-type: y;
 }
 
-section .section__title {
+.section__title {
   height: 100%;
   position: absolute;
   left: 0;
@@ -258,7 +274,7 @@ section .section__title {
   bottom: 0;
 }
 
-section .section__title--txt {
+.section__title--txt {
   position: -webkit-sticky;
   position: sticky;
   top: calc(100vh - 1em - 30px);
@@ -270,16 +286,20 @@ section .section__title--txt {
       align-self: flex-end;
 }
 
-section .section__title--txt-2l {
+.section__title--txt-2l {
   position: -webkit-sticky;
   position: sticky;
-  top: calc(100vh - 2em - 30px);
+  top: calc(100vh - 2em - 60px);
   margin-left: 30px;
   font-weight: 100;
   font-size: 70px;
   z-index: 10;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.section__title--txt-2l img {
+  width: 8em;
 }
 
 .section__inr {
@@ -462,7 +482,6 @@ section .section__title--txt-2l {
 .section__space--list3-details li {
   display: block;
   width: 100%;
-  padding-left: 20px;
   margin-bottom: 5px;
   line-height: 1.54;
 }
@@ -473,17 +492,28 @@ section .section__title--txt-2l {
   cursor: pointer;
 }
 
-.section__space--list3-details li:nth-child(1) {
-  background: url(images/icom_ca.png) left 6px no-repeat;
+.section__space--list3-details li:nth-child(1)::before {
+  font-size: 14px;
+  content: '\f073';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin: 0 9px 0 1px;
 }
 
-.section__space--list3-details li:nth-child(2) {
-  background: url(images/icon_time.png) left 6px no-repeat;
+.section__space--list3-details li:nth-child(2)::before {
+  font-size: 14px;
+  content: '\f017';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin: 0 10px 0 0px;
 }
 
-.section__space--list3-details li:nth-child(3) {
-  margin-top: 10px;
-  background: url(images/icon_map.png) left 6px no-repeat;
+.section__space--list3-details li:nth-child(3)::before {
+  font-size: 14px;
+  content: '\f3c5';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin: 0 8px 0 2px;
 }
 
 .section__picker .section__inr {
@@ -538,6 +568,15 @@ section .section__title--txt-2l {
   height: auto;
 }
 
+.section__picker--person-copy::after {
+  content: "(c)BIRDHEAD";
+  position: absolute;
+  bottom: -12px;
+  right: 0;
+  color: #999;
+  font-size: 10px;
+}
+
 .section__picker--person-txt {
   width: 55%;
 }
@@ -545,6 +584,7 @@ section .section__title--txt-2l {
 .section__picker--person-txt h3 {
   font-size: 24px;
   margin-bottom: 34px;
+  line-height: 1.4;
 }
 
 .section__picker--person-txt p {
@@ -639,6 +679,8 @@ section .section__title--txt-2l {
   }
   .header__nav {
     position: fixed;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     top: 0;
     margin: 0;
     padding-top: 160px;
@@ -659,11 +701,12 @@ section .section__title--txt-2l {
     margin-bottom: 20px;
   }
   .header__nav--list li {
-    margin-bottom: 20px;
-    font-size: 60px;
+    margin-bottom: 10px;
+    font-size: 50px;
   }
   .header__nav--list li:last-child {
-    margin: 0;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .header__sns--list li {
     margin-right: 16px;

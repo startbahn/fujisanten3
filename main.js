@@ -82,3 +82,56 @@ function render() {
   camera.lookAt(scene.position);
   renderer.render( scene, camera );
 }
+
+var picker = document.getElementById('picker');
+var pickerWrap = document.getElementById('picker').querySelector('.section__inr');
+var pickerInner = document.getElementById('picker').querySelector('.section__picker--wrap');
+pickerWrap.scrollLeft = 1;
+var intersected = false;
+var option = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.5
+};
+function stopScrolling(e){ e.preventDefault();}
+function changeDirection(e){
+  console.log(pickerWrap.scrollLeft);
+  if (pickerWrap.scrollLeft === 0) {
+    intersected = false;
+    pickerWrap.scrollLeft = 1;
+    document.body.classList.remove('stop');
+    document.removeEventListener('mousewheel', stopScrolling, {passive: false});
+    picker.removeEventListener('mousewheel', changeDirection);
+  // } else if (pickerWrap.scrollLeft >= (pickerInner.getBoundingClientRect().width - window.innerWidth )) {
+  //   intersected = false;
+  //   document.body.classList.remove('stop');
+  //   document.removeEventListener('mousewheel', stopScrolling, {passive: false});
+  //   picker.removeEventListener('mousewheel', changeDirection);
+  } else {
+    pickerWrap.scrollLeft += e.deltaY;
+  }
+}
+
+// function doWhenIntersect(entries) {
+//   intersected = !intersected;
+//   console.log(intersected);
+//   if(intersected){
+    // document.addEventListener('mousewheel', stopScrolling, {passive: false});
+    // picker.addEventListener('mousewheel', changeDirection);
+//   }
+
+// }
+// var observer = new IntersectionObserver(doWhenIntersect, option);
+// observer.observe(picker);
+
+window.addEventListener('scroll', function(){
+  console.log(window.pageYOffset, picker.offsetTop, pickerWrap.scrollLeft, ( pickerInner.getBoundingClientRect().width - window.innerWidth));
+  if(window.pageYOffset > picker.offsetTop && !intersected) {
+    intersected = true;
+    var scrollOffsetY = picker.offsetTop;
+    window.scrollTo(0, scrollOffsetY);
+    document.body.classList.add('stop');
+    picker.addEventListener('mousewheel', changeDirection);
+    document.addEventListener('mousewheel', stopScrolling, {passive: false});
+  }
+});

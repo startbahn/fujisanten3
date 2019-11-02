@@ -70,7 +70,6 @@ function onDocumentMouseMove( event ) {
   mouseX = ( event.clientX - windowHalfX ) / 2;
   mouseY = ( event.clientY - windowHalfY ) / 2;
 }
-//
 function animate() {
   requestAnimationFrame( animate );
   render();
@@ -88,45 +87,40 @@ var pickerWrap = document.getElementById('picker').querySelector('.section__inr'
 var pickerInner = document.getElementById('picker').querySelector('.section__picker--wrap');
 pickerWrap.scrollLeft = 1;
 var intersected = false;
-var option = {
-  root: null,
-  rootMargin: "0px",
-  threshold: 0.5
-};
+var colorChanged = false;
 function stopScrolling(e){ e.preventDefault();}
 function changeDirection(e){
-  console.log(pickerWrap.scrollLeft);
   if (pickerWrap.scrollLeft === 0) {
     intersected = false;
     pickerWrap.scrollLeft = 1;
     document.body.classList.remove('stop');
     document.removeEventListener('mousewheel', stopScrolling, {passive: false});
     picker.removeEventListener('mousewheel', changeDirection);
-  // } else if (pickerWrap.scrollLeft >= (pickerInner.getBoundingClientRect().width - window.innerWidth )) {
+  } 
+  // else if (pickerWrap.scrollLeft >= (pickerInner.getBoundingClientRect().width - window.innerWidth )) {
   //   intersected = false;
   //   document.body.classList.remove('stop');
   //   document.removeEventListener('mousewheel', stopScrolling, {passive: false});
   //   picker.removeEventListener('mousewheel', changeDirection);
-  } else {
+  //   window.scrollTo += e.deltaY;
+  // }
+   else {
     pickerWrap.scrollLeft += e.deltaY;
   }
 }
+function changeColorsClass(str){
+  document.body.classList.remove('purple');
+  document.body.classList.remove('red');
+  document.body.classList.remove('green');
+  document.body.classList.add(str);
+}
 
-// function doWhenIntersect(entries) {
-//   intersected = !intersected;
-//   console.log(intersected);
-//   if(intersected){
-    // document.addEventListener('mousewheel', stopScrolling, {passive: false});
-    // picker.addEventListener('mousewheel', changeDirection);
-//   }
 
-// }
-// var observer = new IntersectionObserver(doWhenIntersect, option);
-// observer.observe(picker);
 
 window.addEventListener('scroll', function(){
-  console.log(window.pageYOffset, picker.offsetTop, pickerWrap.scrollLeft, ( pickerInner.getBoundingClientRect().width - window.innerWidth));
-  if(window.pageYOffset > picker.offsetTop && !intersected) {
+  // console.log(window.pageYOffset, picker.offsetTop, pickerWrap.scrollLeft, ( pickerInner.getBoundingClientRect().width - window.innerWidth));
+  // NOTE: Change vartical scroll to horizontal scroll on Picker section.
+  if(window.pageYOffset > picker.offsetTop && !intersected && window.innerWidth > 768) {
     intersected = true;
     var scrollOffsetY = picker.offsetTop;
     window.scrollTo(0, scrollOffsetY);
@@ -134,4 +128,38 @@ window.addEventListener('scroll', function(){
     picker.addEventListener('mousewheel', changeDirection);
     document.addEventListener('mousewheel', stopScrolling, {passive: false});
   }
+
+  // NOTE: Change colors on scrolling window
+  if (window.pageYOffset > (document.body.getBoundingClientRect().height / 3 * 1) && window.pageYOffset <= (document.body.getBoundingClientRect().height / 3 * 2)) {
+    if (!document.body.classList.contains('red')) {
+      changeColorsClass('red');
+    }
+  } else if (window.pageYOffset > (document.body.getBoundingClientRect().height / 3 * 2)) {
+    if (!document.body.classList.contains('purple')) {
+      changeColorsClass('purple');
+    }
+  } else {
+    if (!document.body.classList.contains('green')) {
+      changeColorsClass('green');
+    }
+  }
+
 });
+
+var separateTxt = document.querySelectorAll('.js-bg');
+separateTxt.forEach(function(line, i){
+  line.innerHTML = line.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+});
+
+var navLinks = document.querySelectorAll('.header__nav--list li a');
+navLinks.forEach(function(link){
+  link.addEventListener('click', function(){
+    intersected = false;
+    pickerWrap.scrollLeft = 1;
+    document.body.classList.remove('stop');
+    document.removeEventListener('mousewheel', stopScrolling, {passive: false});
+    picker.removeEventListener('mousewheel', changeDirection);
+  })
+});
+
+// FIXME: Resize時の対応

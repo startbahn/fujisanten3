@@ -142,17 +142,125 @@ body {
   font-style: normal;
 }
 
+.js-bg .letter {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  z-index: 1;
+}
+
+.js-bg .letter:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 10px);
+  background-color: #ffffff;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
 /* ================================== 
 3 Elements
 ================================== */
 body {
-  color: #000;
+  color: #2e2c77;
+  -webkit-transition: all 1500ms;
+  transition: all 1500ms;
 }
 
 body.stop {
   overflow: hidden;
   width: 100%;
   height: 100vh;
+}
+
+body.purple {
+  background-color: #3c56a6;
+}
+
+body.purple .info__inr--title svg .st1 {
+  fill: #fff;
+}
+
+body.purple .section__title--txt {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  body.purple .header__sns--list li a {
+    color: #fff;
+  }
+  body.purple .header__nav--list li a {
+    color: #fff;
+  }
+}
+
+body.purple .section__space--list3-details li {
+  color: #fff;
+}
+
+body.purple .section__space--list3-details li a {
+  color: #fff;
+}
+
+body.purple .js-bg .letter {
+  color: #fff;
+}
+
+body.purple .js-bg .letter:after {
+  background-color: #3c56a6;
+}
+
+body.red {
+  background-color: #e44770;
+}
+
+body.red .info__inr--title svg .st1 {
+  fill: #fff;
+}
+
+body.red .section__title--txt {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  body.red .header__sns--list li a {
+    color: #fff;
+  }
+  body.red .header__nav--list li a {
+    color: #fff;
+  }
+}
+
+body.red .section__space--list3-details li {
+  color: #fff;
+}
+
+body.red .section__space--list3-details li a {
+  color: #fff;
+}
+
+body.red .js-bg .letter {
+  color: #fff;
+}
+
+body.red .js-bg .letter:after {
+  background-color: #e44770;
+}
+
+body.green {
+  background-color: #65fad1;
+}
+
+body.green .info__inr--title svg .st1 {
+  fill: #2e2c77;
+}
+
+body.green .js-bg .letter:after {
+  background-color: #65fad1;
 }
 
 .bgFuji {
@@ -215,7 +323,7 @@ body.stop {
 }
 
 .header__nav--list li a {
-  color: #000;
+  color: #2e2c77;
   text-decoration: none;
 }
 
@@ -232,7 +340,7 @@ body.stop {
 }
 
 .header__sns--list li a {
-  color: #000;
+  color: #2e2c77;
 }
 
 .header__sns--list li:last-child {
@@ -254,9 +362,11 @@ body.stop {
   top: 30px;
   right: 40px;
   z-index: 100;
+  -webkit-transition: all 1500ms;
+  transition: all 1500ms;
 }
 
-.info__inr--title img {
+.info__inr--title svg {
   height: calc(100vh - 60px);
   width: auto;
 }
@@ -290,6 +400,8 @@ section {
   z-index: 10;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  -webkit-transition: all 1500ms;
+  transition: all 1500ms;
 }
 
 .section__title--txt-2l {
@@ -493,7 +605,7 @@ section {
 }
 
 .section__space--list3-details li a {
-  color: #000;
+  color: #2e2c77;
   text-decoration: none;
   cursor: pointer;
 }
@@ -590,7 +702,7 @@ section {
 }
 
 .section__picker--person-copy::after {
-  content: "(c)BIRDHEAD";
+  content: "©BIRDHEAD";
   position: absolute;
   bottom: -12px;
   right: 0;

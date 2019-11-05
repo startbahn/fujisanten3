@@ -109,9 +109,16 @@ function changeDirection(e){
   }
 }
 function changeColorsClass(str){
-  document.body.classList.remove('purple');
-  document.body.classList.remove('red');
-  document.body.classList.remove('green');
+  if(str === 'red') {
+    document.body.classList.remove('purple');
+    document.body.classList.remove('green');
+  } else if (str === 'purple') {
+    document.body.classList.remove('red');
+    document.body.classList.remove('green');
+  } else if (str === 'green') {
+    document.body.classList.remove('purple');
+    document.body.classList.remove('red');
+  }
   document.body.classList.add(str);
 }
 
@@ -131,16 +138,16 @@ window.addEventListener('scroll', function(){
 
   // NOTE: Change colors on scrolling window
   if (window.pageYOffset > (document.body.getBoundingClientRect().height / 3 * 1) && window.pageYOffset <= (document.body.getBoundingClientRect().height / 3 * 2)) {
+    if (!document.body.classList.contains('green')) {
+      changeColorsClass('green');
+    }
+  } else if (window.pageYOffset > (document.body.getBoundingClientRect().height / 3 * 2)) {
     if (!document.body.classList.contains('red')) {
       changeColorsClass('red');
     }
-  } else if (window.pageYOffset > (document.body.getBoundingClientRect().height / 3 * 2)) {
+  } else {
     if (!document.body.classList.contains('purple')) {
       changeColorsClass('purple');
-    }
-  } else {
-    if (!document.body.classList.contains('green')) {
-      changeColorsClass('green');
     }
   }
 

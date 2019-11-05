@@ -154,8 +154,8 @@ body {
 .js-bg .letter:after {
   content: '';
   position: absolute;
-  width: 100%;
-  height: calc(100% - 10px);
+  width: 200%;
+  height: 100%;
   background-color: #ffffff;
   bottom: 0;
   left: 0;
@@ -178,7 +178,7 @@ body.stop {
 }
 
 body.purple {
-  background-color: #3c56a6;
+  background-color: #0045df;
 }
 
 body.purple .info__inr--title svg .st1 {
@@ -187,6 +187,10 @@ body.purple .info__inr--title svg .st1 {
 
 body.purple .section__title--txt {
   color: #fff;
+}
+
+body.purple .header__title a svg {
+  fill: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
@@ -206,16 +210,20 @@ body.purple .section__space--list3-details li a {
   color: #fff;
 }
 
+body.purple .section__space--list3-inr {
+  background-color: #0045df;
+}
+
 body.purple .js-bg .letter {
   color: #fff;
 }
 
 body.purple .js-bg .letter:after {
-  background-color: #3c56a6;
+  background-color: #0045df;
 }
 
 body.red {
-  background-color: #e44770;
+  background-color: #f53d6e;
 }
 
 body.red .info__inr--title svg .st1 {
@@ -224,6 +232,10 @@ body.red .info__inr--title svg .st1 {
 
 body.red .section__title--txt {
   color: #fff;
+}
+
+body.red .header__title a svg {
+  fill: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
@@ -243,24 +255,36 @@ body.red .section__space--list3-details li a {
   color: #fff;
 }
 
+body.red .section__space--list3-inr {
+  background-color: #f53d6e;
+}
+
 body.red .js-bg .letter {
   color: #fff;
 }
 
 body.red .js-bg .letter:after {
-  background-color: #e44770;
+  background-color: #f53d6e;
 }
 
 body.green {
-  background-color: #65fad1;
+  background-color: #65FAD1;
 }
 
 body.green .info__inr--title svg .st1 {
   fill: #2e2c77;
 }
 
+body.green .section__space--list3-inr {
+  background-color: #65FAD1;
+}
+
+body.green .header__title a svg {
+  fill: #2e2c77;
+}
+
 body.green .js-bg .letter:after {
-  background-color: #65fad1;
+  background-color: #65FAD1;
 }
 
 .bgFuji {
@@ -291,6 +315,11 @@ body.green .js-bg .letter:after {
   color: #000;
   text-align: justify;
   text-decoration: none;
+}
+
+.header__title a svg {
+  -webkit-transition: all 1500ms;
+  transition: all 1500ms;
 }
 
 .header__menu--btn {
@@ -555,6 +584,7 @@ section {
 .section__space--list3 > li .section__space--list3-inr {
   width: 252px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .section__space--list3 > li .section__space--list3-img {

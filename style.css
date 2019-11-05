@@ -154,8 +154,9 @@ body {
 .js-bg .letter:after {
   content: '';
   position: absolute;
-  width: 200%;
+  width: 100%;
   height: 100%;
+  min-width: 30px;
   background-color: #ffffff;
   bottom: 0;
   left: 0;
@@ -458,7 +459,7 @@ section {
 .section__inr p {
   font-size: 18px;
   font-weight: 100;
-  line-height: 2.1;
+  line-height: 1.5;
 }
 
 .section__about {
@@ -585,6 +586,7 @@ section {
   width: 252px;
   margin: 0 auto;
   overflow: hidden;
+  padding: 10px;
 }
 
 .section__space--list3 > li .section__space--list3-img {

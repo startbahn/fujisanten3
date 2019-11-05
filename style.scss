@@ -153,6 +153,7 @@ body {
       position: absolute;
       width: 100%;
       height: 100%;
+      min-width: 30px;
       background-color: #ffffff;
       bottom: 0;
       left: 0;
@@ -173,12 +174,15 @@ body {
     height: 100vh;
   }
   &.purple {
-    background-color: #3c56a6;
+    background-color: #0045df;
     .info__inr--title svg .st1 {
       fill: #fff;
     }
     .section__title--txt {
       color: #fff;
+    }
+    .header__title a svg {
+      fill: #ffffff;
     }
     @media screen and (min-width: 768px) {
       .header__sns--list li a {
@@ -194,22 +198,28 @@ body {
         color: #fff;
       }
     }
+    .section__space--list3-inr {
+      background-color: #0045df;
+    }
     .js-bg {
       .letter {
         color: #fff;
         &:after {
-          background-color: #3c56a6;
+          background-color: #0045df;
         }
       }
     }
   }
   &.red {
-    background-color: #e44770;
+    background-color: #f53d6e;
     .info__inr--title svg .st1 {
       fill: #fff;
     }
     .section__title--txt {
       color: #fff;
+    }
+    .header__title a svg {
+      fill: #ffffff;
     }
     @media screen and (min-width: 768px) {
       .header__sns--list li a {
@@ -225,24 +235,33 @@ body {
         color: #fff;
       }
     }
+    .section__space--list3-inr {
+      background-color: #f53d6e;
+    }
     .js-bg {
       .letter {
         color: #fff;
         &:after {
-          background-color: #e44770;
+          background-color: #f53d6e;
         }
       }
     }
   }
   &.green {
-    background-color: #65fad1;
+    background-color: #65FAD1;
     .info__inr--title svg .st1 {
+      fill: #2e2c77;
+    }
+    .section__space--list3-inr {
+      background-color: #65FAD1;
+    }
+    .header__title a svg {
       fill: #2e2c77;
     }
     .js-bg {
       .letter {
         &:after {
-          background-color: #65fad1;
+          background-color: #65FAD1;
         }
       }
     }
@@ -273,6 +292,9 @@ body {
         color: #000;
         text-align: justify;
         text-decoration: none;
+        svg {
+          transition: all 1500ms;
+        }
       }
     }
     &__menu--btn {
@@ -392,7 +414,7 @@ section {
     p {
       font-size: 18px;
       font-weight: 100;
-      line-height: 2.1;
+      line-height: 1.5;
     }
   }
 
@@ -503,11 +525,13 @@ section {
         .section__space--list3-inr {
           width: 252px;
           margin: 0 auto;
+          overflow: hidden;
+          padding: 10px;
         }
         .section__space--list3-img {
           width: 252px;
           height: 202px;
-          overflow: hidden;          
+          overflow: hidden;
         }
         img {
           width:100%;

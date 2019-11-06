@@ -500,6 +500,16 @@ section {
   margin-top: 30px;
 }
 
+.section__about--indent2 {
+  text-indent: -58px;
+  padding: 0 0 0 58px;
+}
+
+.section__about--indent4 {
+  text-indent: -100px;
+  padding: 0 0 0 100px;
+}
+
 .section__news {
   padding-top: 400px;
 }

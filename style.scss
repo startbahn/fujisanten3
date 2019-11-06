@@ -453,6 +453,14 @@ section {
       font-size: 18px;
       margin-top: 30px;
     }
+    &--indent2 {
+      text-indent: -58px;
+      padding: 0 0 0 58px;
+    }
+    &--indent4 {
+      text-indent: -100px;
+      padding: 0 0 0 100px;
+    }
   }
 
   //News section style

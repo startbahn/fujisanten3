@@ -201,6 +201,14 @@ body {
     .section__space--list3-inr {
       background-color: #0045df;
     }
+    .section__space--titleh3 svg .st0 {
+      stroke: #ffffff;
+    }
+    .section__space--titleh3 span {
+      &:before, &:after {
+        background: #ffffff;
+      }
+    }
     .js-bg {
       .letter {
         color: #fff;
@@ -238,6 +246,14 @@ body {
     .section__space--list3-inr {
       background-color: #f53d6e;
     }
+    .section__space--titleh3 svg .st0 {
+      stroke: #ffffff;
+    }
+    .section__space--titleh3 span {
+      &:before, &:after {
+        background: #ffffff;
+      }
+    }
     .js-bg {
       .letter {
         color: #fff;
@@ -257,6 +273,14 @@ body {
     }
     .header__title a svg {
       fill: #2e2c77;
+    }
+    .section__space--titleh3 svg .st0 {
+      stroke: #2e2c77;
+    }
+    .section__space--titleh3 span {
+      &:before, &:after {
+        background: #2e2c77;
+      }
     }
     .js-bg {
       .letter {
@@ -473,7 +497,7 @@ section {
         position: relative;
         height: 75px;
         display: inline-block;
-        img {
+        svg {
           height: 100%;
           width: auto;
           vertical-align: top;

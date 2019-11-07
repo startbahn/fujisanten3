@@ -147,6 +147,7 @@ body {
     width: 100%;
     height: calc(100% - 3px);
     transition: all 200ms;
+    font-weight: 100;
     z-index: 1;
     &:after {
       content: '';
@@ -450,16 +451,33 @@ section {
       margin-bottom: 60px;
     }
     .section__about--txt {
+      
       font-size: 18px;
       margin-top: 30px;
+      position: relative;
+      line-height: 1.4;
+     
+      dt {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      dd {
+      }
+    }
+    &--indent-no {
+      text-indent: 0;
+      padding: 0 0 0 58px;
+      margin-top: 0!important;
     }
     &--indent2 {
-      text-indent: -58px;
-      padding: 0 0 0 58px;
+      padding-left: 58px;
     }
     &--indent4 {
-      text-indent: -100px;
-      padding: 0 0 0 100px;
+      padding-left: 90px;
+    }
+    &--indent5 {
+      padding-left: 110px;
     }
   }
 
@@ -981,6 +999,20 @@ section {
         background: url(images/picker/sp_miyatsu.svg)  no-repeat;
       }    
     }
+    &__about {
+      .section__about--txt {
+        font-size: 16px;
+        dt {
+          position: relative;
+        }
+      }
+    }
+    &__about--indent2,
+    &__about--indent4,
+    &__about--indent5 {
+      padding-left: 0;
+    }
+
 
     &__picker--person-txt {
       width: 100%;

@@ -138,7 +138,7 @@ input, select {
 2. Typography
 ================================== */
 body {
-  font-family: neue-haas-unica, Gothic MB101 ,sans-serif;
+  font-family: ゴシックMB101 M, neue-haas-unica, Gothic MB101 ,sans-serif;
   font-style: normal;
 }
 
@@ -179,7 +179,7 @@ body.stop {
 }
 
 body.purple {
-  background-color: #0045df;
+  background-color: #4c2ee5;
 }
 
 body.purple .info__inr--title svg .st1 {
@@ -212,7 +212,7 @@ body.purple .section__space--list3-details li a {
 }
 
 body.purple .section__space--list3-inr {
-  background-color: #0045df;
+  background-color: #4c2ee5;
 }
 
 body.purple .section__space--titleh3 svg .st0 {
@@ -228,7 +228,7 @@ body.purple .js-bg .letter {
 }
 
 body.purple .js-bg .letter:after {
-  background-color: #0045df;
+  background-color: #4c2ee5;
 }
 
 body.red {

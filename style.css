@@ -148,6 +148,7 @@ body {
   height: calc(100% - 3px);
   -webkit-transition: all 200ms;
   transition: all 200ms;
+  font-weight: 100;
   z-index: 1;
 }
 
@@ -498,16 +499,32 @@ section {
 .section__about .section__about--txt {
   font-size: 18px;
   margin-top: 30px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.section__about .section__about--txt dt {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section__about--indent-no {
+  text-indent: 0;
+  padding: 0 0 0 58px;
+  margin-top: 0 !important;
 }
 
 .section__about--indent2 {
-  text-indent: -58px;
-  padding: 0 0 0 58px;
+  padding-left: 58px;
 }
 
 .section__about--indent4 {
-  text-indent: -100px;
-  padding: 0 0 0 100px;
+  padding-left: 90px;
+}
+
+.section__about--indent5 {
+  padding-left: 110px;
 }
 
 .section__news {
@@ -1052,6 +1069,15 @@ section {
   }
   .section__picker--person-img.miyatsu::after {
     background: url(images/picker/sp_miyatsu.svg) no-repeat;
+  }
+  .section__about .section__about--txt {
+    font-size: 16px;
+  }
+  .section__about .section__about--txt dt {
+    position: relative;
+  }
+  .section__about--indent2, .section__about--indent4, .section__about--indent5 {
+    padding-left: 0;
   }
   .section__picker--person-txt {
     width: 100%;

@@ -657,7 +657,7 @@ section {
       list-style-type: none;
       display: flex;
       justify-content: space-around;
-      align-items: flex-start;
+      align-items: stretch;
       flex-wrap: wrap;
 
       //空きを均等割りで最終行を左寄せにするため
@@ -677,6 +677,7 @@ section {
         margin: 0 0 80px 0;
         .section__space--list3-inr {
           width: 252px;
+          height: 100%;
           margin: 0 auto;
           overflow: hidden;
           padding: 10px;
@@ -732,21 +733,21 @@ section {
             cursor: pointer;
           }
         }
+        // li:nth-child(1)::before {
+        //   font-size: 14px;
+        //   content:'\f073';
+        //   font-family:'Font Awesome 5 Free';
+        //   font-weight: 900;
+        //   margin: 0 9px 0 1px;
+        // }
+        // li:nth-child(2)::before {
+        //   font-size: 14px;
+        //   content:'\f017';
+        //   font-family:'Font Awesome 5 Free';
+        //   font-weight:900;
+        //   margin: 0 10px 0 0px;
+        // }
         li:nth-child(1)::before {
-          font-size: 14px;
-          content:'\f073';
-          font-family:'Font Awesome 5 Free';
-          font-weight: 900;
-          margin: 0 9px 0 1px;
-        }
-        li:nth-child(2)::before {
-          font-size: 14px;
-          content:'\f017';
-          font-family:'Font Awesome 5 Free';
-          font-weight:900;
-          margin: 0 10px 0 0px;
-        }
-        li:nth-child(3)::before {
           font-size: 14px;
           content:'\f3c5';
           font-family:'Font Awesome 5 Free';

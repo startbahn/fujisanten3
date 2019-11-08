@@ -142,21 +142,25 @@ body {
 }
 
 .js-bg {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 15px 0 0;
   .letter {
     position: relative;
     width: 100%;
     height: 100%;
-    transition: all 200ms;
+    transition: all 1500ms;
     font-weight: 100;
     z-index: 1;
+    font-size: 14px;
     &:after {
       content: '';
       position: absolute;
       width: 100%;
-      height: calc(100% + 8px);
+      height: calc(100% + 16px);
       min-width: 30px;
       background-color: #ffffff;
-      bottom: -4px;
+      bottom: -8px;
       left: 0;
       z-index: -1;
     }
@@ -167,7 +171,7 @@ body {
 3 Elements
 ================================== */
 body {
-  color: #2e2c77;
+  color: #4c2ee5;
   transition: all 1500ms;
   &.stop {
     overflow: hidden;
@@ -175,15 +179,29 @@ body {
     height: 100vh;
   }
   &.purple {
+    &.is-show {
+      .header__title a svg {
+        fill: #4c2ee5;
+        stroke: #4c2ee5;
+      }
+      .header__menu--btn {
+        color: #4c2ee5;
+      }
+    }
     background-color: #4c2ee5;
-    .info__inr--title svg .st1 {
+    .info__inr--title svg g{
       fill: #fff;
+      stroke: #ffffff;
     }
     .section__title--txt {
       color: #fff;
     }
     .header__title a svg {
       fill: #ffffff;
+      stroke: #ffffff;
+    }
+    .header__menu--btn {
+      color: #ffffff;
     }
     @media screen and (min-width: 768px) {
       .header__sns--list li a {
@@ -194,6 +212,7 @@ body {
       }
       .header__nav--list li a svg .cls-1 {
         fill: #fff;
+        stroke: #ffffff;
       }
     }
     .section__space--list3-details li {
@@ -201,8 +220,12 @@ body {
       a {
         color: #fff;
       }
+      h4::after {
+        background: #fff;
+      }
     }
     .section__space--list3-inr {
+      color: #ffffff;
       background-color: #4c2ee5;
     }
     .section__space--titleh3 svg .st0 {
@@ -223,15 +246,29 @@ body {
     }
   }
   &.red {
+    &.is-show {
+      .header__title a svg {
+        fill: #4c2ee5;
+        stroke: #4c2ee5;
+      }
+      .header__menu--btn {
+        color: #4c2ee5;
+      }
+    }
     background-color: #f53d6e;
-    .info__inr--title svg .st1 {
+    .info__inr--title svg g {
       fill: #fff;
+      stroke: #ffffff;
     }
     .section__title--txt {
       color: #fff;
     }
     .header__title a svg {
       fill: #ffffff;
+      stroke: #ffffff;
+    }
+    .header__menu--btn {
+      color: #ffffff;
     }
     @media screen and (min-width: 768px) {
       .header__sns--list li a {
@@ -242,6 +279,7 @@ body {
       }
       .header__nav--list li a svg .cls-1 {
         fill: #fff;
+        stroke: #ffffff;
       }
     }
     .section__space--list3-details li {
@@ -249,8 +287,12 @@ body {
       a {
         color: #fff;
       }
+      h4::after {
+        background: #fff;
+      }
     }
     .section__space--list3-inr {
+      color: #ffffff;
       background-color: #f53d6e;
     }
     .section__space--titleh3 svg .st0 {
@@ -272,21 +314,32 @@ body {
   }
   &.green {
     background-color: #65FAD1;
-    .info__inr--title svg .st1 {
-      fill: #2e2c77;
+    .info__inr--title svg g {
+      fill: #4c2ee5;
+      stroke: #4c2ee5;
     }
     .section__space--list3-inr {
+      color: #4c2ee5;
       background-color: #65FAD1;
     }
     .header__title a svg {
-      fill: #2e2c77;
+      fill: #4c2ee5;
+      stroke: #4c2ee5;
+    }
+    .header__menu--btn {
+      color: #4c2ee5;
     }
     .section__space--titleh3 svg .st0 {
-      stroke: #2e2c77;
+      stroke: #4c2ee5;
+    }
+    .section__space--list3-details li {
+      h4::after {
+        background: #4c2ee5;
+      }
     }
     .section__space--titleh3 span {
       &:before, &:after {
-        background: #2e2c77;
+        background: #4c2ee5;
       }
     }
     .js-bg {
@@ -337,6 +390,7 @@ body {
       left: 50%;
       margin-left: -40px;
       display: none;
+      transition: all 1500ms;
     }
     &__nav {
       margin-left: 40px;
@@ -351,7 +405,7 @@ body {
           margin: 20px 0 0;
         }
         a {
-          color: #2e2c77;
+          color: #4c2ee5;
           text-decoration: none;
           &.startbahn {
             display: flex;
@@ -372,7 +426,7 @@ body {
       font-size: 22px;
       line-height: 22px;
       a {
-        color: #2e2c77;
+        color: #4c2ee5;
       }
       &:last-child {
         margin: 0;
@@ -393,8 +447,8 @@ body {
 .info {
   position: fixed;
   top: 30px;
-  right: 40px;  
-  z-index: 100; 
+  right: 40px;
+  z-index: 100;
   transition: all 1500ms;
   &__inr {
     &--title {
@@ -403,6 +457,9 @@ body {
         width: auto;
       }
     }
+  }
+  @media screen and (max-width: 768px) {
+    right: 15px;
   }
 }
 
@@ -430,7 +487,7 @@ section {
       margin-left: 30px;
       font-weight: 100;
       font-size: 110px;
-      z-index: 10;
+      z-index: 102;
       align-self: flex-end;
       transition: all 1500ms;
     }
@@ -442,8 +499,16 @@ section {
       font-size: 80px;
       z-index: 10;
       align-self: flex-end;
-      img {
+      svg {
         width: 8em;
+        fill: #ffffff;
+        stroke: #ffffff;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        top: calc(100vh - 2em);
       }
     }
   }
@@ -455,6 +520,7 @@ section {
       font-size: 18px;
       font-weight: 100;
       line-height: 1.5;
+      word-break: break-all;
     }
   }
 
@@ -470,7 +536,7 @@ section {
       font-size: 18px;
       margin-top: 30px;
       position: relative;
-      line-height: 1.4;
+      line-height: 1.6;
       font-family: ゴシックMB101 L, Gothic MB101 Light;
      
       dt {
@@ -479,6 +545,7 @@ section {
         left: 0;
       }
       dd {
+        word-break: break-all;
       }
     }
     &--indent-no {
@@ -499,10 +566,16 @@ section {
 
   //News section style
   &__news {
-    padding-top: 400px;
+    padding: 300px 0;
+    min-height: auto;
+    @media screen and (max-width: 768px) {
+      padding: 100px 0;
+    }
   }
   &__news--list {
     li {
+      width: 100%;
+      overflow: hidden;
       display:  flex;
       justify-content: flex-start;
       align-items: center;
@@ -525,6 +598,13 @@ section {
         font-size: 14px;;
         font-family: ゴシックMB101 L, Gothic MB101 Light;
       }
+      @media screen and (max-width: 768px){
+        flex-direction: column;
+        align-items: flex-start;
+        h3 {
+          margin: 0 0 15px;
+        }
+      }
     }
   }
 
@@ -545,6 +625,9 @@ section {
           height: 100%;
           width: auto;
           vertical-align: top;
+          .st0 {
+            stroke-width: 0.5px;
+          }
         }
       }
       span::before {
@@ -611,7 +694,7 @@ section {
         }
         h4 {
           font-family: ゴシックMB101 M, Gothic MB101 Medium;
-          font-size: 17px;
+          font-size: 15px;
           line-height: 1.64;
           position: relative;
           margin-top: 34px;
@@ -629,6 +712,7 @@ section {
 
         }
         address {
+          font-size: 14px;
           margin-top: 26px;
           font-style: normal;
           line-height: 1.64;
@@ -643,10 +727,10 @@ section {
           margin-bottom: 5px;
           line-height: 1.54;
           a {
-            color: #2e2c77;
+            color: #4c2ee5;
             text-decoration: none;
             cursor: pointer;
-          }  
+          }
         }
         li:nth-child(1)::before {
           font-size: 14px;
@@ -746,10 +830,12 @@ section {
     &-txt {
       width: 55%;
       h3 {
-        font-size: 24px;
         margin-bottom: 34px;
         line-height: 1.4;
         font-family: ゴシックMB101 M, Gothic MB101 Medium;
+        span.letter {
+          font-size: 24px;
+        }
       }
       p {
         line-height: 29px;
@@ -878,18 +964,21 @@ section {
     &__nav {
       position: fixed;
       box-sizing: border-box;
-      top: 0;
+      top: -100vh;
       margin: 0;
       padding-top: calc(100vh * 0.2);
       width: 100%;
-      background: rgba( 255, 255, 255, 0.85);
+      background: rgba( 255, 255, 255, 1);
       z-index: 99;
-      display: none;  
+      display: block;
       padding-left: 20px;
       height: 100vh;
+      opacity: 0;
+      transition: all 800ms;
     }
     .is-show {
-      display: block; 
+      transform: translateY(100vh);
+      opacity: 1;
     }
     .close-btn {
       display: block;
@@ -916,10 +1005,6 @@ section {
 }
   .info {
     position: absolute;
-  }
-  .section__title--txt,
-  .section__title--txt-2l {
-    font-size: 40px;
   }
 
   .section {
@@ -1054,7 +1139,8 @@ section {
   section {
     .section__title--txt,
     .section__title--txt-2l {
-      font-size: 30px;
+      font-size: 63px;
+      margin: 0 0 0 15px;
     }
   }
   .section {
@@ -1082,6 +1168,7 @@ section {
           width: 48%;
         }
         > li {
+          position: relative;
           width: 48%;
           .section__space--list3-inr {
             width: 100%;

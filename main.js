@@ -14,7 +14,7 @@ function init() {
   container.setAttribute('class','bgFuji');
   document.body.appendChild( container );
   camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
-  camera.position.z = 250;
+  camera.position.z = 1000;
   // scene
   scene = new THREE.Scene();
   var ambientLight = new THREE.AmbientLight( 0xFFFFFF, 1.5 );
@@ -76,8 +76,13 @@ function animate() {
 }
 function render() {
   var radian = (window.pageYOffset * 2 + window.innerHeight)  / document.body.clientHeight > 1.46 ? 1.46 : (window.pageYOffset * 2 + window.innerHeight)  / document.body.clientHeight;
-  camera.position.z = Math.sin(radian) * 700;
-  camera.position.y = Math.cos(radian) * 900;
+  if (window.innerWidth < 768) {
+    camera.position.z = Math.sin(radian) * 1100;
+    camera.position.y = Math.cos(radian) * 1400;
+  } else {
+    camera.position.z = Math.sin(radian) * 700;
+    camera.position.y = Math.cos(radian) * 900;
+  }
   camera.lookAt(scene.position);
   renderer.render( scene, camera );
 }
@@ -168,5 +173,18 @@ navLinks.forEach(function(link){
     picker.removeEventListener('mousewheel', changeDirection);
   })
 });
+
+var navlist = document.querySelectorAll('.header__nav--list li');
+navlist.forEach(function(nav){
+  nav.addEventListener('click', function(){
+    document.querySelector('.header__nav').classList.remove('is-show');
+    document.body.classList.remove('is-show');
+    if (document.body.classList.contains('is-show')){
+      document.getElementById('js-show-popup-btn').innerHTML = 'CLOSE';
+    } else {
+      document.getElementById('js-show-popup-btn').innerHTML = 'MENU';
+    }
+  })
+})
 
 // FIXME: Resize時の対応

@@ -573,7 +573,7 @@ section {
     }
   }
   &__news--list {
-    li {
+    li a {
       width: 100%;
       overflow: hidden;
       display:  flex;
@@ -582,6 +582,16 @@ section {
       margin-bottom: 30px;
       padding-bottom: 30px;
       border-bottom: 1px solid #d0d0d0;
+      text-decoration: none;
+      transition: all 500ms;
+      &:hover {
+        .js-bg span.letter {
+          color: #4c2ee5;
+          &:after {
+            background-color: #fff;
+          }
+        }
+      }
       time {
         width: 180px;
         display: block;

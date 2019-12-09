@@ -231,6 +231,10 @@ body.purple .header__menu--btn {
   }
 }
 
+body.purple .section__space--list3-inr:hover {
+  color: #4c2ee5;
+}
+
 body.purple .section__space--list3-details li {
   color: #fff;
 }
@@ -320,9 +324,18 @@ body.red .section__space--list3-details li h4::after {
   background: #fff;
 }
 
+body.red .section__space--list3-details li:hover {
+  background: #fff;
+  color: #f53d6e;
+}
+
 body.red .section__space--list3-inr {
   color: #ffffff;
   background-color: #f53d6e;
+}
+
+body.red .section__space--list3-inr:hover {
+  color: #f53d6e;
 }
 
 body.red .section__space--titleh3 svg .st0 {
@@ -380,6 +393,12 @@ body.green .js-bg .letter:after {
   background-color: #65FAD1;
 }
 
+body .section__space--list3-inr:hover {
+  background-color: #fff;
+  -webkit-transition: background-color 0.6s;
+  transition: background-color 0.6s;
+}
+
 .bgFuji {
   position: fixed;
   top: 0;
@@ -401,7 +420,7 @@ body.green .js-bg .letter:after {
 }
 
 .header__title {
-  margin: 30px 0 60px 40px;
+  margin: 30px 0 30px 40px;
 }
 
 .header__title a {
@@ -516,6 +535,31 @@ body.green .js-bg .letter:after {
   }
 }
 
+.breadcrumb__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.breadcrumb__list li {
+  margin-right: 10px;
+}
+
+.breadcrumb__list li:after {
+  content: ">";
+  padding-left: 10px;
+}
+
+.breadcrumb__list li:last-child:after {
+  content: none;
+}
+
+.breadcrumb__list li a {
+  color: #fff;
+}
+
 /* ================================== 
 7 content
 ================================== */
@@ -533,6 +577,7 @@ section {
   left: 0;
   top: 0;
   bottom: 0;
+  pointer-events: none;
 }
 
 .section__title--txt {
@@ -593,12 +638,59 @@ section {
 }
 
 .section__about {
-  padding-top: 540px;
+  padding-top: 190px;
 }
 
-.section__about .section__about--read {
-  font-size: 24px;
+.section__about--copy {
+  font-size: 18px !important;
+  line-height: 2.2 !important;
   margin-bottom: 60px;
+  background: #4c2ee5;
+  padding: 10px;
+  color: #fff;
+  font-family: ゴシックMB101 L, Gothic MB101 Light;
+}
+
+.section__about--exhibition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section__about--exhibition li {
+  width: calc(50% - 30px);
+  font-family: ゴシックMB101 M, Gothic MB101 Medium;
+}
+
+.section__about--exhibition li .section__about--exhibition-title {
+  font-size: 20px !important;
+  line-height: 1;
+  margin-bottom: 15px;
+  background: #4c2ee5;
+  color: #fff;
+  display: inline-block;
+  padding: 3px;
+  font-family: ゴシックMB101 L, Gothic MB101 Light;
+}
+
+.section__about--exhibition li .section__about--exhibition-date {
+  background: #4c2ee5;
+  color: #fff;
+  padding: 3px;
+}
+
+.section__about--exhibition li .section__about--exhibition-date > p {
+  line-height: 1.4;
+  font-size: 15px;
+}
+
+.section__about--exhibition li .section__about--exhibition-discription {
+  margin-top: 15px !important;
+  font-size: 14px !important;
+  line-height: 1.8 !important;
 }
 
 .section__about .section__about--txt {
@@ -619,6 +711,16 @@ section {
   word-break: break-all;
 }
 
+.section__about .section__about--txt dd a {
+  display: inline;
+  color: cornflowerblue;
+}
+
+.section__about .section__about--txt dd a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .section__about--indent-no {
   text-indent: 0;
   padding: 0 0 0 58px;
@@ -635,6 +737,51 @@ section {
 
 .section__about--indent5 {
   padding-left: 110px;
+}
+
+.section__about--indent8 {
+  padding-left: 140px;
+}
+
+.section__about .section__about--artist {
+  display: inline;
+}
+
+.section__about .section__about--artist a {
+  display: inline-block !important;
+  font-size: 14px;
+  background: #4c2ee5;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 20px;
+  position: relative;
+  color: #65FAD1 !important;
+  padding: 8px 20px 8px 0;
+  margin-bottom: 8px;
+}
+
+.section__about .section__about--artist a::after {
+  content: "/";
+  color: #fff;
+  text-align: center;
+  width: 20px;
+  display: inline-block;
+  line-height: 20px;
+  position: absolute;
+  z-index: 1001;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.section__about .section__about--artist a:hover {
+  color: #65FAD1 !important;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #fff !important;
+          text-decoration-color: #fff !important;
+}
+
+.section__about .section__about--artist a:last-child:after {
+  display: none;
 }
 
 .section__news {
@@ -676,10 +823,15 @@ section {
   background-color: #fff;
 }
 
+.section__news--list li a .section__news--tag {
+  margin-bottom: 10px;
+}
+
 .section__news--list li a time {
   width: 180px;
   display: block;
   font-size: 14px;
+  font-family: ゴシックMB101 M, Gothic MB101 Medium;
 }
 
 .section__news--list li a h3 {
@@ -706,6 +858,95 @@ section {
             align-items: flex-start;
   }
   .section__news--list li a h3 {
+    margin: 0 0 15px;
+  }
+}
+
+.section__event {
+  padding: 300px 0;
+  min-height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .section__event {
+    padding: 100px 0;
+  }
+}
+
+.section__event--list-title {
+  height: 23px;
+  overflow: hidden;
+}
+
+.section__event--list-text {
+  margin-top: 30px;
+  height: 43px;
+  overflow: hidden;
+}
+
+.section__event--list li a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  text-decoration: none;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  background: #4c2ee5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  overflow: hidden;
+}
+
+.section__event--list li a:hover {
+  background: #fff;
+  color: #4c2ee5;
+}
+
+.section__event--list li a img {
+  width: 252px;
+  height: 202px;
+  display: block;
+  font-size: 14px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.section__event--list li a .section__event--list-inr {
+  padding: 0 10px;
+}
+
+.section__event--list li a h3 {
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.3;
+  font-family: ゴシックMB101 M, Gothic MB101 Medium;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: １;
+  overflow: hidden;
+}
+
+.section__event--list li a p {
+  font-size: 14px;
+  font-family: ゴシックMB101 L, Gothic MB101 Light;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .section__event--list li a h3 {
     margin: 0 0 15px;
   }
 }
@@ -802,6 +1043,7 @@ section {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: ゴシックMB101 L, Gothic MB101 Light;
+  display: block;
 }
 
 .section__space--list3 > li .section__space--list3-img {
@@ -1019,6 +1261,44 @@ section {
   stroke: #fff;
 }
 
+.link__more {
+  float: right;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 1em;
+  position: relative;
+}
+
+.link__more:after {
+  content: "→";
+  display: inline-block;
+  margin-right: -1em;
+}
+
+.link__more:before {
+  position: absolute;
+  content: "";
+  display: block;
+  background: #fff;
+  height: 1px;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+
+.link__more:hover {
+  color: #fff;
+}
+
+.link__more:hover:before {
+  width: 100%;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
 @media only screen and (max-width: 1310px) {
   .section-details li {
     width: 100%;
@@ -1143,9 +1423,19 @@ section {
   .section-details li {
     font-size: 11px;
   }
+  .list__page .section__inr {
+    padding: 0 100px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .section__event--list li a img {
+    width: 126px;
+    height: 101px;
+  }
+  .section__event--list-text {
+    margin-top: 10px;
+  }
   .section__picker--wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1222,7 +1512,7 @@ section {
   .section__about .section__about--txt dt {
     position: relative;
   }
-  .section__about--indent2, .section__about--indent4, .section__about--indent5 {
+  .section__about--indent2, .section__about--indent4, .section__about--indent5, .section__about--indent8 {
     padding-left: 0;
   }
   .section__picker--person-txt {
@@ -1241,6 +1531,15 @@ section {
   section .section__title--txt-2l {
     font-size: 63px;
     margin: 0 0 0 15px;
+  }
+  .section__about--exhibition {
+    display: block;
+  }
+  .section__about--exhibition li {
+    width: 100%;
+  }
+  .section__about--exhibition li + li {
+    margin-top: 50px;
   }
   .section__picker--person-img:nth-child(odd) .section__picker--person-img::after, .section__picker--person-img:nth-child(even) .section__picker--person-img::after {
     top: -60px;
@@ -1268,6 +1567,9 @@ section {
   .section__space--list3 > li .section__space--list3-img {
     width: 100%;
     height: auto;
+  }
+  .list__page .section__inr {
+    padding: 0 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -669,11 +669,11 @@ section {
   transition: all 500ms;
 }
 
-.section__news--list li a:hover .js-bg span.letter {
+.section__news--list li a[href]:hover .js-bg span.letter {
   color: #4c2ee5;
 }
 
-.section__news--list li a:hover .js-bg span.letter:after {
+.section__news--list li a[href]:hover .js-bg span.letter:after {
   background-color: #fff;
 }
 

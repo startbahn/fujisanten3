@@ -528,6 +528,7 @@ section {
 }
 
 .section__title {
+  pointer-events: none;
   height: 100%;
   position: absolute;
   left: 0;

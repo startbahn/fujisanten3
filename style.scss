@@ -585,7 +585,7 @@ section {
       border-bottom: 1px solid #d0d0d0;
       text-decoration: none;
       transition: all 500ms;
-      &:hover {
+      &[href]:hover {
         .js-bg span.letter {
           color: #4c2ee5;
           &:after {

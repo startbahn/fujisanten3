@@ -1,0 +1,54 @@
+[
+  {    
+    "area": "kyoto",
+    "name": "えんがわ",
+    "spaceimg": "images/space/space-01.png",
+    "address": "京都府京都市",
+    "txt": "Engawa KYOTOでは、わが家のような居心地の良さの中で、人と人がアイデアを持ち寄り・語りあい・カタチにできるSPACEと、0から100までワンストップで事業を支援するPROGRAMを提供。SPACE×PROGRAMの交わりで、ここに集う人々の“縁”をつなぎ、育み、社会の活力となるイノベーションを実現させてゆきます",
+    "dotw": "月曜、金曜休み", 
+    "collabo": "株式会社A 株式会社B",
+    "time": "11:00 - 19:00 (※展示期間中)",
+    "web": "https://startbahn.org",
+    "artist": [ {
+        "name" : "作家名1",
+        "category": "アーティスト",
+        "image": "images/space/artist-01.png"
+        },
+        {
+        "name": "作家名1",
+        "category": "プロデュース・アーティスト",
+        "image": "images/space/artist-01.png"
+        },
+        {
+          "name": "作家名３",
+          "category": "ミュージシャン",
+          "image": "images/space/artist-01.png"
+        },
+        {
+          "name": "作家名1",
+          "category": "プロデュース・アーティスト",
+          "image": "images/space/artist-01.png"
+        },
+        {
+          "name": "作家名1",
+          "category": "プロデュース・アーティスト",
+          "image": "images/space/artist-01.png"
+        },
+        {
+          "name": "作家名1",
+          "category": "プロデュース・アーティスト",
+          "image": "images/space/artist-01.png"
+        },
+        {
+          "name": "作家名1",
+          "category": "プロデュース・アーティスト",
+          "image": "images/space/artist-01.png"
+        },
+        {
+          "name": "作家名1",
+          "category": "プロデュース・アーティスト",
+          "image": "images/space/artist-01.png"
+        }
+    ]    
+  }
+]

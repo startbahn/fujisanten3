@@ -30,6 +30,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/85/three.min.js" defer></script>
   <script type="text/javascript" src="https://threejs.org/examples/js/loaders/OBJLoader.js" defer></script>
   <script type="module" src="main.js" defer></script>
+  <script type="module" src="space.js" defer></script>
   <meta property="og:title" content="富士山展3.0 - 冨嶽二〇二〇景 - ブロックチェーン×アートの初売り。startbahnを使った新春恒例のアートイベント"/>
   <meta property="og:description" content="ブロックチェーン×アートの初売り。startbahnを使った新春恒例のアートイベント"/>
   <meta property="og:type" content="website"/>
@@ -92,8 +93,7 @@
       </svg>
     </a></h1>
 
-    <p id="js-show-popup-btn" class="header__menu--btn" onClick="ga(‘send’, ‘event’, ‘button’, ‘click’,’wpbottom’);">
-      MENU</p>
+    <p id="js-show-popup-btn" class="header__menu--btn" onClick="ga(‘send’, ‘event’, ‘button’, ‘click’,’wpbottom’);">MENU</p>
     <nav class="header__nav popup" id="js-popup">
       <ul class="header__nav--list">
         <li><a href="#about" class="js-close">About</a></li>
@@ -107,7 +107,6 @@
         </a></li>
       </ul>
       <ul class="header__sns--list">
-
         <li><a href="https://www.facebook.com/startbahn.inc/?modal=suggested_action%22"><i
             class="fab fa-facebook-f"></i></a></li>
         <li><a href="https://twitter.com/fujisanten" target="_blank"><i class="fab fa-twitter"></i></a></li>
@@ -809,38 +808,39 @@
      </svg>
     </h2></div>
   </section>
+
   <section class="section__about" id="about">
     <div class="section__title"><h2 class="section__title--txt">About</h2></div>
-    <div class="section__inr">
+      <div class="section__inr">
 
-    <p class="section__about--copy">『富士山展』は、これからの時代に求められる「領域を横断する表現の場づくり」、それにみあった「作品の流通システムづくり」、そして「芸術の価値を伝え、時代に刻む文化の創造」を目的とし、スタートバーンが毎年年始に企画している展覧会です。本年で4回目を迎える本展では、副題を「冨嶽二〇二〇景」と題し、時代の節目となる2020年に合わせ規模を大幅に拡大し、これまで以上に多様な領域/視点から富士山を捉えることを通して、断片的に広がる表現をマッピングしていきます。各地に散逸している作品を一箇所に集めたセレクション展示や、記録撮影により展覧会を離れた場所からでもご覧いただけるアーカイブシステムなどを準備することで、多くの方々に富士山展を概観していただけることを目指します。</p>
+      <p class="section__about--copy">『富士山展』は、これからの時代に求められる「領域を横断する表現の場づくり」、それにみあった「作品の流通システムづくり」、そして「芸術の価値を伝え、時代に刻む文化の創造」を目的とし、スタートバーンが毎年年始に企画している展覧会です。本年で4回目を迎える本展では、副題を「冨嶽二〇二〇景」と題し、時代の節目となる2020年に合わせ規模を大幅に拡大し、これまで以上に多様な領域/視点から富士山を捉えることを通して、断片的に広がる表現をマッピングしていきます。各地に散逸している作品を一箇所に集めたセレクション展示や、記録撮影により展覧会を離れた場所からでもご覧いただけるアーカイブシステムなどを準備することで、多くの方々に富士山展を概観していただけることを目指します。</p>
 
-    <ul class="section__about--exhibition">
+      <ul class="section__about--exhibition">
 
-      <li>
-        <h3 class="section__about--exhibition-title">■ サテライト展</h3>
-        <div class="section__about--exhibition-date">
-          <p>２０２０年１月５日(日) 〜 1月19日(日) 会場により異なります</p>
-          <p>日本各地の参加会場</p>
-        </div>
-        <p class="js-bg section__about--exhibition-discription">
-          サテライト展示では、日本各地から参加スペースを募り2020年1月5日〜1月19日の期間中のいずれかで、それぞれの会場が企画、キュレーションする展覧会やアートイベント、ライブパフォーマンスなどを開催します。また、開催された展覧会やイベントの出展作品とその詳細は、富士山展公式サイトでもご覧いただけます。
-        </p>
-      </li>
+        <li>
+          <h3 class="section__about--exhibition-title">■ サテライト展</h3>
+          <div class="section__about--exhibition-date">
+            <p>２０２０年１月５日(日) 〜 1月19日(日) 会場により異なります</p>
+            <p>日本各地の参加会場</p>
+          </div>
+          <p class="js-bg section__about--exhibition-discription">
+            サテライト展示では、日本各地から参加スペースを募り2020年1月5日〜1月19日の期間中のいずれかで、それぞれの会場が企画、キュレーションする展覧会やアートイベント、ライブパフォーマンスなどを開催します。また、開催された展覧会やイベントの出展作品とその詳細は、富士山展公式サイトでもご覧いただけます。
+          </p>
+        </li>
 
-      <li>
-        <h3 class="section__about--exhibition-title">■ セレクション展</h3>
-        <div  class="section__about--exhibition-date">
-          <p>2020 年2月2日(日) 〜 2月8日(土)</p>
-          <p>11:00 〜18:00 (会期中無休）</p>
-          <p>T-ART HALL 140-0002 東京都品川区東品川2-6-10</p>
-        </div>
-        <p class="js-bg section__about--exhibition-discription">
-        (仮)サテライト展、日本各地で展示された作品の中から2月に開催されるセレクション展で展示される作品を選定するためのシステムです。ピッカーは、アート関係者だけでなく、本展の趣旨に合わせ様々な領域の第一線で活躍する専門家が担当します。
-        </p>
-      </li>
+        <li>
+          <h3 class="section__about--exhibition-title">■ セレクション展</h3>
+          <div  class="section__about--exhibition-date">
+            <p>2020 年2月2日(日) 〜 2月8日(土)</p>
+            <p>11:00 〜18:00 (会期中無休）</p>
+            <p>T-ART HALL 140-0002 東京都品川区東品川2-6-10</p>
+          </div>
+          <p class="js-bg section__about--exhibition-discription">
+          (仮)サテライト展、日本各地で展示された作品の中から2月に開催されるセレクション展で展示される作品を選定するためのシステムです。ピッカーは、アート関係者だけでなく、本展の趣旨に合わせ様々な領域の第一線で活躍する専門家が担当します。
+          </p>
+        </li>
 
-    </ul>
+      </ul>
 
       <dl>
 
@@ -892,6 +892,7 @@
       </dl>
     </div>
   </section>
+
   <section class="section__news" id="news">
 
   <div class="section__title">
@@ -950,55 +951,23 @@
   
     <div class="section__inr">
       <ul class="section__event--list">
+
         <li>
           <a href="https://mailchi.mp/e98ec2040384/dlr517e418-472129" target="_blank">
-            <img src="images/event/event.png" width="200" height="140">
+            <img src="../images/event/event-200107.png" width="200" height="140">
+        
             <div class="section__event--list-inr">
-
+        
               <div class="section__event--list-title">
-                <h3>『富士山展3.0』参加会場と参加アーティスト第一弾発表アーティスト第一弾発表アーティスト第一弾発表</h3>
+                <h3>富士山展3.0 -冨嶽二〇二〇景- スペシャルトークイベント</h3>
               </div>
-
-              <div class="section__event--list-text">
-                <p>伊藤亜紗、椹木野衣、四方幸子、武田秀樹、飛鷹全法、宮津大輔、山下有佳子、公式ピッカーの参加も決定。長い場合のテキストテキストテキストテキストテキストテキスト。テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-              </div>
-
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://mailchi.mp/e98ec2040384/dlr517e418-472129" target="_blank">
-            <img src="images/event/event.png" width="200" height="140">
-            <div class="section__event--list-inr">
-            
-              <div class="section__event--list-title">
-                <h3>『富士山展3.0』参加会場と参加アーティスト第一弾発表アーティスト第一弾発表アーティスト第一弾発表</h3>
-              </div>
-            
+        
               <div class="section__event--list-text">
                 <p>
-                  伊藤亜紗、椹木野衣、四方幸子、武田秀樹、飛鷹全法、宮津大輔、山下有佳子、公式ピッカーの参加も決定。長い場合のテキストテキストテキストテキストテキストテキスト。テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                  椿昇（京都造形芸術大学教授）氏、ウスビ・サコ（京都精華大学学長）氏、施井泰平（スタートバーン株式会社代表取締役）氏による、来たるべきアートの未来に向けてのトークイベントを行います。
                 </p>
               </div>
-            
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://mailchi.mp/e98ec2040384/dlr517e418-472129" target="_blank">
-            <img src="images/event/event.png" width="200" height="140">
-            <div class="section__event--list-inr">
-            
-              <div class="section__event--list-title">
-                <h3>『富士山展3.0』参加会場と参加アーティスト第一弾発表</h3>
-              </div>
-            
-              <div class="section__event--list-text">
-                <p>
-                  伊藤亜紗、椹木野衣、四方幸子、武田秀樹、飛鷹全法、宮津大輔、山下有佳子、公式ピッカーの参加も決定。長い場合のテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                </p>
-              </div>
-            
+        
             </div>
           </a>
         </li>
@@ -1007,6 +976,8 @@
       <a href="event/index.html" class="link__more">View More</a>
     </div>
   </section>
+
+
   <section class="section__space" id="space">
     <div class="section__title">
       <h2 class="section__title--txt">Space</h2></div>
@@ -1037,7 +1008,7 @@
       <ul class="section__space--list3">
 
         <li>
-          <div class="section__space--list3-inr ls-space-pup-open">
+          <div class="section__space--list3-inr ls-space-pup-open" id="">
             <p class="section__space--list3-img"><img src="images/saloncojica.png" alt="salon cojica"></p>
             <h4>salon cojica</h4>
             <address>&#12306;001-0023<br>北海道札幌市北区北区３ 北23条西8丁目3-33 coneco bld.1F</address>
@@ -1081,7 +1052,7 @@
       <ul class="section__space--list3">
 
         <li>
-          <div class="section__space--list3-inr ls-space-pup-open">
+          <div class="section__space--list3-inr ls-space-pup-open" id="">
             <p class="section__space--list3-img"><img src="images/fukushima-mura.png" alt="福島・ミューラル・ヴィジョン"></p>
             <h4>福島・ミューラル・ヴィジョン</h4>
             <address>&#12306;960-8031<br>福島市栄町8-1平和ビル壁面（福島駅徒歩２分）</address>
@@ -1094,7 +1065,7 @@
         </li>
 
         <li>
-          <div class="section__space--list3-inr ls-space-pup-open">
+          <div class="section__space--list3-inr ls-space-pup-open" id="">
             <p class="section__space--list3-img"><img src="images/oomachi.png" alt="OOMACHI GALLERY"></p>
             <h4>OOMACHI GALLERY</h4>
             <address>&#12306;960-8041<br>福島県福島市大町9-21ニューヤブウチビル3F</address>
@@ -1128,7 +1099,7 @@
       <ul class="section__space--list3">
 
         <li>
-          <div class="section__space--list3-inr ls-space-pup-open">
+          <div class="section__space--list3-inr ls-space-pup-open" id="">
             <p class="section__space--list3-img"><img src="images/hammock.png" alt=""></p>
             <h4>EUKARYOTE</h4>
             <address>&#12306;150-0001<br>
@@ -1143,7 +1114,7 @@
         </li>
 
         <li>
-          <div class="section__space--list3-inr ls-space-pup-open">
+          <div class="section__space--list3-inr ls-space-pup-open" id="">
             <p class="section__space--list3-img"><img src="images/flesh.png" alt=""></p>
             <h4>shop & gallery FL田SH</h4>
             <address>&#12306;150-0001<br>
@@ -1158,7 +1129,7 @@
         </li>
 
         <li>
-          <div class="section__space--list3-inr ls-space-pup-open">
+          <div class="section__space--list3-inr ls-space-pup-open" id="">
             <p class="section__space--list3-img"><img src="images/shiten.png" alt="SHI-TEN coffee"></p>
             <h4>SHI-TEN coffee</h4>
             <address>&#12306;101-0021<br>
@@ -1174,7 +1145,7 @@
         </li>
 
         <li>
-          <div class="section__space--list3-inr ls-space-pup-open">
+          <div class="section__space--list3-inr ls-space-pup-open" id="">
             <p class="section__space--list3-img"><img src="images/hirota.png" alt="ギャラリー広田美術"></p>
             <h4>ギャラリー広田美術</h4>
             <address>&#12306;104-0061<br>
@@ -1189,14 +1160,14 @@
         </li>
 
         <li>
-          <div class="section__space--list3-inr ls-space-pup-open">
+          <div class="section__space--list3-inr ls-space-pup-open" id="">
             <p class="section__space--list3-img"><img src="images/yotsuya.png" alt="四谷未確認スタジオ"></p>
             <h4>四谷未確認スタジオ</h4>
             <address>&#12306;530-0001<br>
               東京都新宿区四谷４丁目１３−１
             </address>
             <!-- <ul class="section__space--list3-details">
-                        <li>&nbsp;</li> -->
+              <li>&nbsp;</li> -->
             <!-- <li>&nbsp;</li> 
               <li><a href="https://goo.gl/maps/9oAeWQmDm8ciRuA1A" target="_blank">Google Map</a></li>
             </ul>-->
@@ -1204,7 +1175,7 @@
         </li>
 
         <li>
-          <div class="section__space--list3-inr ls-space-pup-open">
+          <div class="section__space--list3-inr ls-space-pup-open" id="">
             <p class="section__space--list3-img"><img src="images/rocket.png" alt="東京大学先端科学技術研究センター　異才発掘プロジェクトROCKET"></p>
             <h4>東京大学先端科学技術研究センター　異才発掘プロジェクトROCKET</h4>
             <address>&#12306;153-0041<br>
@@ -1219,7 +1190,7 @@
         </li>
 
         <li>
-          <div class="section__space--list3-inr ls-space-pup-open">
+          <div class="section__space--list3-inr ls-space-pup-open" id="">
             <p class="section__space--list3-img"><img src="images/aikoko.png" alt="AI KOKO GALLERY"></p>
             <h4>AI KOKO GALLERY</h4>
             <address>&#12306;130-0025<br>
@@ -1234,7 +1205,7 @@
         </li>
 
         <li>
-          <div class="section__space--list3-inr ls-space-pup-open">
+          <div class="section__space--list3-inr ls-space-pup-open" id="">
             <p class="section__space--list3-img"><img src="images/publicisgallery.png" alt="PUBLICIS WALL GALLERY"></p>
             <h4>PUBLICIS WALL GALLERY</h4>
             <address>&#12306;141-0021<br>
@@ -1248,83 +1219,80 @@
           </div>
         </li>
 
-
-
         <li>
-          <div class="section__space--list3-inr">
+          <div class="section__space--list3-inr ls-space-pup-open" id="">
             <p class="section__space--list3-img"><img src="images/marumasu.png" alt="PUBLICIS WALL GALLERY"></p>
             <h4>marumasu銀座店</h4>
             <address>&#12306;104-0061<br>
               東京都中央区銀座5-2-1東急プラザ銀座3階-L2
             </address>
-            <ul class="section__space--list3-details">
-              <!-- <li>&nbsp;</li> -->
-              <!-- <li>&nbsp;</li> -->
+            <!--<ul class="section__space--list3-details">
+               <li>&nbsp;</li> -->
+              <!-- <li>&nbsp;</li>
               <li><a href="https://goo.gl/maps/5ABtQJVmRZE5tRfC7" target="_blank">Google Map</a></li>
-            </ul>
+            </ul>-->
           </div>
         </li>
 
         <li>
-          <div class="section__space--list3-inr">
+          <div class="section__space--list3-inr ls-space-pup-open" id="">
             <p class="section__space--list3-img"><img src="images/yanagi.png" alt="PUBLICIS WALL GALLERY"></p>
             <h4>銀座柳画廊</h4>
             <address>&#12306;104-0061<br>
               東京都中央区銀座5-1-7 数寄屋橋ビル 3階
             </address>
-            <ul class="section__space--list3-details">
-              <!-- <li>&nbsp;</li> -->
-              <!-- <li>&nbsp;</li> -->
+            <!-- <ul class="section__space--list3-details">
+              <li>&nbsp;</li> -->
+              <!-- <li>&nbsp;</li>
               <li><a href="https://goo.gl/maps/t8M5UyxuL9LKDxsg6" target="_blank">Google Map</a></li>
-            </ul>
+            </ul>-->
           </div>
         </li>
       
       </ul>
 
-
       <h3 class="section__space--titleh3"><span>
-        <?xml version="1.0" encoding="utf-8"?>
-        <!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-        <svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-          y="0px" viewBox="0 0 173.3 24" style="enable-background:new 0 0 173.3 24;" xml:space="preserve">
-          <style type="text/css">
-            .st0 {fill: none; stroke: #000000; stroke-width: 0.6; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; }
-          </style>
-          <g>
-            <path class="st0" d="M19.1,22.2h-5.4l-7-9.7H6.6v9.7H2.3V1.6h4.3v9.1h0.1l6.8-9.1h5l-7.9,9.8L19.1,22.2z" />
-            <path class="st0" d="M26.5,17.2l-1.6,5h-4.5l7.2-20.7h5.7l7.2,20.7H36l-1.6-5H26.5z M32.8,12.2c-0.8-2.7-1.7-5.4-2.3-8.1h-0.1
-        		c-0.7,2.7-1.5,5.4-2.3,8.1l-0.4,1.4h5.6L32.8,12.2z" />
-            <path class="st0" d="M53.4,22.2l-4-8.4c-1.3-2.8-2.6-5.7-3.8-8.5h-0.1c0.1,3,0.2,6,0.2,9v7.9h-4.1V1.6h6.1l4,8.4
-        		c1.3,2.8,2.6,5.7,3.8,8.5h0.1c-0.1-3-0.2-6-0.2-9V1.6h4.1v20.7H53.4z" />
-            <path class="st0" d="M66.8,17.2l-1.6,5h-4.5l7.2-20.7h5.7l7.2,20.7h-4.5l-1.6-5H66.8z M73.2,12.2c-0.8-2.7-1.7-5.4-2.3-8.1h-0.1
-        		c-0.7,2.7-1.5,5.4-2.3,8.1L68,13.5h5.6L73.2,12.2z" />
-            <path class="st0"
-              d="M98.6,8H94c-0.4-2-1.7-3.1-4-3.1c-3.3,0-5.4,2.7-5.4,7.1c0,4.5,2,7.3,5.3,7.3c3,0,4.6-1.7,4.6-4.9h-4.9v-3.5
-        		h8.9v11.3h-3.6V20h-0.1c-1.2,1.6-3.3,2.6-6,2.6c-5.3,0-8.6-4-8.6-10.6C80.2,5.2,84,1.1,90,1.1C95.1,1.1,98.2,3.8,98.6,8z" />
-            <path class="st0" d="M106.4,17.2l-1.6,5h-4.5l7.2-20.7h5.7l7.2,20.7h-4.5l-1.6-5H106.4z M112.7,12.2c-0.8-2.7-1.7-5.4-2.3-8.1h-0.1
-        		c-0.7,2.7-1.5,5.4-2.3,8.1l-0.4,1.4h5.6L112.7,12.2z" />
-            <path class="st0" d="M135.6,22.2l-1.9-8.2c-0.7-2.9-1.3-5.9-1.8-8.8h-0.1c-0.5,3-1.1,5.9-1.8,8.8l-1.9,8.2h-5.5l-4.3-20.7h4.2
-        		l1.5,7.5c0.6,3,1.1,6,1.5,8.9h0.1c0.5-2.9,1.2-5.9,1.9-8.9l1.8-7.5h5.4l1.8,7.5c0.7,3,1.4,6,1.9,8.9h0.1c0.4-2.9,0.9-6,1.5-8.9
-        		l1.5-7.5h4.2l-4.3,20.7H135.6z" />
-            <path class="st0" d="M149.4,17.2l-1.6,5h-4.5l7.2-20.7h5.7l7.2,20.7h-4.5l-1.6-5H149.4z M155.7,12.2c-0.8-2.7-1.7-5.4-2.3-8.1h-0.1
-        		c-0.7,2.7-1.5,5.4-2.3,8.1l-0.4,1.4h5.6L155.7,12.2z" />
-          </g>
-        </svg></span></h3>
+      <?xml version="1.0" encoding="utf-8"?>
+      <!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+      <svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+        y="0px" viewBox="0 0 173.3 24" style="enable-background:new 0 0 173.3 24;" xml:space="preserve">
+        <style type="text/css">
+          .st0 {fill: none; stroke: #000000; stroke-width: 0.6; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; }
+        </style>
+        <g>
+          <path class="st0" d="M19.1,22.2h-5.4l-7-9.7H6.6v9.7H2.3V1.6h4.3v9.1h0.1l6.8-9.1h5l-7.9,9.8L19.1,22.2z" />
+          <path class="st0" d="M26.5,17.2l-1.6,5h-4.5l7.2-20.7h5.7l7.2,20.7H36l-1.6-5H26.5z M32.8,12.2c-0.8-2.7-1.7-5.4-2.3-8.1h-0.1
+          c-0.7,2.7-1.5,5.4-2.3,8.1l-0.4,1.4h5.6L32.8,12.2z" />
+          <path class="st0" d="M53.4,22.2l-4-8.4c-1.3-2.8-2.6-5.7-3.8-8.5h-0.1c0.1,3,0.2,6,0.2,9v7.9h-4.1V1.6h6.1l4,8.4
+          c1.3,2.8,2.6,5.7,3.8,8.5h0.1c-0.1-3-0.2-6-0.2-9V1.6h4.1v20.7H53.4z" />
+          <path class="st0" d="M66.8,17.2l-1.6,5h-4.5l7.2-20.7h5.7l7.2,20.7h-4.5l-1.6-5H66.8z M73.2,12.2c-0.8-2.7-1.7-5.4-2.3-8.1h-0.1
+          c-0.7,2.7-1.5,5.4-2.3,8.1L68,13.5h5.6L73.2,12.2z" />
+          <path class="st0"
+            d="M98.6,8H94c-0.4-2-1.7-3.1-4-3.1c-3.3,0-5.4,2.7-5.4,7.1c0,4.5,2,7.3,5.3,7.3c3,0,4.6-1.7,4.6-4.9h-4.9v-3.5
+          h8.9v11.3h-3.6V20h-0.1c-1.2,1.6-3.3,2.6-6,2.6c-5.3,0-8.6-4-8.6-10.6C80.2,5.2,84,1.1,90,1.1C95.1,1.1,98.2,3.8,98.6,8z" />
+          <path class="st0" d="M106.4,17.2l-1.6,5h-4.5l7.2-20.7h5.7l7.2,20.7h-4.5l-1.6-5H106.4z M112.7,12.2c-0.8-2.7-1.7-5.4-2.3-8.1h-0.1
+          c-0.7,2.7-1.5,5.4-2.3,8.1l-0.4,1.4h5.6L112.7,12.2z" />
+          <path class="st0" d="M135.6,22.2l-1.9-8.2c-0.7-2.9-1.3-5.9-1.8-8.8h-0.1c-0.5,3-1.1,5.9-1.8,8.8l-1.9,8.2h-5.5l-4.3-20.7h4.2
+          l1.5,7.5c0.6,3,1.1,6,1.5,8.9h0.1c0.5-2.9,1.2-5.9,1.9-8.9l1.8-7.5h5.4l1.8,7.5c0.7,3,1.4,6,1.9,8.9h0.1c0.4-2.9,0.9-6,1.5-8.9
+          l1.5-7.5h4.2l-4.3,20.7H135.6z" />
+          <path class="st0" d="M149.4,17.2l-1.6,5h-4.5l7.2-20.7h5.7l7.2,20.7h-4.5l-1.6-5H149.4z M155.7,12.2c-0.8-2.7-1.7-5.4-2.3-8.1h-0.1
+          c-0.7,2.7-1.5,5.4-2.3,8.1l-0.4,1.4h5.6L155.7,12.2z" />
+        </g>
+      </svg></span></h3>
 
       <ul class="section__space--list3">
         <li>
-          <div class="section__space--list3-inr">
+          <div class="section__space--list3-inr ls-space-pup-open" id="">
             <p class="section__space--list3-img"><img src="images/komekami.png" alt="PUBLICIS WALL GALLERY"></p>
             <h4>米神ミヅカブラ</h4>
             <address>&#12306;250-0023<br>
             神奈川県小田原市米神247-3
             </address>
-            <ul class="section__space--list3-details">
-              <!-- <li>&nbsp;</li> -->
-              <!-- <li>&nbsp;</li> -->
+            <!-- <ul class="section__space--list3-details">
+              <li>&nbsp;</li> -->
+              <!-- <li>&nbsp;</li>
               <li><a href="https://goo.gl/maps/vD88hNa7oQJaVvcs6" target="_blank">Google Map</a></li>
-            </ul>
+            </ul>-->
           </div>
         </li>
       </ul>
@@ -1350,7 +1318,7 @@
       <ul class="section__space--list3">
 
         <li>
-          <div class="section__space--list3-inr ls-space-pup-open">
+          <div class="section__space--list3-inr ls-space-pup-open" id="">
             <p class="section__space--list3-img"><img src="images/barrack.png" alt="ArtSpace&Cafe Barrack"></p>
             <h4>ArtSpace&Cafe Barrack</h4>
             <address>&#12306;489-0814<br>
@@ -1366,7 +1334,7 @@
         </li>
 
         <li>
-          <div class="section__space--list3-inr ls-space-pup-open">
+          <div class="section__space--list3-inr ls-space-pup-open" id="">
             <p class="section__space--list3-img"><img src="images/mikawaya.png" alt="MIKAWAYA"></p>
             <h4>GALLERY MIKAWAYA</h4>
             <address>&#12306;452-0905<br>
@@ -1404,7 +1372,7 @@
       <ul class="section__space--list3">
 
         <li>
-          <div class="section__space--list3-inr ls-space-pup-open">
+          <div class="section__space--list3-inr ls-space-pup-open" id="">
             <p class="section__space--list3-img"><img src="images/fincharts.png" alt="Finch Arts"></p>
             <h4>Finch Arts</h4>
             <address>&#12306;606-8412<br>
@@ -1419,7 +1387,7 @@
         </li>
 
         <li>
-          <div class="section__space--list3-inr ls-space-pup-open">
+          <div class="section__space--list3-inr ls-space-pup-open" id="">
             <p class="section__space--list3-img"><img src="images/engawa.png" alt="engawaKYOTO"></p>
             <h4>the gallery @ engawa KYOTO</h4>
             <address>&#12306;600-8412<br>
@@ -1463,7 +1431,7 @@
 
       <ul class="section__space--list3">
         <li>
-          <div class="section__space--list3-inr ls-space-pup-open">
+          <div class="section__space--list3-inr ls-space-pup-open" id="">
             <p class="section__space--list3-img"><img src="images/tororu.png" alt="洋食と珈琲の店 トロル"></p>
             <h4>洋食と珈琲の店 トロル</h4>
             <address>&#12306;811-5133<br>
@@ -1495,125 +1463,59 @@
     </div>
   </div>
 
- <div class="section__space-popup"> 
-    <header>
-      <p>KYOTO</p>
-      <h2>ENGAWA KYOTO</h2>
-    </header>
+<div class="section__space-popup">
+  <header>
+    <p class="js__space-popup--area"></p>
+    <h2 class="js__space-popup--name"></h2>
+  </header>
 
-    <div class="section__space-popup--info">
-      <div class="section__space-popup--info-img"><img src="images/space/space-01.png" class="section__space-popup--img"></div>
-     
-      <div class="section__space-popup--info-txt">
-        <p>Engawa
-          KYOTOでは、わが家のような居心地の良さの中で、人と人がアイデアを持ち寄り・語りあい・カタチにできるSPACEと、0から100までワンストップで事業を支援するPROGRAMを提供。SPACE×PROGRAMの交わりで、ここに集う人々の“縁”をつなぎ、育み、社会の活力となるイノベーションを実現させてゆきます
-        </p>
-  
-        <dl class="section__space-popup--detail">
-  
-          <div>
-            <dt>住所：</dt>
-            <dd>〒150-0001<br>東京都渋谷区神宮前３丁目４１−３</dd>
-          </div>
-          <div>
-            <dt>営業時間：</dt>
-            <dd>11:00 - 19:00 (※展示期間中)</dd>
-          </div>
-          <div>
-            <dt>休廊日：</dt>
-            <dd>日曜日、月曜日</dd>
-          </div>
-          <div>
-            <dt>Website：</dt>
-            <dd><a href="https://startbahn.org/channels/392cf4d9a9918f" target="_blank">https://startbahn.org/channels/392cf4d9a9918f</a></dd>
-          </div>
-          <div>
-            <dt>協力：</dt>
-            <dd>アストロデザイン株式会社、<br>
-            株式会社丹青社、<br>
-            株式会社電通、<br>
-            株式会社クールアート東京、<br>
-            NEORT株式会社<br>
-            </dd>
-          </div>
-          <div>
-            <dt>
-            </dt>
-            <dd>
-            </dd>
-          </div>
-  
-        </dl>
-      </div>
+  <div class="section__space-popup--info">
+    <div class="section__space-popup--info-img"><img class="js-space-popup--info-img"></div>
+
+    <div class="section__space-popup--info-txt">
+      <p class="js-space-popup--catch">
+      </p>
+
+      <dl class="section__space-popup--detail">
+
+        <div>
+          <dt>住所：</dt>
+          <dd class="js-space-popup--add"></dd>
+        </div>
+        <div>
+          <dt>営業時間：</dt>
+          <dd class="js-space-popup--time"></dd>
+        </div>
+        <div>
+          <dt>休廊日：</dt>
+          <dd class="js-space-popup--dotw"></dd>
+        </div>
+        <div>
+          <dt>Website：</dt>
+          <dd><a class="js-space-popup--web" target="_blank"></a></dd>
+        </div>
+        <div>
+          <dt>協力：</dt>
+          <dd class="js-space-popup--collabo">
+          </dd>
+        </div>
+
+      </dl>
     </div>
-  
-    <h3>ARTISTS</h3>
+  </div>
 
-      <ul class="section__space-popup--artist">
-        <li>
-          <img src="images/space/artist-01.png">
-          <div>
-            <p>Tomoko Arakawa</p>
-            <p>アーティスト</p>
-          </div>
-        </li>
-        <li>
-          <img src="images/space/artist-01.png">
-          <div>
-            <p>Tomoko Arakawa</p>
-            <p>アーティスト</p>
-          </div>
-        </li>
-        <li>
-          <img src="images/space/artist-01.png">
-          <div>
-            <p>Tomoko Arakawa</p>
-            <p>アーティスト</p>
-          </div>
-        </li>
-        <li>
-          <img src="images/space/artist-01.png">
-          <div>
-            <p>Tomoko Arakawa</p>
-            <p>アーティスト</p>
-          </div>
-        </li>
-        <li>
-          <img src="images/space/artist-01.png">
-          <div>
-            <p>Tomoko Arakawa</p>
-            <p>アーティスト</p>
-          </div>
-        </li>
-        <li>
-          <img src="images/space/artist-01.png">
-          <div>
-            <p>Tomoko Arakawa</p>
-            <p>アーティスト</p>
-          </div>
-        </li>
-        <li>
-          <img src="images/space/artist-01.png">
-          <div>
-            <p>長い名前サンプルTomoko Arakawa</p>
-            <p>アーティスト</p>
-          </div>
-        </li>
-        <li>
-          <img src="images/space/artist-01.png">
-          <div>
-            <p>Tomoko Arakawa</p>
-            <p>アーティスト</p>
-          </div>
-        </li>
-      </ul>
+  <h3>ARTISTS</h3>
 
-    <h3>MAP</h3>
- 
-    <iframe id="maps"
+  <ul class="section__space-popup--artist artist">
+  </ul>
+
+  <h3>MAP</h3>
+
+  <iframe id="maps"
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2479130825877!2d139.71145241525244!3d35.6708971801967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c98e6591b23%3A0x539ff84137081422!2z44CSMTUwLTAwMDEg5p2x5Lqs6YO95riL6LC35Yy656We5a6u5YmN77yT5LiB55uu77yU77yR4oiS77yT!5e0!3m2!1sja!2sjp!4v1575972960146!5m2!1sja!2sjp"
     width="100%" height="70%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    </div> 
+</div>
+
    
   <div class="black-background ls-space-pup-close"></div>
   </section>

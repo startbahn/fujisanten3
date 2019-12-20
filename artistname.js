@@ -1,32 +1,41 @@
 //jsonファイルURL
 //var dmain = 'fujisanten.com';
 //var directory = 'json';
-const file = 'artistname.json';
+const artistName = 'artistname.json';
 //var url = 'https://' + dmain + '/' + directory + '/' + file + '.json';
 
 //json読み込み
-fetch(file)
+fetch(artistName)
   .then(function (response) {
     return response.json();
   })
   .then(function (json) {
-
     //外枠アクセス
-    let infoArtist = document.querySelector('.js-about-artist');
-
+    let aboutArtist = document.querySelector('#js-about-artist');
+    
     //テンプレ複製
     for (let i = 1; i < json.length; i++) {
-      let clone = infoArtist.firstElementChild.cloneNode(true);
-      infoArtist.appendChild(clone);
+      let clone = aboutArtist.firstElementChild.cloneNode(true);
+      aboutArtist.appendChild(clone);
     }
 
-    //a tag
-    let infoArtistLink = document.querySelectorAll('.js-about-artist-link');
+    let edges = json.data.fairChannels.edges;
+      
+    for (let i = 0; i < edges.length; i++) {
 
-    //Dom
-    for (let i = 0; i < json.length; i++) {
-      if (json[i].lavel === artist)
-        infoArtistLink[i].innerHTML = json[i].title;
-      infoArtistLink[i].href = json[i].slug;
-    }
+      let nodeList = edges[i].node;  
+
+      let nodeTitle = edges[i].node.title;
+      let nodeLabel = edges[i].node.label;
+      let nodeSlug = edges[i].node.slug;  
+       
+      if (nodeLabel === 'artist') {
+          console.log(nodeTitle);
+          console.log('https://startbahn.org/channels/' + nodeSlug); 
+
+        //let list = document.createElement('li');     
+        //list.innerHTML = '<a href="https://startbahn.org/channels/' + nodeSlug + '">' + nodeTitle + ' </a>';
+        //aboutArtist[i].appendChild(list);
+      }
+    } 
   });

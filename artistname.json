@@ -18,6 +18,27 @@
         },
         {
           "node": {
+            "title": "とてもスペシャルなアーティスト",
+            "label": "artist",
+            "slug": "e91edb50cf1115eb922w"
+          }
+        },
+        {
+          "node": {
+            "title": "ギャラリー",
+            "label": "gallery",
+            "slug": "e91edb50cf1115eb0001"
+          }
+        },
+        {
+          "node": {
+            "title": "とてもスペシャルなアーティスト",
+            "label": "artist",
+            "slug": "e91edb50cf1115eb9226"
+          }
+        },
+        {
+          "node": {
             "title": "マジでクールなギャラリー",
             "label": "gallery",
             "slug": "b854826579a1d1a7d221"

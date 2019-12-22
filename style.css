@@ -731,6 +731,10 @@ section {
 }
 
 .section__about .section__about--txt dd a:hover {
+  text-decoration: none;
+}
+
+.section__about .section__about--txt dd a[href]:hover {
   text-decoration: underline;
   cursor: pointer;
 }

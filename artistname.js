@@ -12,6 +12,7 @@ fetch(artistName)
   .then(function (json) {
     //外枠アクセス
     let aboutArtist = document.querySelector('#js-about-artist');
+
     
     //テンプレ複製
     for (let i = 1; i < json.length; i++) {
@@ -28,14 +29,15 @@ fetch(artistName)
       let nodeTitle = edges[i].node.title;
       let nodeLabel = edges[i].node.label;
       let nodeSlug = edges[i].node.slug;  
+
        
       if (nodeLabel === 'artist') {
-          console.log(nodeTitle);
-          console.log('https://startbahn.org/channels/' + nodeSlug); 
-
-        //let list = document.createElement('li');     
-        //list.innerHTML = '<a href="https://startbahn.org/channels/' + nodeSlug + '">' + nodeTitle + ' </a>';
-        //aboutArtist[i].appendChild(list);
+        let link = document.createElement('a'); 
+        if (nodeSlug !== '') {
+          link.href = 'https://startbahn.org/channels/' + nodeSlug;
+        }
+        link.innerHTML = nodeTitle;
+        aboutArtist.appendChild(link);
       }
     } 
   });

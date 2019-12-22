@@ -629,12 +629,19 @@ section {
         word-break: break-all;
         a {
           display: inline;
-          color: cornflowerblue;
+          color: cornflowerblue;         
           &:hover {
+            text-decoration: none;
+          }
+          &[href]:hover {
             text-decoration: underline;
             cursor: pointer;
           }
         }
+      }
+
+      #js-about-artist {
+
       }
     }
     &--indent-no {

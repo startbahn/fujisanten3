@@ -1,0 +1,19 @@
+{
+  "data": {
+    "fairChannels": {
+      "edges": [
+        {
+          "node": {
+            "title": "マジでクールなギャラリーでまじ卍",
+            "label": "gallery",
+            "slug": "b854826579a1d1a7d221",
+            "description": "よくある平凡な普通の人並みで常識的なギャラリー",
+            "bannerImage": {
+              "url": "https://startbahn-beta.s3.amazonaws.com/uploads/channel/banner_image/4/3.0Image2.png"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

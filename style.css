@@ -656,13 +656,16 @@ section {
 }
 
 .section__about--copy {
-  font-size: 18px !important;
+  font-size: 17px !important;
   line-height: 2.2 !important;
-  margin-bottom: 60px;
   background: #4c2ee5;
   padding: 10px;
   color: #fff;
   font-family: ゴシックMB101 L, Gothic MB101 Light;
+}
+
+.section__about--copy + .section__about--copy {
+  margin-top: 20px;
 }
 
 .section__about--exhibition {
@@ -672,6 +675,7 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 60px;
 }
 
 .section__about--exhibition li {
@@ -761,6 +765,31 @@ section {
   padding-left: 140px;
 }
 
+.section__about .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -15px;
+}
+
+.section__about .banner a {
+  display: block;
+  padding: 9px 9px 5px 9px;
+  background: #4c2ee5;
+  width: calc((100% - 120px)/4);
+  margin-right: 1%;
+  margin-bottom: 10px;
+}
+
+.section__about .banner a img {
+  width: 100%;
+}
+
 .section__about .section__about--bgblue {
   display: inline;
 }
@@ -774,7 +803,7 @@ section {
   line-height: 20px;
   position: relative;
   color: #65FAD1 !important;
-  padding: 8px 20px 8px 0;
+  padding: 5px 20px 5px 3px;
   margin-bottom: 8px;
 }
 
@@ -1390,6 +1419,10 @@ section {
   background-size: 16px 16px;
 }
 
+.section__space-popup--detail div dd pre {
+  white-space: pre-wrap;
+}
+
 .section__space-popup--artist {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1489,6 +1522,11 @@ section {
 #maps {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
+}
+
+.acd-check,
+.acd-check {
+  display: none;
 }
 
 .article__inr {
@@ -1663,6 +1701,38 @@ section {
   .article__inr {
     padding: 0 50px;
   }
+  .acd-check {
+    display: none;
+  }
+  .acd-label {
+    font-size: 14px;
+    text-align: right;
+  }
+  .acd-label:before {
+    content: "もっと読む ↓";
+    color: #fff;
+    display: block;
+    margin-bottom: 1px;
+    padding: 10px;
+  }
+  .section__about--pullwrap {
+    overflow: hidden;
+    padding: 0;
+    height: 0;
+    opacity: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+    visibility: hidden;
+  }
+  .acd-check:checked + .acd-label:before {
+    content: "閉じる ↑";
+  }
+  .acd-check:checked + .acd-label + .section__about--pullwrap {
+    height: auto;
+    opacity: 1;
+    padding: 0;
+    visibility: visible;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1748,6 +1818,11 @@ section {
   }
   .section__about .section__about--txt dt {
     position: relative;
+  }
+  .section__about .banner a {
+    width: 44%;
+    margin-right: 1%;
+    margin-bottom: 1%;
   }
   .section__about--indent2, .section__about--indent4, .section__about--indent5, .section__about--indent8 {
     padding-left: 0;

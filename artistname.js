@@ -28,13 +28,13 @@ fetch(artistName)
 
       let nodeTitle = edges[i].node.title;
       let nodeLabel = edges[i].node.label;
-      let nodeSlug = edges[i].node.slug;  
+      let nodeSlug = edges[i].node.slug; 
 
        
       if (nodeLabel === 'artist') {
         let link = document.createElement('a'); 
         if (nodeSlug !== '') {
-          link.href = 'https://startbahn.org/channels/' + nodeSlug;
+          link.href = '' + nodeSlug;
         }
         link.innerHTML = nodeTitle;
         aboutArtist.appendChild(link);

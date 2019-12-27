@@ -1,0 +1,1174 @@
+{
+  "spaceJson": [
+    {
+      "spaceId": null,
+      "spaceName": "VOU / 棒",
+      "address": "〒600-8091 京都府京都市下京区元悪王子町47−１２",
+      "date": "#REF!",
+      "channel": null,
+      "slug": null,
+      "web": "https://www.instagram.com/voukyoto/?hl=ja"
+    },
+    {
+      "spaceId": "s01",
+      "spaceName": "salon cojica",
+      "address": "〒001-0023 \n北海道札幌市北区北23条西8丁目3-33 coneco bld.1F",
+      "date": "1月7日(火)〜1月25日(土)\n11:00 - 19:00\n日・月：休廊",
+      "channel": "https://startbahn.org/channels/4a15a7c701519f281804",
+      "slug": "4a15a7c701519f281804",
+      "web": "https://www.salon-cojica.com/"
+    },
+    {
+      "spaceId": "s02",
+      "spaceName": "Finch Arts",
+      "address": "〒606-8412 京都府京都市左京区浄土寺馬場町７６",
+      "date": "2019年12月20日(金)〜2020年1月19日(日)\n金・土・日：13:00 - 19:00\n月・火・水・木：休廊\n12月27日〜1月9日：休廊",
+      "channel": "https://startbahn.org/channels/91a3af95f1aefb5f3c7b",
+      "slug": "91a3af95f1aefb5f3c7b",
+      "web": "http://finch.link/"
+    },
+    {
+      "spaceId": "s03",
+      "spaceName": "the gallery @ engawa KYOTO",
+      "address": "〒600-8412 \n京都府京都市下京区二帖半敷町647 オンリー烏丸ビル1F  \nthe gallery @ engawa KYOTO",
+      "date": "1月7日(火)～1月17日(金)\n9:00 - 21:00\n土・日・祝：休館",
+      "channel": "なし",
+      "slug": "なし",
+      "web": "https://engawakyoto.com/"
+    },
+    {
+      "spaceId": "s04",
+      "spaceName": "ArtSpace&Cafe Barrack",
+      "address": "489-0814\n愛知県瀬戸市末広町1丁目 31-6\nタネリスタジオビルヂング1階",
+      "date": "1月9日(木)～1月19日(日)\b\n期間中の\n木・金：11:00 ｰ 18:00\n土・日：11:00 ｰ 19:00",
+      "channel": "https://startbahn.org/channels/4a48b9f9f165d13cf21c",
+      "slug": "4a48b9f9f165d13cf21c",
+      "web": "http://www.cafebarrack.com/"
+    },
+    {
+      "spaceId": "s05",
+      "spaceName": "GALLERY MIKAWAYA",
+      "address": "〒452-0905 \n愛知県清須市須ヶ口2248",
+      "date": "1月12日(日)〜1月27日(月)\n日・月：14:00 - 20:00",
+      "channel": "https://startbahn.org/channels/e58163bbb53f4bddbef0",
+      "slug": "e58163bbb53f4bddbef0",
+      "web": "http://gallerymikawaya.blogspot.jp"
+    },
+    {
+      "spaceId": "s06",
+      "spaceName": "福島・ミューラル・ヴィジョン",
+      "address": "〒960-8031\n福島市栄町8-1平和ビル壁面（福島駅徒歩２分）",
+      "date": "1月5日(日)〜1月19日(日)\n16:30 - 21:00",
+      "channel": "なし",
+      "slug": "なし",
+      "web": "http://fukushima-mural.com"
+    },
+    {
+      "spaceId": "s07",
+      "spaceName": "oomachi gallery",
+      "address": "福島県福島市大町9-21ニューヤブウチビル3F",
+      "date": "1月11日(土)〜1月19日(日)\n平日：13:00 - 19:00\n土・日：11:00 - 19:00\n初日11日のみ　11:00 - 21:00",
+      "channel": "https://startbahn.org/channels/2cc325eb09de23fb19b3",
+      "slug": "2cc325eb09de23fb19b3",
+      "web": "http://oomachigallery.com/"
+    },
+    {
+      "spaceId": "s08",
+      "spaceName": "洋食と珈琲の店 トロル",
+      "address": "〒811-5133 \n長崎県壱岐市郷ノ浦町本村触５２６",
+      "date": "1月5日(日)〜1月19日(日)\n11:00 - 17:00\n不定休",
+      "channel": "https://startbahn.org/channels/c9449aec7e5ac74b5bfd",
+      "slug": "c9449aec7e5ac74b5bfd",
+      "web": "https://www.iki-troll.com/"
+    },
+    {
+      "spaceId": "s09",
+      "spaceName": "T-ART HALL",
+      "address": "140-0002 東京都品川区東品川2-6-10寺田倉庫株式会社本社ビル2F",
+      "date": "2月2日(日)〜2月8日(土)",
+      "channel": null,
+      "slug": null,
+      "web": null
+    },
+    {
+      "spaceId": "s10",
+      "spaceName": "HAMON GALLERY",
+      "address": "〒104-0043 東京都中央区湊3丁目5番地-2 頂ビルディング2F",
+      "date": null,
+      "channel": null,
+      "slug": null,
+      "web": null
+    },
+    {
+      "spaceId": "s11",
+      "spaceName": "EUKARYOTE",
+      "address": "〒150-0001 \n東京都渋谷区神宮前３丁目４１−３",
+      "date": "1月10日(月)〜1月27日(木)\n月曜：休廊",
+      "channel": "https://startbahn.org/channels/08f621dfde7ad39ed5ab",
+      "slug": "08f621dfde7ad39ed5ab",
+      "web": "http://eukaryote.jp/"
+    },
+    {
+      "spaceId": "s12",
+      "spaceName": "shop & gallery FL田SH",
+      "address": "〒150-0001\n東京都渋谷区神宮前3-38-11 原宿ロイヤルビル302",
+      "date": "1月19日(日)〜1月31日(金)\n\n木・金\b：18:00 - 22:00\n土・日：14:00 - 20:00\n月・火・水：休廊",
+      "channel": "https://startbahn.org/channels/919638969f6c7a42877d",
+      "slug": "919638969f6c7a42877d",
+      "web": "https://www.instagram.com/flesh.tyo/"
+    },
+    {
+      "spaceId": "s13",
+      "spaceName": "建仁寺",
+      "address": "〒605-0811 京都府京都市東山区小松町５８４",
+      "date": null,
+      "channel": null,
+      "slug": null,
+      "web": null
+    },
+    {
+      "spaceId": "s14",
+      "spaceName": "SHI-TEN coffee",
+      "address": "〒101-0021 \n東京都千代田区外神田５丁目４−１２",
+      "date": "1月5日(日) 〜1月19日(日)\n月〜金：8:00 - 18:00\n土・日・祝：10:00 - 18:00",
+      "channel": "https://startbahn.org/channels/2de19ad8321d177946ce",
+      "slug": "2de19ad8321d177946ce",
+      "web": "https://shiten.tokyo/"
+    },
+    {
+      "spaceId": "s15",
+      "spaceName": "ギャラリー広田美術",
+      "address": "〒104-0061 \n東京都中央区銀座７丁目３−１５ ぜん屋ビル1階",
+      "date": "1月8日(水)〜1月9日(木)\n11:00 - 19:00",
+      "channel": "https://startbahn.org/channels/9a08992a5ecb44e01972",
+      "slug": "9a08992a5ecb44e01972",
+      "web": "http://www.hirota-b.co.jp/"
+    },
+    {
+      "spaceId": "s16",
+      "spaceName": "照恩寺",
+      "address": "〒187-0041 東京都小平市美園町３丁目２３−２０",
+      "date": null,
+      "channel": null,
+      "slug": null,
+      "web": "http://fukushima-mural.com/"
+    },
+    {
+      "spaceId": "s17",
+      "spaceName": "marumasu銀座店",
+      "address": "〒104-0061 \n東京都中央区銀座5-2-1東急プラザ銀座3階-L2",
+      "date": "1月6日(月)〜1月19日(日) \n11:00 - 21:00",
+      "channel": "販売なし",
+      "slug": "販売なし",
+      "web": "http://marumasu-stole.com/shop/"
+    },
+    {
+      "spaceId": "s18",
+      "spaceName": "四谷未確認スタジオ",
+      "address": "東京都新宿区四谷4-13-1",
+      "date": "1月5日(日)〜1月13日(月・祝) \n14:00 - 20:00",
+      "channel": "https://startbahn.org/channels/8862249ce1d5d52ab9da",
+      "slug": "8862249ce1d5d52ab9da",
+      "web": "https://www.yotsuyamikakunin.com/"
+    },
+    {
+      "spaceId": "s19",
+      "spaceName": "東京大学先端科学技術研究センター　 ROCKETハウス",
+      "address": "〒153-0041 \n東京都目黒区駒場３丁目８−１\n東京大学先端科学技術研究センター\nROCKET HOUSE",
+      "date": "1月14日(火)～1月17日(金)",
+      "channel": "https://startbahn.org/channels/6deda4884a67090c168f",
+      "slug": "6deda4884a67090c168f",
+      "web": "https://rocket.tokyo/"
+    },
+    {
+      "spaceId": "s20",
+      "spaceName": "PUBLICIS WALL GALLERY",
+      "address": "東京都品川区上大崎3-1-1 JR 東急目黒ビル12F",
+      "date": "1月14日(火)〜1月24日(金)\n土・日・祝：休廊",
+      "channel": "https://startbahn.org/channels/6a7ee7ed21ebb20537f3",
+      "slug": "6a7ee7ed21ebb20537f3",
+      "web": "https://www.pinterest.jp/publiciswallgallery/"
+    },
+    {
+      "spaceId": "s21",
+      "spaceName": "AI KOKO GALLERY",
+      "address": "〒130-0025 \n東京都墨田区千歳２丁目１０−４ チトセマンション303",
+      "date": "①1月11日(土)18:00\n②1月15日(水)19:00\n③1月18日(土)14:00、16:00、18:00",
+      "channel": "https://startbahn.org/channels/50d9cc21927c646a3270",
+      "slug": "50d9cc21927c646a3270",
+      "web": "http://aikokogallery.tumblr.com/"
+    },
+    {
+      "spaceId": "s22",
+      "spaceName": "米神ミヅカブラ",
+      "address": "〒250-0023 \n神奈川県小田原市米神247-3",
+      "date": "1月9日(木)〜1月14日(火)\n10:00 - 20:00\n休みなし",
+      "channel": "https://startbahn.org/dchannels/57a92f93e8209fe9a31c",
+      "slug": "https://startbahn.org/dchannels/57a92f93e8209fe9a31c",
+      "web": null
+    },
+    {
+      "spaceId": "s23",
+      "spaceName": "銀座柳画廊",
+      "address": "〒104-0061 \n東京都中央区銀座5-1-7 数寄屋橋ビル 3階",
+      "date": "1月6日(月)〜1月31日(金)\n月〜金：10:00 - 19:00 \n土：11:00 - 18:00\n日・祝：休廊",
+      "channel": "https://startbahn.org/channels/eddfcf92353ce4511a56",
+      "slug": "eddfcf92353ce4511a56",
+      "web": "http://www.yanagi.com/"
+    },
+    {
+      "spaceId": "s24",
+      "spaceName": "MEGUMI OGITA GALLERY",
+      "address": "〒104-0061 \n東京都中央区銀座２丁目１６−１２ 銀座大塚ビルB1",
+      "date": "1月14日 (火)〜2月1日 (土)\n11:00 - 19:00\n土・日・祝：休廊",
+      "channel": "https://startbahn.org/channels/07e7ea8cd7b48fb9d352",
+      "slug": "07e7ea8cd7b48fb9d352",
+      "web": "http://www.megumiogita.com/"
+    }
+  ],
+  "artistJson": [
+    {
+      "spaceId": "s11",
+      "artistName": "山口聡一",
+      "channel": "https://startbahn.org/channels/6f51f70b8640cb6bff63",
+      "slug": "6f51f70b8640cb6bff63",
+      "account": "https://startbahn.org/deadc1b75812513ee8c4",
+      "aslug": "deadc1b75812513ee8c4"
+    },
+    {
+      "spaceId": null,
+      "artistName": "本山ゆかり",
+      "channel": null,
+      "slug": null,
+      "account": null,
+      "aslug": null
+    },
+    {
+      "spaceId": "s12",
+      "artistName": "金田金太郎",
+      "channel": "https://startbahn.org/channels/2d161d4627285fd89074",
+      "slug": "2d161d4627285fd89074",
+      "account": "https://startbahn.org/85704b23c7ccf2d0caaf",
+      "aslug": "85704b23c7ccf2d0caaf"
+    },
+    {
+      "spaceId": "s12",
+      "artistName": "時吉あきな",
+      "channel": "https://startbahn.org/channels/5a9a9c643ad86e95108f",
+      "slug": "5a9a9c643ad86e95108f",
+      "account": "https://startbahn.org/0ea3626d92bbea8f7c9b",
+      "aslug": "0ea3626d92bbea8f7c9b"
+    },
+    {
+      "spaceId": "s01",
+      "artistName": "東方悠平",
+      "channel": "https://startbahn.org/channels/6aea306f38904f880af8",
+      "slug": "6aea306f38904f880af8",
+      "account": "https://startbahn.org/a6ea5e68f44275ec2d17",
+      "aslug": "a6ea5e68f44275ec2d17"
+    },
+    {
+      "spaceId": "s01",
+      "artistName": "大橋鉄郎",
+      "channel": "https://startbahn.org/channels/8a50944c86b09d044d31",
+      "slug": "8a50944c86b09d044d31",
+      "account": null,
+      "aslug": null
+    },
+    {
+      "spaceId": "s14",
+      "artistName": "竹本真理",
+      "channel": "https://startbahn.org/channels/da6b084db52c4da18e74",
+      "slug": "da6b084db52c4da18e74",
+      "account": "https://startbahn.org/120931286b6c3730fe69",
+      "aslug": "120931286b6c3730fe69"
+    },
+    {
+      "spaceId": "s14",
+      "artistName": "じょいとも",
+      "channel": "https://startbahn.org/channels/11a33bc8a94d1ef49321",
+      "slug": "11a33bc8a94d1ef49321",
+      "account": "https://startbahn.org/joytomo",
+      "aslug": "joytomo"
+    },
+    {
+      "spaceId": "s14",
+      "artistName": "トモトシ",
+      "channel": "https://startbahn.org/channels/1b8aa38837f0dbe9bccf",
+      "slug": "1b8aa38837f0dbe9bccf",
+      "account": "https://startbahn.org/24c161f579b2fb625fcc",
+      "aslug": "24c161f579b2fb625fcc"
+    },
+    {
+      "spaceId": "s14",
+      "artistName": "Fabian Leitgeb",
+      "channel": "https://startbahn.org/dashboard/channels/f82a98b2c94fc2f8e0e8",
+      "slug": "https://startbahn.org/dashboard/channels/f82a98b2c94fc2f8e0e8",
+      "account": null,
+      "aslug": null
+    },
+    {
+      "spaceId": "s14",
+      "artistName": "硬軟",
+      "channel": "https://startbahn.org/channels/b5985233b0ad6fe40dd1",
+      "slug": "b5985233b0ad6fe40dd1",
+      "account": "https://startbahn.org/15b5fad2f9583583090d",
+      "aslug": "15b5fad2f9583583090d"
+    },
+    {
+      "spaceId": "s14",
+      "artistName": "花牟禮有基",
+      "channel": "https://startbahn.org/channels/58682d8acafee6d71497",
+      "slug": "58682d8acafee6d71497",
+      "account": "https://startbahn.org/7851ce8464cff7301a5b/works",
+      "aslug": "7851ce8464cff7301a5b/works"
+    },
+    {
+      "spaceId": "s14",
+      "artistName": "横山 奈穂子",
+      "channel": "https://startbahn.org/channels/263bc6687ae1ff5757fa",
+      "slug": "263bc6687ae1ff5757fa",
+      "account": "https://startbahn.org/nahokoyokoyama",
+      "aslug": "nahokoyokoyama"
+    },
+    {
+      "spaceId": "s15",
+      "artistName": "漆原夏樹",
+      "channel": "https://startbahn.org/channels/3be8016874ab6352e662",
+      "slug": "3be8016874ab6352e662",
+      "account": "https://startbahn.org/ccb1bccbc087190155b6",
+      "aslug": "ccb1bccbc087190155b6"
+    },
+    {
+      "spaceId": "s15",
+      "artistName": "狩野宏明",
+      "channel": "https://startbahn.org/channels/19448d9597fdae8d47c9",
+      "slug": "19448d9597fdae8d47c9",
+      "account": "https://startbahn.org/00ca572a6f9bfc2ad780",
+      "aslug": "00ca572a6f9bfc2ad780"
+    },
+    {
+      "spaceId": "s15",
+      "artistName": "神戸智行",
+      "channel": "https://startbahn.org/channels/16ef2d8e82d4fb240e12",
+      "slug": "16ef2d8e82d4fb240e12",
+      "account": "https://startbahn.org/b6974e69372a623044bd",
+      "aslug": "b6974e69372a623044bd"
+    },
+    {
+      "spaceId": "s15",
+      "artistName": "斎正機",
+      "channel": "https://startbahn.org/channels/3a35a6efd323f95d5df5",
+      "slug": "3a35a6efd323f95d5df5",
+      "account": null,
+      "aslug": null
+    },
+    {
+      "spaceId": "s15",
+      "artistName": "ナカムラ徹",
+      "channel": null,
+      "slug": null,
+      "account": "展示なしかも",
+      "aslug": "展示なしかも"
+    },
+    {
+      "spaceId": "s15",
+      "artistName": "山内隆",
+      "channel": "https://startbahn.org/channels/31a4f19dac300574a8c6",
+      "slug": "31a4f19dac300574a8c6",
+      "account": "https://startbahn.org/ff0248134c4c721904ff",
+      "aslug": "ff0248134c4c721904ff"
+    },
+    {
+      "spaceId": "s15",
+      "artistName": "野崎慎",
+      "channel": "https://startbahn.org/dashboard/channels/8967c32d35e6d73a3ff9",
+      "slug": "https://startbahn.org/dashboard/channels/8967c32d35e6d73a3ff9",
+      "account": "https://startbahn.org/63cd265b2985ca046930",
+      "aslug": "63cd265b2985ca046930"
+    },
+    {
+      "spaceId": "s15",
+      "artistName": "財田翔悟",
+      "channel": "https://startbahn.org/channels/d26f789a4210cfca5310",
+      "slug": "d26f789a4210cfca5310",
+      "account": "https://startbahn.org/d3313ed2cece7d285f59",
+      "aslug": "d3313ed2cece7d285f59"
+    },
+    {
+      "spaceId": "s15",
+      "artistName": "寺内誠",
+      "channel": "https://startbahn.org/channels/14f2dde6cdb53d3dc76d",
+      "slug": "14f2dde6cdb53d3dc76d",
+      "account": "https://startbahn.org/9c2296abd06e4c6d68b9",
+      "aslug": "9c2296abd06e4c6d68b9"
+    },
+    {
+      "spaceId": "s15",
+      "artistName": "阿部ふみ",
+      "channel": "https://startbahn.org/channels/87549481413533bcc5e2",
+      "slug": "87549481413533bcc5e2",
+      "account": "https://startbahn.org/0128f15199517fa6c492",
+      "aslug": "0128f15199517fa6c492"
+    },
+    {
+      "spaceId": "s15",
+      "artistName": "賀門利誓",
+      "channel": null,
+      "slug": null,
+      "account": "展示なしかも",
+      "aslug": "展示なしかも"
+    },
+    {
+      "spaceId": "s15",
+      "artistName": "品川亮",
+      "channel": null,
+      "slug": null,
+      "account": "展示なしかも",
+      "aslug": "展示なしかも"
+    },
+    {
+      "spaceId": "s15",
+      "artistName": "佐々木怜央",
+      "channel": "https://startbahn.org/channels/9482aa27a22734a49189",
+      "slug": "9482aa27a22734a49189",
+      "account": "https://startbahn.org/3b57d3c4fcbbf66d96ec",
+      "aslug": "3b57d3c4fcbbf66d96ec"
+    },
+    {
+      "spaceId": "s15",
+      "artistName": "榎本裕一",
+      "channel": null,
+      "slug": null,
+      "account": "展示なしかも",
+      "aslug": "展示なしかも"
+    },
+    {
+      "spaceId": "s15",
+      "artistName": "鵜飼義丈",
+      "channel": null,
+      "slug": null,
+      "account": "展示なしかも",
+      "aslug": "展示なしかも"
+    },
+    {
+      "spaceId": "s15",
+      "artistName": "大島真由美",
+      "channel": "https://startbahn.org/channels/2da167835617a28fd693",
+      "slug": "2da167835617a28fd693",
+      "account": null,
+      "aslug": null
+    },
+    {
+      "spaceId": null,
+      "artistName": "牧進",
+      "channel": "チャンネルなしかも？",
+      "slug": "チャンネルなしかも？",
+      "account": null,
+      "aslug": null
+    },
+    {
+      "spaceId": "s15",
+      "artistName": "横山大観",
+      "channel": "チャンネルなし",
+      "slug": "チャンネルなし",
+      "account": "所有投稿で",
+      "aslug": "所有投稿で"
+    },
+    {
+      "spaceId": "s18",
+      "artistName": "黒坂祐",
+      "channel": "https://startbahn.org/channels/33cf91961efc18721719",
+      "slug": "33cf91961efc18721719",
+      "account": "https://startbahn.org/3dae5f78d8b7ec5d4487",
+      "aslug": "3dae5f78d8b7ec5d4487"
+    },
+    {
+      "spaceId": "s18",
+      "artistName": "都築拓磨",
+      "channel": "https://startbahn.org/dashboard/channels/7d9b8c167f7965953f87",
+      "slug": "https://startbahn.org/dashboard/channels/7d9b8c167f7965953f87",
+      "account": "https://startbahn.org/41d75061ff103434a30d",
+      "aslug": "41d75061ff103434a30d"
+    },
+    {
+      "spaceId": "s18",
+      "artistName": "布谷麻衣",
+      "channel": "https://startbahn.org/channels/9703f262a7c347503154",
+      "slug": "9703f262a7c347503154",
+      "account": null,
+      "aslug": null
+    },
+    {
+      "spaceId": "s03",
+      "artistName": "市川透",
+      "channel": null,
+      "slug": null,
+      "account": "https://www.b-ownd.com/artists/qN4tOb",
+      "aslug": "https://www.b-ownd.com/artists/qN4tOb"
+    },
+    {
+      "spaceId": "s03",
+      "artistName": "中村弘峰",
+      "channel": null,
+      "slug": null,
+      "account": "https://www.b-ownd.com/artists/8r9tZb",
+      "aslug": "https://www.b-ownd.com/artists/8r9tZb"
+    },
+    {
+      "spaceId": "s03",
+      "artistName": "若宮隆志",
+      "channel": null,
+      "slug": null,
+      "account": "https://www.b-ownd.com/artists/bznt1b",
+      "aslug": "https://www.b-ownd.com/artists/bznt1b"
+    },
+    {
+      "spaceId": "s03",
+      "artistName": "古賀崇洋",
+      "channel": null,
+      "slug": null,
+      "account": "https://www.b-ownd.com/artists/qQPtWL",
+      "aslug": "https://www.b-ownd.com/artists/qQPtWL"
+    },
+    {
+      "spaceId": "s03",
+      "artistName": "ノグチミエコ",
+      "channel": null,
+      "slug": null,
+      "account": "https://www.b-ownd.com/artists/8jltZx",
+      "aslug": "https://www.b-ownd.com/artists/8jltZx"
+    },
+    {
+      "spaceId": "s03",
+      "artistName": "奈良祐希",
+      "channel": null,
+      "slug": null,
+      "account": "https://www.b-ownd.com/artists/8OgtK8",
+      "aslug": "https://www.b-ownd.com/artists/8OgtK8"
+    },
+    {
+      "spaceId": "s03",
+      "artistName": "加藤亮太郎",
+      "channel": null,
+      "slug": null,
+      "account": "https://www.b-ownd.com/artists/bDotkx",
+      "aslug": "https://www.b-ownd.com/artists/bDotkx"
+    },
+    {
+      "spaceId": "s03",
+      "artistName": "浅井コレクション",
+      "channel": null,
+      "slug": null,
+      "account": "https://www.instagram.com/coolarttokyo/",
+      "aslug": "https://www.instagram.com/coolarttokyo/"
+    },
+    {
+      "spaceId": "s19",
+      "artistName": "堀内粋",
+      "channel": null,
+      "slug": null,
+      "account": "https://startbahn.org/9c7f865decf924cffec5",
+      "aslug": "9c7f865decf924cffec5"
+    },
+    {
+      "spaceId": "s19",
+      "artistName": "吉田悠太",
+      "channel": null,
+      "slug": null,
+      "account": "https://startbahn.org/3638fed21cfddd0a8414",
+      "aslug": "3638fed21cfddd0a8414"
+    },
+    {
+      "spaceId": "s19",
+      "artistName": "平林瑚夏",
+      "channel": null,
+      "slug": null,
+      "account": "https://startbahn.org/740775f856369972b942",
+      "aslug": "740775f856369972b942"
+    },
+    {
+      "spaceId": "s19",
+      "artistName": "濱口瑛士",
+      "channel": null,
+      "slug": null,
+      "account": "https://startbahn.org/4ff642cdaf4130da22df",
+      "aslug": "4ff642cdaf4130da22df"
+    },
+    {
+      "spaceId": "s19",
+      "artistName": "和田めい",
+      "channel": null,
+      "slug": null,
+      "account": "https://startbahn.org/b01b6732394d79e5f26a",
+      "aslug": "b01b6732394d79e5f26a"
+    },
+    {
+      "spaceId": "s19",
+      "artistName": "金澤洋輝",
+      "channel": null,
+      "slug": null,
+      "account": "https://startbahn.org/c90d7790951e106bf5a9",
+      "aslug": "c90d7790951e106bf5a9"
+    },
+    {
+      "spaceId": "s19",
+      "artistName": "山岡寛永",
+      "channel": null,
+      "slug": null,
+      "account": "https://startbahn.org/99e0079d6a60ea2d48a0",
+      "aslug": "99e0079d6a60ea2d48a0"
+    },
+    {
+      "spaceId": "s19",
+      "artistName": "松井大和",
+      "channel": null,
+      "slug": null,
+      "account": "https://startbahn.org/7d498b28aacac750c2aa",
+      "aslug": "7d498b28aacac750c2aa"
+    },
+    {
+      "spaceId": "s19",
+      "artistName": "仲川 珠生",
+      "channel": null,
+      "slug": null,
+      "account": "https://startbahn.org/70132b3f55f54b179eb2",
+      "aslug": "70132b3f55f54b179eb2"
+    },
+    {
+      "spaceId": "s19",
+      "artistName": "いぬこ",
+      "channel": null,
+      "slug": null,
+      "account": "https://startbahn.org/8ae9694683c59508754a",
+      "aslug": "8ae9694683c59508754a"
+    },
+    {
+      "spaceId": "s19",
+      "artistName": "磯野大樹",
+      "channel": null,
+      "slug": null,
+      "account": "https://startbahn.org/2e795f1adf8190ba670d",
+      "aslug": "2e795f1adf8190ba670d"
+    },
+    {
+      "spaceId": "s19",
+      "artistName": "常山心",
+      "channel": null,
+      "slug": null,
+      "account": "https://startbahn.org/e8bee78dc8caa7c18684",
+      "aslug": "e8bee78dc8caa7c18684"
+    },
+    {
+      "spaceId": "s19",
+      "artistName": "護",
+      "channel": "yamada?",
+      "slug": "yamada?",
+      "account": "https://startbahn.org/0dfd0c1fd2e96261ced1",
+      "aslug": "0dfd0c1fd2e96261ced1"
+    },
+    {
+      "spaceId": "s06",
+      "artistName": "及川俊哉",
+      "channel": "https://startbahn.org/channels/ba3e543a29d57e6b1b73",
+      "slug": "ba3e543a29d57e6b1b73",
+      "account": null,
+      "aslug": null
+    },
+    {
+      "spaceId": "s06",
+      "artistName": "金子潤",
+      "channel": "https://startbahn.org/channels/d5169f36315dc1531930",
+      "slug": "d5169f36315dc1531930",
+      "account": "https://startbahn.org/33ed3a9d47f84821c5ff",
+      "aslug": "33ed3a9d47f84821c5ff"
+    },
+    {
+      "spaceId": "s06",
+      "artistName": "Moclone",
+      "channel": "https://startbahn.org/channels/ef8c4b809ed8e1afcddf",
+      "slug": "ef8c4b809ed8e1afcddf",
+      "account": "https://startbahn.org/6c5f3c137f4aa61d7869",
+      "aslug": "6c5f3c137f4aa61d7869"
+    },
+    {
+      "spaceId": "s06",
+      "artistName": "山田大輔",
+      "channel": "https://startbahn.org/channels/80a368bbbe1bf4cc7043",
+      "slug": "80a368bbbe1bf4cc7043",
+      "account": "https://startbahn.org/ec2021d98ae728de4bb6",
+      "aslug": "ec2021d98ae728de4bb6"
+    },
+    {
+      "spaceId": "s06",
+      "artistName": "佐久間鑑",
+      "channel": "https://startbahn.org/channels/aa5d75c1c98c185c1de8",
+      "slug": "aa5d75c1c98c185c1de8",
+      "account": "https://startbahn.org/4df74e3ee24786fb3501",
+      "aslug": "4df74e3ee24786fb3501"
+    },
+    {
+      "spaceId": "s06",
+      "artistName": "harumaki",
+      "channel": "https://startbahn.org/channels/317a295dbb95acebb620",
+      "slug": "317a295dbb95acebb620",
+      "account": "https://startbahn.org/97f136b246476e0a7724",
+      "aslug": "97f136b246476e0a7724"
+    },
+    {
+      "spaceId": "s06",
+      "artistName": "スゲノマロ",
+      "channel": "https://startbahn.org/channels/5dde3d63e749e77bb1c2",
+      "slug": "5dde3d63e749e77bb1c2",
+      "account": "https://startbahn.org/8b9b898827b34a208fee",
+      "aslug": "8b9b898827b34a208fee"
+    },
+    {
+      "spaceId": "s06",
+      "artistName": "朱のべん",
+      "channel": "https://startbahn.org/channels/b6d7a9b8dc30993996cf",
+      "slug": "b6d7a9b8dc30993996cf",
+      "account": "https://startbahn.org/a6e6bbc05b31e1b54461",
+      "aslug": "a6e6bbc05b31e1b54461"
+    },
+    {
+      "spaceId": "s06",
+      "artistName": "渡邊清一郎",
+      "channel": "https://startbahn.org/channels/d0c5ec7ba8210731c366",
+      "slug": "d0c5ec7ba8210731c366",
+      "account": "https://startbahn.org/de78eff19a219ecfef1e",
+      "aslug": "de78eff19a219ecfef1e"
+    },
+    {
+      "spaceId": "s06",
+      "artistName": "小池晶子",
+      "channel": "https://startbahn.org/channels/92002d3009b3d055f728",
+      "slug": "92002d3009b3d055f728",
+      "account": "https://startbahn.org/784723a2937f2829a271",
+      "aslug": "784723a2937f2829a271"
+    },
+    {
+      "spaceId": "s06",
+      "artistName": "佐川友星",
+      "channel": null,
+      "slug": null,
+      "account": "https://startbahn.org/fbf69dfec74a3cc9fbc0",
+      "aslug": "fbf69dfec74a3cc9fbc0"
+    },
+    {
+      "spaceId": "s08",
+      "artistName": "グウナカヤマ",
+      "channel": "https://startbahn.org/channels/7f8fe4cccf84e5311e66",
+      "slug": "7f8fe4cccf84e5311e66",
+      "account": "https://startbahn.org/c6204f5049a4f347765d",
+      "aslug": "c6204f5049a4f347765d"
+    },
+    {
+      "spaceId": "s21",
+      "artistName": "加藤明洋",
+      "channel": "https://startbahn.org/channels/110a3c6d9c8f031a59cd",
+      "slug": "110a3c6d9c8f031a59cd",
+      "account": "https://startbahn.org/59f1170628abfd715e3d",
+      "aslug": "59f1170628abfd715e3d"
+    },
+    {
+      "spaceId": "s04",
+      "artistName": "RIKU",
+      "channel": "https://startbahn.org/channels/69b45474187c5d2d16bc",
+      "slug": "69b45474187c5d2d16bc",
+      "account": "https://startbahn.org/b40de085e49f0f9cb9b9",
+      "aslug": "b40de085e49f0f9cb9b9"
+    },
+    {
+      "spaceId": "s04",
+      "artistName": "MITOS",
+      "channel": "https://startbahn.org/channels/5f793326ef0b2b3c9191",
+      "slug": "5f793326ef0b2b3c9191",
+      "account": "https://startbahn.org/6dcd253c97675d873386",
+      "aslug": "6dcd253c97675d873386"
+    },
+    {
+      "spaceId": "s04",
+      "artistName": "植松ゆりか",
+      "channel": "https://startbahn.org/channels/8ace7fedbc83aea139b8",
+      "slug": "8ace7fedbc83aea139b8",
+      "account": "https://startbahn.org/96ef7f2015b1381c47cc",
+      "aslug": "96ef7f2015b1381c47cc"
+    },
+    {
+      "spaceId": "s04",
+      "artistName": "近藤佳那子",
+      "channel": "https://startbahn.org/channels/79f90ed048d69a9f930f",
+      "slug": "79f90ed048d69a9f930f",
+      "account": "https://startbahn.org/150698751c771eb07675",
+      "aslug": "150698751c771eb07675"
+    },
+    {
+      "spaceId": "s04",
+      "artistName": "鈴木優作",
+      "channel": "https://startbahn.org/channels/97e26681e77a1ad13ce4",
+      "slug": "97e26681e77a1ad13ce4",
+      "account": "https://startbahn.org/c2b13b3b023ff10646ea",
+      "aslug": "c2b13b3b023ff10646ea"
+    },
+    {
+      "spaceId": "s04",
+      "artistName": "古畑大気",
+      "channel": "https://startbahn.org/channels/6209b308a700218f5c43",
+      "slug": "6209b308a700218f5c43",
+      "account": "https://startbahn.org/716c24168f86a1f16ffa",
+      "aslug": "716c24168f86a1f16ffa"
+    },
+    {
+      "spaceId": "s04",
+      "artistName": "前畑裕司",
+      "channel": "https://startbahn.org/channels/a724a90995cf8a7efba2",
+      "slug": "a724a90995cf8a7efba2",
+      "account": "https://startbahn.org/b7e4a840e6aa7405c8e2",
+      "aslug": "b7e4a840e6aa7405c8e2"
+    },
+    {
+      "spaceId": "s04",
+      "artistName": "高田裕大",
+      "channel": "https://startbahn.org/channels/f8872a3d50fe9c3a0e07",
+      "slug": "f8872a3d50fe9c3a0e07",
+      "account": "https://startbahn.org/92d660aadd2e89b7ea1b",
+      "aslug": "92d660aadd2e89b7ea1b"
+    },
+    {
+      "spaceId": "s20",
+      "artistName": "内田 喜基",
+      "channel": "https://startbahn.org/channels/7acd6a1bc89514ebddec",
+      "slug": "7acd6a1bc89514ebddec",
+      "account": "https://startbahn.org/ef2a6d2dee69558dcf10",
+      "aslug": "ef2a6d2dee69558dcf10"
+    },
+    {
+      "spaceId": "s09",
+      "artistName": "玉山拓郎",
+      "channel": null,
+      "slug": null,
+      "account": null,
+      "aslug": null
+    },
+    {
+      "spaceId": "s09",
+      "artistName": "黒川岳",
+      "channel": null,
+      "slug": null,
+      "account": null,
+      "aslug": null
+    },
+    {
+      "spaceId": "s09",
+      "artistName": "村松佳樹",
+      "channel": null,
+      "slug": null,
+      "account": null,
+      "aslug": null
+    },
+    {
+      "spaceId": "s09",
+      "artistName": "岸裕真",
+      "channel": "kishi yuma名でチャンネル作る？",
+      "slug": "kishi yuma名でチャンネル作る？",
+      "account": "https://startbahn.org/86d7c2d0b897a10905d5",
+      "aslug": "86d7c2d0b897a10905d5"
+    },
+    {
+      "spaceId": "s09",
+      "artistName": "釣部東京",
+      "channel": null,
+      "slug": null,
+      "account": "アカウントなし",
+      "aslug": "アカウントなし"
+    },
+    {
+      "spaceId": "s09",
+      "artistName": "°F / efu",
+      "channel": null,
+      "slug": null,
+      "account": "アカウントなし",
+      "aslug": "アカウントなし"
+    },
+    {
+      "spaceId": "s09",
+      "artistName": "おかず",
+      "channel": null,
+      "slug": null,
+      "account": "アカウントなし",
+      "aslug": "アカウントなし"
+    },
+    {
+      "spaceId": "s09",
+      "artistName": "ツミキルーム",
+      "channel": null,
+      "slug": null,
+      "account": "アカウントなし",
+      "aslug": "アカウントなし"
+    },
+    {
+      "spaceId": "s09",
+      "artistName": "久保田哲也",
+      "channel": null,
+      "slug": null,
+      "account": "アカウントなし",
+      "aslug": "アカウントなし"
+    },
+    {
+      "spaceId": "s09",
+      "artistName": "Almina",
+      "channel": null,
+      "slug": null,
+      "account": "アカウントなし",
+      "aslug": "アカウントなし"
+    },
+    {
+      "spaceId": null,
+      "artistName": "未定：公募1名",
+      "channel": null,
+      "slug": null,
+      "account": null,
+      "aslug": null
+    },
+    {
+      "spaceId": "s09",
+      "artistName": "長谷川愛",
+      "channel": "https://startbahn.org/channels/0f9a72a806f9dbf0ee6a",
+      "slug": "0f9a72a806f9dbf0ee6a",
+      "account": "https://startbahn.org/aihasegawa",
+      "aslug": "aihasegawa"
+    },
+    {
+      "spaceId": "s09",
+      "artistName": "西島大介",
+      "channel": "https://startbahn.org/channels/79446165fd583a9c4ca4",
+      "slug": "79446165fd583a9c4ca4",
+      "account": "https://startbahn.org/daisuke_nishijima",
+      "aslug": "daisuke_nishijima"
+    },
+    {
+      "spaceId": null,
+      "artistName": "広田美術から数点",
+      "channel": null,
+      "slug": null,
+      "account": null,
+      "aslug": null
+    },
+    {
+      "spaceId": "s09",
+      "artistName": "飯田竜太",
+      "channel": "https://startbahn.org/channels/9c7ec190c9076f7b32b1",
+      "slug": "9c7ec190c9076f7b32b1",
+      "account": "https://startbahn.org/ryuta_iida",
+      "aslug": "ryuta_iida"
+    },
+    {
+      "spaceId": null,
+      "artistName": "榎本耕一",
+      "channel": "https://startbahn.org/channels/af95680daf10af06e04d",
+      "slug": "af95680daf10af06e04d",
+      "account": "https://startbahn.org/koichibycorn",
+      "aslug": "koichibycorn"
+    },
+    {
+      "spaceId": null,
+      "artistName": "増田セバスチャン",
+      "channel": "https://startbahn.org/channels/3c42edf71e4e7654150d",
+      "slug": "3c42edf71e4e7654150d",
+      "account": "https://startbahn.org/9b598dd7f77111fd6853",
+      "aslug": "9b598dd7f77111fd6853"
+    },
+    {
+      "spaceId": "s09",
+      "artistName": "鈴木有紗",
+      "channel": "https://startbahn.org/channels/6852ea5e5256e0465be1",
+      "slug": "6852ea5e5256e0465be1",
+      "account": "https://startbahn.org/arisa1019",
+      "aslug": "arisa1019"
+    },
+    {
+      "spaceId": "s09",
+      "artistName": "大坂秩加",
+      "channel": "https://startbahn.org/channels/73c914e18cf81389a0be",
+      "slug": "73c914e18cf81389a0be",
+      "account": "https://startbahn.org/25ea2181a0db9ec9b462",
+      "aslug": "25ea2181a0db9ec9b462"
+    },
+    {
+      "spaceId": null,
+      "artistName": "中村ケンゴ",
+      "channel": "https://startbahn.org/channels/abb0599bcdb9bad2cfb8",
+      "slug": "abb0599bcdb9bad2cfb8",
+      "account": "https://startbahn.org/kengo_nakamura",
+      "aslug": "kengo_nakamura"
+    },
+    {
+      "spaceId": null,
+      "artistName": "葉",
+      "channel": "https://startbahn.org/channels/e607bf7175f921b131af",
+      "slug": "e607bf7175f921b131af",
+      "account": "https://startbahn.org/summer_yo",
+      "aslug": "summer_yo"
+    },
+    {
+      "spaceId": null,
+      "artistName": "やんツー",
+      "channel": "https://startbahn.org/channels/2c478b765ec5f182bb42",
+      "slug": "2c478b765ec5f182bb42",
+      "account": "https://startbahn.org/e34151f788a91f840944",
+      "aslug": "e34151f788a91f840944"
+    },
+    {
+      "spaceId": null,
+      "artistName": "布施琳太郎",
+      "channel": "https://startbahn.org/channels/5dec99d97189022d6b74",
+      "slug": "5dec99d97189022d6b74",
+      "account": "https://startbahn.org/rintarofuse",
+      "aslug": "rintarofuse"
+    },
+    {
+      "spaceId": "s09",
+      "artistName": "坂爪康太郎",
+      "channel": "https://startbahn.org/channels/8523fe204b79648e2b41",
+      "slug": "8523fe204b79648e2b41",
+      "account": "https://startbahn.org/942e754d7774a063e449",
+      "aslug": "942e754d7774a063e449"
+    },
+    {
+      "spaceId": null,
+      "artistName": "鈴木秀尚",
+      "channel": "https://startbahn.org/channels/c71f6bbd66c4c451fb6f",
+      "slug": "c71f6bbd66c4c451fb6f",
+      "account": "https://startbahn.org/suzukihidetaka",
+      "aslug": "suzukihidetaka"
+    },
+    {
+      "spaceId": "s22",
+      "artistName": "新造真人",
+      "channel": "https://startbahn.org/channels/367c67853969b3d7e3f7",
+      "slug": "367c67853969b3d7e3f7",
+      "account": "https://startbahn.org/b240fa215f41f8695324",
+      "aslug": "b240fa215f41f8695324"
+    },
+    {
+      "spaceId": "s05",
+      "artistName": "織田真二",
+      "channel": "　https://startbahn.org/channels/b53569f491cdc9e70a61",
+      "slug": "　b53569f491cdc9e70a61",
+      "account": "https://startbahn.org/27ce7067f2b0ae91930a",
+      "aslug": "27ce7067f2b0ae91930a"
+    },
+    {
+      "spaceId": "s23",
+      "artistName": "松沢真紀",
+      "channel": "https://startbahn.org/channels/aade2055c327a1d3ca86",
+      "slug": "aade2055c327a1d3ca86",
+      "account": "https://startbahn.org/37db9f76678033c8e391",
+      "aslug": null
+    },
+    {
+      "spaceId": "s24",
+      "artistName": "TAKASHI",
+      "channel": "https://startbahn.org/channels/ad08d520614f2d43869f",
+      "slug": "ad08d520614f2d43869f",
+      "account": "https://startbahn.org/2a4e7547e4912398f844",
+      "aslug": null
+    },
+    {
+      "spaceId": "s24",
+      "artistName": "清水愛里",
+      "channel": null,
+      "slug": null,
+      "account": null,
+      "aslug": null
+    },
+    {
+      "spaceId": "s24",
+      "artistName": "井上浩輝",
+      "channel": null,
+      "slug": null,
+      "account": null,
+      "aslug": null
+    },
+    {
+      "spaceId": null,
+      "artistName": null,
+      "channel": null,
+      "slug": null,
+      "account": null,
+      "aslug": null
+    },
+    {
+      "spaceId": null,
+      "artistName": null,
+      "channel": null,
+      "slug": null,
+      "account": null,
+      "aslug": null
+    },
+    {
+      "spaceId": null,
+      "artistName": null,
+      "channel": null,
+      "slug": null,
+      "account": null,
+      "aslug": null
+    },
+    {
+      "spaceId": null,
+      "artistName": null,
+      "channel": null,
+      "slug": null,
+      "account": null,
+      "aslug": null
+    },
+    {
+      "spaceId": null,
+      "artistName": null,
+      "channel": null,
+      "slug": null,
+      "account": null,
+      "aslug": null
+    }
+  ],
+  "data": {
+    "fairChannels": {
+      "edges": [
+        {
+          "node": {
+            "title": "加藤 明洋",
+            "label": "artist",
+            "slug": "707d17f092b4feb6169a",
+            "description": "複素数体であれば、任意のCM-タイプの A は、実際、数体である定義体（英語版）(field of definition)を持っている。\r\n自己準同型環の可能なタイプは、対合（ロサチの対合（英語版）(Rosati involution）をもつ環として既に分類されていて、CM-タイプのアーベル多様体の分類を導き出す。\r\n\r\n楕円曲線と同じような方法でCM-タイプの多様体を構成するには、Cd の中の格子 Λ から始め、アーベル多様体のリーマンの関係式（英語版）(Riemann relations)を考えに入れる必要がある。 \r\nCM-タイプ(CM-type)は、単位元での A の正則接空間上にある EndQ(A) の（最大）可換部分環 L の作用を記述したものである。単純な種類のスペクトル理論が適応され、L が固有ベクトルの基底を通して作用することを示すことができる。言い換えると、L は A の正則ベクトル場の上の対角行列を通した作用を持っている。L 自体がある複数の体の積というよりも数体であるという単純な場合には、CM-タイプは L の複素埋め込み（英語版）(complex embedding)のリストである。複素共役をなすペアとして、2d 個の複素埋め込みがあり、CM-タイプは各々のペアのから一つを選択する。そのようなCM-タイプの全てが実現されることが知られている。",
+            "bannerImage": {
+              "url": "https://startbahn-beta.s3.amazonaws.com/uploads/channel/banner_image/1/Screen_Shot_2018-05-09_at_12.50.08.png"
+            }
+          }
+        },
+        {
+          "node": {
+            "title": "とてもスペシャルなアーティスト",
+            "label": "artist",
+            "slug": "e91edb50cf1115eb9221",
+            "description": "hogehogehoge\r\nhogehoge\r\nhoge\r\n\r\nhogehoge\r\nhoge\r\n\r\n\r\nho\r\n\r\nhoge\r\n",
+            "bannerImage": {
+              "url": "/assets/fallback/thumb_image_missing-db2fc660b60abb67533328eb4edc0008c33cb31d7a35a130c77d3e297f4ab805.jpg"
+            }
+          }
+        },
+        {
+          "node": {
+            "title": "マジでクールなギャラリー",
+            "label": "gallery",
+            "slug": "4a15a7c701519f281804",
+            "description": "よくある平凡な普通の人並みで常識的なギャラリーああああああああああああああああああああああああああああああ",
+            "bannerImage": {
+              "url": "https://startbahn-beta.s3.amazonaws.com/uploads/channel/banner_image/4/3.0Image2.png"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

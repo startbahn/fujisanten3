@@ -808,7 +808,7 @@ section {
       }
       img {
         width: 252px;
-        height: 202px;
+        height: auto;
         display: block;
         font-size: 14px;
         margin-right: 10px;
@@ -1535,9 +1535,13 @@ section {
   .section {
     &__event--list li a img {
       width: 126px;
-      height: 101px;
-    }
 
+      height: auto;
+    }
+    &__event--list-title {
+      height: 36px;
+      overflow: hidden;
+    }
     &__event--list-text {
       margin-top: 10px;
     }
@@ -1547,7 +1551,6 @@ section {
       width: 100%;
       padding-right: 0;
     }
-
     &__picker--person{
       display: block;
       padding: 30px 50px 0 50px;

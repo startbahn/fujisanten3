@@ -56,8 +56,29 @@ window.onload = function () {
               spaceImg.src = 'images/noimg02.png';
             }
           }
+             
+          //COMTOPIA流Google MAP表示方法
+          var geocoder = new google.maps.Geocoder();
+          var address = json.spaceJson[i].address;
+          console.log(address);
+          geocoder.geocode({ 'address': address, 'language': 'ja' }, function (results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
+              var latlng = results[0].geometry.location;//緯度と経度
+              var mapOpt = {
+                center: latlng,
+                zoom: 15,//地図倍率
+                mapTypeId: google.maps.MapTypeId.ROADMAP//
+              };
+              var map = new google.maps.Map(document.getElementById('google_map'), mapOpt);
+              var marker = new google.maps.Marker({//マーカー
+                position: map.getCenter(),
+                map: map
+              });
+            } else { }
+          });
         }
       }
+
       //popupのスペースに参加アーティスト取得
       for (var t = 0; t < json.artistJson.length; t++) {
         let aId = json.artistJson[t].spaceId;
@@ -86,6 +107,7 @@ window.onload = function () {
     document.querySelector('.js-space-popup--web').innerHTML = '';
     document.querySelector('.js-space-popup--time').innerHTML = '';
     document.querySelector('.js-space-popup--dotw').innerHTML = '';    
+    document.querySelector('.js-space-popup--map').innerHTML = '';
     }
   }
 }

@@ -1,7 +1,7 @@
 //jsonファイルURL
 //var dmain = 'fujisanten.com';
 //var directory = 'json';
-const artistName = 'artistname.json';
+const artistName = 'fujisanjson.json';
 //var url = 'https://' + dmain + '/' + directory + '/' + file + '.json';
 
 //json読み込み
@@ -15,29 +15,31 @@ fetch(artistName)
 
     
     //テンプレ複製
-    for (let i = 1; i < json.length; i++) {
-      let clone = aboutArtist.firstElementChild.cloneNode(true);
-      aboutArtist.appendChild(clone);
-    }
+    json.artistJson.forEach(function(item, i) {
+      var elem = document.createElement('p');
+      elem.classList.add('section__about--bgblue');
+      elem.innerHTML = item.artistName;
+      aboutArtist.appendChild(elem);
+    });
 
-    let edges = json.data.fairChannels.edges;
+    // let edges = json.artistJson;
       
-    for (let i = 0; i < edges.length; i++) {
+    // for (let i = 0; i < edges.length; i++) {
 
-      let nodeList = edges[i].node;  
+    //   let nodeList = edges[i].node;  
 
-      let nodeTitle = edges[i].node.title;
-      let nodeLabel = edges[i].node.label;
-      let nodeSlug = edges[i].node.slug; 
+    //   let nodeTitle = edges[i].node.title;
+    //   let nodeLabel = edges[i].node.label;
+    //   let nodeSlug = edges[i].node.slug; 
 
        
-      if (nodeLabel === 'artist') {
-        let link = document.createElement('a'); 
-        if (nodeSlug !== '') {
-          link.href = '' + nodeSlug;
-        }
-        link.innerHTML = nodeTitle;
-        aboutArtist.appendChild(link);
-      }
-    } 
+    //   if (nodeLabel === 'artist') {
+    //     let link = document.createElement('a'); 
+    //     if (nodeSlug !== '') {
+    //       link.href = '' + nodeSlug;
+    //     }
+    //     link.innerHTML = nodeTitle;
+    //     aboutArtist.appendChild(link);
+    //   }
+    // } 
   });

@@ -45,18 +45,20 @@ window.onload = function () {
           spaceWeb.innerHTML = json.spaceJson[i].web;
           spaceWeb.href = json.spaceJson[i].web;
           spaceTime.innerHTML = json.spaceJson[i].date;
+          spaceCatch.innerHTML = json.spaceJson[i].description.replace(/\n/g,"<br />");
+          spaceImg.src = json.spaceJson[i].bannerImage;
 
           //slug no　と　orgのslugを判定
-          let edges = json.data.fairChannels.edges;
-          for (let e = 0; e < edges.length; e++) {
-            if (json.spaceJson[i].slug == edges[e].node.slug) {
-              spaceCatch.innerHTML = edges[e].node.description;
-              spaceImg.src = edges[e].node.bannerImage.url;
-            } else {　//orgにチャンネルがなければ noimageを返す
-              spaceImg.src = 'images/noimg02.png';
-            }
-          }
-             
+          // let edges = json.data.fairChannels.edges;
+          // for (let e = 0; e < edges.length; e++) {
+          //   if (json.spaceJson[i].slug == edges[e].node.slug) {
+          //     spaceCatch.innerHTML = edges[e].node.description;
+          //     spaceImg.src = edges[e].node.bannerImage.url;
+          //   } else {　//orgにチャンネルがなければ noimageを返す
+          //     spaceImg.src = 'images/noimg02.png';
+          //   }
+          // }
+
           //COMTOPIA流Google MAP表示方法
           var geocoder = new google.maps.Geocoder();
           var address = json.spaceJson[i].address;

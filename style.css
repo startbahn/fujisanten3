@@ -1079,6 +1079,7 @@ section {
 .section__space--list3 > li {
   width: 33%;
   margin: 0 0 80px 0;
+  cursor: pointer;
 }
 
 .section__space--list3 > li .section__space--list3-inr {

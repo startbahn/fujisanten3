@@ -1741,6 +1741,9 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
+  .section__event--list-inr {
+    padding: 10px !important;
+  }
   .section__event--list li a img {
     width: 126px;
     height: auto;
@@ -1749,8 +1752,14 @@ section {
     height: 36px;
     overflow: hidden;
   }
+  .section__event--list li a h3 {
+    font-size: 14px !important;
+  }
   .section__event--list-text {
-    margin-top: 10px;
+    margin-top: 5px !important;
+  }
+  .section__event--list li a p {
+    font-size: 12px !important;
   }
   .section__picker--wrap {
     -ms-flex-wrap: wrap;

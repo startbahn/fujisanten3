@@ -29,7 +29,10 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/85/three.min.js" defer></script>
   <script type="text/javascript" src="https://threejs.org/examples/js/loaders/OBJLoader.js" defer></script>
-  <script type="module" src="./main.js" defer></script>
+  <script type="module" src="main.js" defer></script>
+  <!-- <script type="module" src="artistname.js" defer></script> -->
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyD1gabDc2tdDNYRL7g6L1maUC9G_e_6iA4"></script>
+  <script type="module" src="space-org.js" defer></script>
   <meta property="og:title" content="富士山展3.0 - 冨嶽二〇二〇景 - ブロックチェーン×アートの初売り。startbahnを使った新春恒例のアートイベント"/>
   <meta property="og:description" content="ブロックチェーン×アートの初売り。startbahnを使った新春恒例のアートイベント"/>
   <meta property="og:type" content="website"/>
@@ -818,7 +821,7 @@
         　富士山の火山活動が活発であった9世紀〜11世紀、富士山は実物を見ることすら難しい崇高な霊山でした。交通網の発達により多くの人が実物を見ることができるようになると、富士登山や富士信仰が大衆化し、畏れ多いものからランドマーク的な象徴へと変容しました。その後、国家主義の時代にはプロパガンダのため大日本帝国の象徴として用いられましたが、現在の富士山はオリエンタリズムのシンボル、つまり外から見た際に日本とイコールの意味を持つ記号となり、古くから受け継がれてきた象徴的意義を喪失し、デフォルメされた絵文字的記号となっています。
       </p>
       <input id="acd-check1" class="acd-check" type="checkbox">
-      <label class="acd-label" for="acd-check1">もっと読む</label>
+      <label class="acd-label" for="acd-check1"></label>
       <div class="section__about--pullwrap">
       <p class="section__about--copy">
         　これは、日本の美術史における富士をめぐる表象とも連動しています。現存する最古の富士をモチーフとした作品、「聖徳太子絵伝(しょうとくたいしえでん)
@@ -837,6 +840,7 @@
           <h3 class="section__about--exhibition-title">■ サテライト展</h3>
           <div class="section__about--exhibition-date">
             <p>2020年1月5日(日) 〜 1月19日(日)</p>
+
             <p>日本各地の参加会場</p>
           </div>
           <p class="js-bg section__about--exhibition-discription">
@@ -861,7 +865,108 @@
 
       <dl>
 
+        <div class="section__about--txt">
+          <dt class="js-bg">参加アーティスト：</dt>
+          <dd class="section__about--indent8">
 
+            <p class="section__about--bgblue">東方悠平</p>
+            <p class="section__about--bgblue">大橋鉄郎</p>
+            <p class="section__about--bgblue">浅井コレクション</p>
+            <p class="section__about--bgblue"><a href="https://www.b-ownd.com/artists/qN4tOb" target="_blank">市川透</a></p>
+            <p class="section__about--bgblue"><a href="https://www.b-ownd.com/artists/8r9tZb" target="_blank">中村弘峰</a></p>
+            <p class="section__about--bgblue"><a href="https://www.b-ownd.com/artists/bznt1b" target="_blank">若宮隆志</a></p>
+            <p class="section__about--bgblue"><a href="https://www.b-ownd.com/artists/8jltZx" target="_blank">ノグチミエコ</a></p>
+            <p class="section__about--bgblue"><a href="https://www.b-ownd.com/artists/8OgtK8" target="_blank">奈良祐希</a></p>
+            <p class="section__about--bgblue"><a href="https://www.b-ownd.com/artists/qQPtWL" target="_blank">古賀崇洋</a></p>
+            <p class="section__about--bgblue"><a href="https://www.b-ownd.com/artists/bDotkx" target="_blank">加藤亮太郎</a></p>
+            <p class="section__about--bgblue">RIKU</p>
+            <p class="section__about--bgblue">MITOS</p>
+            <p class="section__about--bgblue">植松ゆりか</p>
+            <p class="section__about--bgblue">近藤佳那子</p>
+            <p class="section__about--bgblue">鈴木優作</p>
+            <p class="section__about--bgblue">古畑大気</p>
+            <p class="section__about--bgblue">前畑裕司</p>
+            <p class="section__about--bgblue">栗原光</p>
+            <p class="section__about--bgblue">オカモトマユコ</p>
+            <p class="section__about--bgblue">高田裕大</p>
+            <p class="section__about--bgblue">織田真二</p>
+            <p class="section__about--bgblue">及川俊哉</p>
+            <p class="section__about--bgblue">金子潤</p>
+            <p class="section__about--bgblue">小池晶子</p>
+            <p class="section__about--bgblue">佐川友星</p>
+            <p class="section__about--bgblue">佐久間鑑</p>
+            <p class="section__about--bgblue">朱のべん</p>
+            <p class="section__about--bgblue">スゲノマロ</p>
+            <p class="section__about--bgblue">山田大輔</p>
+            <p class="section__about--bgblue">Moclone</p>
+            <p class="section__about--bgblue">harumaki</p>
+            <p class="section__about--bgblue">渡邊清一郎</p>
+            <p class="section__about--bgblue">グウナカヤマ</p>
+            <p class="section__about--bgblue">山口聡一</p>
+            <p class="section__about--bgblue">金田金太郎</p>
+            <p class="section__about--bgblue">時吉あきな</p>
+            <p class="section__about--bgblue">硬軟</p>
+            <p class="section__about--bgblue">じょいとも</p>
+            <p class="section__about--bgblue">竹本真理</p>
+            <p class="section__about--bgblue">トモトシ</p>
+            <p class="section__about--bgblue">花牟禮有基</p>
+            <p class="section__about--bgblue">Fabian Leitgeb</p>
+            <p class="section__about--bgblue">横山奈穂子</p>
+            <p class="section__about--bgblue">漆原夏樹</p>
+            <p class="section__about--bgblue">狩野宏明</p>
+            <p class="section__about--bgblue">神戸智行</p>
+            <p class="section__about--bgblue">斎正機</p>
+            <p class="section__about--bgblue">ナカムラ徹</p>
+            <p class="section__about--bgblue">山内隆</p>
+            <p class="section__about--bgblue">野崎慎</p>
+            <p class="section__about--bgblue">財田翔悟</p>
+            <p class="section__about--bgblue">寺内誠</p>
+            <p class="section__about--bgblue">阿部ふみ</p>
+            <p class="section__about--bgblue">賀門利誓</p>
+            <p class="section__about--bgblue">佐々木怜央</p>
+            <p class="section__about--bgblue">榎本裕一</p>
+            <p class="section__about--bgblue">鵜飼義丈</p>
+            <p class="section__about--bgblue">大島真由美</p>
+            <p class="section__about--bgblue">黒坂祐</p>
+            <p class="section__about--bgblue">都築拓磨</p>
+            <p class="section__about--bgblue">sui</p>
+            <p class="section__about--bgblue">悠太</p>
+            <p class="section__about--bgblue">平林瑚夏</p>
+            <p class="section__about--bgblue">濱口瑛士</p>
+            <p class="section__about--bgblue">Mei Wada</p>
+            <p class="section__about--bgblue">金澤洋輝(gutara)</p>
+            <p class="section__about--bgblue">Kanei Yamaoak</p>
+            <p class="section__about--bgblue">松井大和</p>
+            <p class="section__about--bgblue">仲川 珠生</p>
+            <p class="section__about--bgblue">いぬこ</p>
+            <p class="section__about--bgblue">kanzume12345</p>
+            <p class="section__about--bgblue">住人K</p>
+            <p class="section__about--bgblue">yamada</p>
+            <p class="section__about--bgblue">内田 喜基</p>
+            <p class="section__about--bgblue">加藤明洋</p>
+            <p class="section__about--bgblue">新造真人</p>
+            <p class="section__about--bgblue">松沢真紀</p>
+            <p class="section__about--bgblue">井上浩</p>
+            <p class="section__about--bgblue">TAKASHI</p>
+            <p class="section__about--bgblue">清水愛里</p>
+            <p class="section__about--bgblue">玉山拓郎</p>
+            <p class="section__about--bgblue">黒川岳</p>
+            <p class="section__about--bgblue">村松佳樹</p>
+            <p class="section__about--bgblue">岸裕真</p>
+            <p class="section__about--bgblue">釣部東京</p>
+            <p class="section__about--bgblue">°F / efu</p>
+            <p class="section__about--bgblue">おかず</p>
+            <p class="section__about--bgblue">ツミキルーム</p>
+            <p class="section__about--bgblue">久保田哲也</p>
+            <p class="section__about--bgblue">Almina</p>
+            <p class="section__about--bgblue">長谷川愛</p>
+            <p class="section__about--bgblue">西島大介</p>
+            <p class="section__about--bgblue">飯田竜太</p>
+            <p class="section__about--bgblue">鈴木有紗</p>
+            <p class="section__about--bgblue">大坂秩加</p>
+            <p class="section__about--bgblue">坂爪康太郎</p>
+          </dd>
+        </div>
 
         <div class="section__about--txt">
           <dt class="js-bg">企画・監修：</dt>
@@ -895,7 +1000,7 @@
         <div class="section__about--txt">
           <dt class="js-bg">特別協力：</dt>
           <dd class="section__about--indent4 banner">
-                <a href="https://www.astrodesign.co.jp/" target="_blank"><img src="images/b-astro.png"></a>
+            <a href="https://www.astrodesign.co.jp/" target="_blank"><img src="images/b-astro.png"></a>
           </dd>
         </div>
 
@@ -978,7 +1083,7 @@
           </a>
         </li>
       </ul>
-      <!-- <a href="news-press/index.html" class="link__more">View More </a> -->
+      <a href="news-press/index.html" class="link__more">View More </a> 
     </div>
   </section>
 
@@ -1012,10 +1117,9 @@
         </li>
         
       </ul>
-      <!-- <a href="event/index.html" class="link__more">View More</a>  -->
+      <a href="event/index.html" class="link__more">View More</a> 
     </div>
   </section>
-
 
   <section class="section__space" id="space">
     <div class="section__title">
@@ -1051,11 +1155,6 @@
             <p class="section__space--list3-img"><img src="images/saloncojica.png" alt="salon cojica"></p>
             <h4>salon cojica</h4>
             <address>&#12306;001-0023<br>北海道札幌市北区北区３ 北23条西8丁目3-33 coneco bld.1F</address>
-            <!-- <ul class="section__space--list3-details">
-               <li>&nbsp;</li> -->
-              <!-- <li>&nbsp;</li> 
-              <li><a href="https://goo.gl/maps/QvdLc1wSSuGZp84M9" target="_blank">Google Map</a></li>
-            </ul>-->
           </div>
         </li>
 
@@ -1095,11 +1194,6 @@
             <p class="section__space--list3-img"><img src="images/fukushima-mura.png" alt="福島・ミューラル・ヴィジョン"></p>
             <h4>福島・ミューラル・ヴィジョン</h4>
             <address>&#12306;960-8031<br>福島市栄町8-1平和ビル壁面（福島駅徒歩２分）</address>
-            <!-- <ul class="section__space--list3-details">
-              <li>&nbsp;</li> -->
-              <!-- <li>&nbsp;</li> 
-              <li><a href="https://goo.gl/maps/A59T76w6QAwbT3Zc7" target="_blank">Google Map</a></li>
-            </ul>-->
           </div>
         </li>
 
@@ -1108,11 +1202,6 @@
             <p class="section__space--list3-img"><img src="images/oomachi.png" alt="OOMACHI GALLERY"></p>
             <h4>OOMACHI GALLERY</h4>
             <address>&#12306;960-8041<br>福島県福島市大町9-21ニューヤブウチビル3F</address>
-            <!-- <ul class="section__space--list3-details">
-              <li>&nbsp;</li> -->
-              <!-- <li>&nbsp;</li> 
-              <li><a href="https://goo.gl/maps/h1oYfDjUNAJCPYqb7" target="_blank">Google Map</a></li>
-            </ul>-->
           </a>
         </li>
 
@@ -1144,11 +1233,6 @@
             <address>&#12306;150-0001<br>
               東京都渋谷区神宮前３丁目４１−３
             </address>
-            <!-- <ul class="section__space--list3-details">
-            <li>&nbsp;</li> -->
-            <!-- <li>&nbsp;</li> 
-              <li><a href="https://goo.gl/maps/GhLvZeFkhfDFQUER7" target="_blank">Google Map</a></li>
-            </ul>-->
           </div>
         </li>
 
@@ -1159,11 +1243,6 @@
             <address>&#12306;150-0001<br>
               東京都渋谷区神宮前3-38-11 原宿ニューロイヤルビル302
             </address>
-            <!-- <ul class="section__space--list3-details">
-                        <li>&nbsp;</li> -->
-            <!-- <li>&nbsp;</li> 
-              <li><a href="https://goo.gl/maps/jxEnq71T2BjXXnDu5" target="_blank">Google Map</a></li>
-            </ul>-->
           </div>
         </li>
 
@@ -1174,12 +1253,6 @@
             <address>&#12306;101-0021<br>
               東京都千代田区外神田５丁目４−１２
             </address>
-            <!-- <ul class="section__space--list3-details">
-                        <li>&nbsp;</li> -->
-            <!-- <li>&nbsp;</li> 
-              <li><a href="https://goo.gl/maps/S5sqXgUej8rmoiVb6" target="_blank">Google Map</a></li>
-            </ul>-->
-
           </div>
         </li>
 
@@ -1190,11 +1263,6 @@
             <address>&#12306;104-0061<br>
               東京都千代田区丸の内1丁目3-2
             </address>
-            <!-- <ul class="section__space--list3-details">
-                        <li>&nbsp;</li> -->
-            <!-- <li>&nbsp;</li> 
-              <li><a href="https://goo.gl/maps/zXsGo5Dujd1ybJFP8" target="_blank">Google Map</a></li>
-            </ul>-->
           </div>
         </li>
 
@@ -1205,11 +1273,6 @@
             <address>&#12306;530-0001<br>
               東京都新宿区四谷４丁目１３−１
             </address>
-            <!-- <ul class="section__space--list3-details">
-              <li>&nbsp;</li> -->
-            <!-- <li>&nbsp;</li> 
-              <li><a href="https://goo.gl/maps/9oAeWQmDm8ciRuA1A" target="_blank">Google Map</a></li>
-            </ul>-->
           </div>
         </li>
 
@@ -1220,11 +1283,6 @@
             <address>&#12306;153-0041<br>
               東京都目黒区駒場３丁目８−１東京大学先端科学技術研究センターROCKET HOUSE
             </address>
-            <!-- ß<ul class="section__space--list3-details">
-              <li>&nbsp;</li> -->
-              <!-- <li>&nbsp;</li> 
-              <li><a href="https://goo.gl/maps/g9eiMUdeggC3i5yU9" target="_blank">Google Map</a></li>
-            </ul>-->
           </div>
         </li>
 
@@ -1235,11 +1293,6 @@
             <address>&#12306;130-0025<br>
               東京都墨田区千歳２丁目１０−４ チトセマンション 303
             </address>
-            <!-- <ul class="section__space--list3-details">
-              <li>&nbsp;</li> -->
-              <!-- <li>&nbsp;</li> 
-              <li><a href="https://goo.gl/maps/zZkrHdyQ52V96LFN6" target="_blank">Google Map</a></li>
-            </ul>-->
           </div>
         </li>
 
@@ -1250,11 +1303,6 @@
             <address>&#12306;141-0021<br>
               東京都品川区上大崎3-1-1 JR東急目黒ビル 12F PUBLICIS GROUPE JAPAN 総合受付横
             </address>
-            <!-- <ul class="section__space--list3-details">
-                        <li>&nbsp;</li> -->
-            <!-- <li>&nbsp;</li>
-              <li><a href="https://goo.gl/maps/DzPEoTwTJwWzfNicA" target="_blank">Google Map</a></li>
-            </ul>　-->
           </div>
         </li>
 
@@ -1265,11 +1313,6 @@
             <address>&#12306;104-0061<br>
               東京都中央区銀座5-2-1東急プラザ銀座3階-L2
             </address>
-            <!--<ul class="section__space--list3-details">
-               <li>&nbsp;</li> -->
-              <!-- <li>&nbsp;</li>
-              <li><a href="https://goo.gl/maps/5ABtQJVmRZE5tRfC7" target="_blank">Google Map</a></li>
-            </ul>-->
           </div>
         </li>
 
@@ -1280,11 +1323,15 @@
             <address>&#12306;104-0061<br>
               東京都中央区銀座5-1-7 数寄屋橋ビル 3階
             </address>
-            <!-- <ul class="section__space--list3-details">
-              <li>&nbsp;</li> -->
-              <!-- <li>&nbsp;</li>
-              <li><a href="https://goo.gl/maps/t8M5UyxuL9LKDxsg6" target="_blank">Google Map</a></li>
-            </ul>-->
+          </div>
+        </li>
+        <li>
+          <div class="section__space--list3-inr ls-space-pup-open" id="s24">
+            <p class="section__space--list3-img"><img src="images/megumiogita.png" alt="MEGUMI OGITA GALLERY"></p>
+            <h4>MEGUMI OGITA GALLERY</h4>
+            <address>&#12306;104-0061<br>
+              東京都中央区銀座２丁目１６−１２ 銀座大塚ビルB1
+            </address>
           </div>
         </li>
       
@@ -1327,11 +1374,6 @@
             <address>&#12306;250-0023<br>
             神奈川県小田原市米神247-3
             </address>
-            <!-- <ul class="section__space--list3-details">
-              <li>&nbsp;</li> -->
-              <!-- <li>&nbsp;</li>
-              <li><a href="https://goo.gl/maps/vD88hNa7oQJaVvcs6" target="_blank">Google Map</a></li>
-            </ul>-->
           </div>
         </li>
       </ul>
@@ -1364,11 +1406,6 @@
               愛知県瀬戸市末広町1丁目 31-6
               タネリスタジオビルヂング1階
             </address>
-            <!-- <ul class="section__space--list3-details">
-            <li>&nbsp;</li> -->
-            <!-- <li>&nbsp;</li>
-              <li><a href="https://goo.gl/maps/Ci8v6G6KrKN3gFD4A" target="_blank">Google Map</a></li>
-            </ul>-->
           </div>
         </li>
 
@@ -1379,11 +1416,6 @@
             <address>&#12306;452-0905<br>
               愛知県清須市須ヶ口2248
             </address>
-            <!-- <ul class="section__space--list3-details">
-              <li>&nbsp;</li> -->
-              <!-- <li>&nbsp;</li>
-              <li><a href="https://goo.gl/maps/Ci8v6G6KrKN3gFD4A" target="_blank">Google Map</a></li>
-            </ul>-->
           </div>
         </li>
 
@@ -1417,11 +1449,6 @@
             <address>&#12306;600-8412<br>
               京都府京都市下京区二帖半敷町647 オンリー烏丸ビル1F
             </address>
-            <!-- <ul class="section__space--list3-details">
-              <li>&nbsp;</li> -->
-              <!-- <li>&nbsp;</li> 
-              <li><a href="https://g.page/engawaKYOTO?share" target="_blank">Google Map</a></li>
-            </ul>-->
           </div>
         </li>
 
@@ -1461,11 +1488,7 @@
             <address>&#12306;811-5133<br>
               長崎県壱岐市郷ノ浦町本村触５２６
             </address>
-            <!--<ul class="section__space--list3-details">
-               <li>&nbsp;</li> -->
-              <!-- <li>&nbsp;</li> 
-              <li><a href="https://goo.gl/maps/MfqimYCxxKEAtsRn9" target="_blank">Google Map</a></li>
-            </ul>-->
+
           </div>
         </li>
       </ul>
@@ -1514,7 +1537,7 @@
 
         <div>
           <dt>Website：</dt>
-          <dd><a class="js-space-popup--web" target="_blank"></a></dd>
+          <dd><a class="js-space-popup--web" target="_blank"></dd>
         </div>
 
         <div>
@@ -1533,9 +1556,7 @@
 
   <h3>MAP</h3>
 
-  <iframe id="maps"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2479130825877!2d139.71145241525244!3d35.6708971801967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c98e6591b23%3A0x539ff84137081422!2z44CSMTUwLTAwMDEg5p2x5Lqs6YO95riL6LC35Yy656We5a6u5YmN77yT5LiB55uu77yU77yR4oiS77yT!5e0!3m2!1sja!2sjp!4v1575972960146!5m2!1sja!2sjp"
-    width="100%" height="70%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+ <div id="google_map" style="height: 500px;" class="js-space-popup--map"></div>
 </div>
 
    

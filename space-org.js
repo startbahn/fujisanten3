@@ -3,7 +3,11 @@ window.onload = function () {
 
   for (var i = 0; i < openElements.length; i++) {
     openElements[i].onclick = function () {
+      // var y = window.scrollY;
+      // document.body.style.top = `-` + y + `px`; 
+
       document.body.classList.add('space-popup');
+      document.querySelector('.section__space-popup').scrollTo(0, 0);
       var clickId = this.id; //クリックしたスペースの ID(slug)を取得する
       const fujisan = 'fujisanjson.json';
   
@@ -15,9 +19,8 @@ window.onload = function () {
       .then(function (json) {
 
       //Dom外枠アクセス
-
       let popupSpace = document.querySelector('.section__space-popup');
-    
+        
       //テンプレ複製
       for (var i = 1; i < json.length; i++) {
         var clone = popupSpace.firstElementChild.cloneNode(true);
@@ -62,7 +65,6 @@ window.onload = function () {
           //COMTOPIA流Google MAP表示方法
           var geocoder = new google.maps.Geocoder();
           var address = json.spaceJson[i].address;
-          console.log(address);
           geocoder.geocode({ 'address': address, 'language': 'ja' }, function (results, status) {
             if (status == google.maps.GeocoderStatus.OK) {
               var latlng = results[0].geometry.location;//緯度と経度
@@ -96,20 +98,28 @@ window.onload = function () {
 
   //popup window close　
   var closeElements = document.getElementsByClassName("ls-space-pup-close");
+
   for (var i = 0; i < closeElements.length; i++) {
     closeElements[i].onclick = function () {
-    //いらんDom消す
-    document.body.classList.remove('space-popup');
-    document.querySelector('.section__space-popup--artist').innerHTML = '';
-    document.querySelector('.js__space-popup--area').innerHTML = '';
-    document.querySelector('.js__space-popup--name').innerHTML = '';
-    document.querySelector('.js-space-popup--info-img').src = '';
-    document.querySelector('.js-space-popup--catch').innerHTML = '';
-    document.querySelector('.js-space-popup--add').innerHTML = '';
-    document.querySelector('.js-space-popup--web').innerHTML = '';
-    document.querySelector('.js-space-popup--time').innerHTML = '';
-    document.querySelector('.js-space-popup--dotw').innerHTML = '';    
-    document.querySelector('.js-space-popup--map').innerHTML = '';
+      // setTimeout(function () {
+      //   const str = document.body.style.top;
+      //   const y = str.slice(1, -2);
+      //   window.scrollTo(0, y);
+      // }, 0);
+   
+      //いらんDom消す
+      document.body.classList.remove('space-popup');
+      document.body.classList.remove('space-popup');
+      document.querySelector('.section__space-popup--artist').innerHTML = '';
+      document.querySelector('.js__space-popup--area').innerHTML = '';
+      document.querySelector('.js__space-popup--name').innerHTML = '';
+      document.querySelector('.js-space-popup--info-img').src = '';
+      document.querySelector('.js-space-popup--catch').innerHTML = '';
+      document.querySelector('.js-space-popup--add').innerHTML = '';
+      document.querySelector('.js-space-popup--web').innerHTML = '';
+      document.querySelector('.js-space-popup--time').innerHTML = '';
+      // document.querySelector('.js-space-popup--dotw').innerHTML = '';
+      document.querySelector('.js-space-popup--map').innerHTML = '';
     }
   }
 }

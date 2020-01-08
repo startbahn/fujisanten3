@@ -10,7 +10,7 @@ window.onload = function () {
       document.querySelector('.section__space-popup').scrollTo(0, 0);
       var clickId = this.id; //クリックしたスペースの ID(slug)を取得する
       const fujisan = 'fujisanjson.json';
-  
+
       //json読み込み
       fetch(fujisan)
        .then(function (response) {
@@ -20,7 +20,7 @@ window.onload = function () {
 
       //Dom外枠アクセス
       let popupSpace = document.querySelector('.section__space-popup');
-        
+
       //テンプレ複製
       for (var i = 1; i < json.length; i++) {
         var clone = popupSpace.firstElementChild.cloneNode(true);

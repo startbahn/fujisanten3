@@ -906,6 +906,9 @@ section {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .section__news--list li a .section__news--list-time {
+    padding-bottom: 6px;
+  }
   .section__news--list li a h3 {
     margin: 0 0 15px;
   }
@@ -1875,7 +1878,7 @@ section {
   }
   .section__space-popup--detail div dd {
     width: auto;
-    max-width: 100%;
+    max-width: calc(100% - 80px);
   }
 }
 

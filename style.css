@@ -1858,8 +1858,14 @@ section {
     display: block;
   }
   .section__space-popup--info-img {
-    width: 100%;
+    width: 100% !important;
     padding-top: 82.2%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .section__space-popup--info-img img {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .section__space-popup--info-txt {
     width: 100%;

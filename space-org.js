@@ -50,6 +50,8 @@ window.onload = function () {
           spaceTime.innerHTML = json.spaceJson[i].date;
           spaceCatch.innerHTML = json.spaceJson[i].description.replace(/\n/g,"<br />");
           spaceImg.src = json.spaceJson[i].bannerImage;
+          
+          
 
           //slug no　と　orgのslugを判定
           // let edges = json.data.fairChannels.edges;
@@ -86,9 +88,15 @@ window.onload = function () {
       //popupのスペースに参加アーティスト取得
       for (var t = 0; t < json.artistJson.length; t++) {
         let aId = json.artistJson[t].spaceId;
+        let art = json.artistJson[t].art;
+
         if (aId == clickId) {
-          let list = document.createElement('li');
+          let list = document.createElement('a');
           list.innerHTML = json.artistJson[t].artistName ;
+          if (art !== null) {
+            list.href = json.artistJson[t].art;
+            list.setAttribute('target', '_blank'); 
+          }
           spaceArtist.appendChild(list);
           }
         }}

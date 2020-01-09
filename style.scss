@@ -932,7 +932,7 @@ section {
           overflow: hidden;
         }
         img {
-          width:100%;
+          width: 100%;
           height: auto;
         }
         h4 {
@@ -990,9 +990,9 @@ section {
         // }
         li:nth-child(1)::before {
           font-size: 14px;
-          content:'\f3c5';
-          font-family:'Font Awesome 5 Free';
-          font-weight:900;
+          content: '\f3c5';
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
           margin: 0 8px 0 2px;
         }
       }
@@ -1014,9 +1014,9 @@ section {
       width: 100%;
       max-width: 100%;
       overflow-y: scroll;
-      -ms-overflow-style: none;    /* IE, Edge 対応 */
-      scrollbar-width: none;       /* Firefox 対応 */
-      &::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+      -ms-overflow-style: none;/* IE, Edge 対応 */
+      scrollbar-width: none; /* Firefox 対応 */
+      &::-webkit-scrollbar { /* Chrome, Safari 対応 */
         display:none;
       }
       @media only screen and (max-width: 768px){
@@ -1218,7 +1218,7 @@ section {
         font-size: 15px;
         margin-bottom: -20px;
         margin-right: -20px;
-        li {
+        a {
           display: flex;
           align-items: center;
           width: 33%;
@@ -1296,7 +1296,7 @@ section {
   filter: grayscale(1);
 }
 .acd-check,
-.acd-check{
+.acd-check {
   display: none;
 }
 
@@ -1366,10 +1366,10 @@ section {
           width: 50%;
       }
       //空きを均等割りで最終行を左寄せにするためのbefore after
-      &:before{
-        order:1;
+      &:before {
+        order: 1;
       }
-      &:after{
+      &:after {
         width: 50%;
       }
     }
@@ -1479,7 +1479,7 @@ section {
       }
     }
     &__space-popup--artist{
-      li {
+      a {
         width: 48%;
       }
     }
@@ -1495,7 +1495,7 @@ section {
     font-size: 14px;
     text-align: right;
     &:before {
-      content:"もっと読む ↓";
+      content: "もっと読む ↓";
       color: #fff;
       display: block;
       margin-bottom: 1px;
@@ -1511,7 +1511,7 @@ section {
     visibility: hidden;
   }
   .acd-check:checked + .acd-label:before {
-    content:"閉じる ↑";
+    content: "閉じる ↑";
 
   }
   .acd-check:checked + .acd-label + .section__about--pullwrap{
@@ -1536,20 +1536,20 @@ section {
       overflow: hidden;
     }
     &__event--list li a h3 {
-      font-size:14px!important;
+      font-size: 14px!important;
     }
     &__event--list-text {
       margin-top: 5px!important;
     }
     &__event--list li a p {
-      font-size:12px!important;
+      font-size: 12px!important;
     }
-    &__picker--wrap{
+    &__picker--wrap {
       flex-wrap: wrap;
       width: 100%;
       padding-right: 0;
     }
-    &__picker--person{
+    &__picker--person {
       display: block;
       padding: 30px 50px 0 50px;
       margin: 0;
@@ -1727,9 +1727,9 @@ section {
         }
       }
     }
-    &__space-popup--artist{
+    &__space-popup--artist {
       display: block;
-      li {
+      a {
         width: 100%;
       }
     }

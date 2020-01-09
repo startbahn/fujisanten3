@@ -611,7 +611,7 @@ section {
           background: #4c2ee5;
           color :#fff;
           padding: 3px;
-          > p{
+          > p {
             line-height: 1.4;
             font-size: 15px;
           }
@@ -728,7 +728,7 @@ section {
     li a {
       width: 100%;
       overflow: hidden;
-      display:  flex;
+      display: flex;
       justify-content: flex-start;
       align-items: center;
       margin-bottom: 30px;
@@ -796,7 +796,7 @@ section {
     }
     li a {
       width: 100%;
-      display:  flex;
+      display: flex;
       justify-content: flex-start;
       align-items: center;
       margin-bottom: 30px;
@@ -808,7 +808,7 @@ section {
       overflow: hidden;
       &:hover {
         background: #fff;
-        color:#4c2ee5;   
+        color: #4c2ee5;   
       }
       img {
         width: 252px;
@@ -829,7 +829,7 @@ section {
         font-family: ゴシックMB101 M, Gothic MB101 Medium;
         display: -webkit-box;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp:１;
+        -webkit-line-clamp: 1;
         overflow: hidden;
       }
       p {
@@ -901,13 +901,13 @@ section {
       flex-wrap: wrap;
 
       //空きを均等割りで最終行を左寄せにするため
-      &:before{
-        content:"";
+      &:before {
+        content: "";
         display: block;
         width: 33%;
-        order:1;
+        order: 1;
       }
-      &:after{
+      &:after {
         content:"";
         display: block;
         width: 33%;

@@ -984,7 +984,7 @@ section {
   font-family: ゴシックMB101 M, Gothic MB101 Medium;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: １;
+  -webkit-line-clamp: 1;
   overflow: hidden;
 }
 

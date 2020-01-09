@@ -215,7 +215,7 @@
       "channel": "https://startbahn.org/channels/6deda4884a67090c168f",
       "slug": "6deda4884a67090c168f",
       "web": "https://rocket.tokyo/",
-      "description": "「富士山展3.0」 \n会期：1月14日(火)～1月17日(金)\n参加作家：sui、悠太、平林瑚夏、濱口瑛士、Mei Wada、金澤洋輝(gutara)、Kanei Yamaoak、松井大和、仲川 珠生、いぬこ、磯野大樹、住人K、yamada\n\n会場：\n〒153-0041 東京都目黒区駒場３丁目８−１東京大学先端科学技術研究センター\nROCKET HOUSE\n地図はこちら：https://www.rcast.u-tokyo.ac.jp/content/000010071.pdf\nhttps://rocket.tokyo/",
+      "description": "「富士山展3.0」 \n会期：1月14日(火)～1月17日(金)\n参加作家：sui、悠太、平林瑚夏、濱口瑛士、Mei Wada、金澤洋輝(gutara)、Kanei Yamaoak、松井大和、仲川 珠生、いぬこ、磯野大樹、常山心、yamada\n\n会場：\n〒153-0041 東京都目黒区駒場３丁目８−１東京大学先端科学技術研究センター\nROCKET HOUSE\n地図はこちら：https://www.rcast.u-tokyo.ac.jp/content/000010071.pdf\nhttps://rocket.tokyo/",
       "bannerImage": "https://s3.startbahn.org/uploads/channel/banner_image/158/IMG_4379.JPG"
     },
     {
@@ -620,7 +620,7 @@
       "aslug": "3638fed21cfddd0a8414"
     },
     {
-      "spaceId": "s19",
+      "spaceId": "",
       "artistName": "住人K",
       "channel": null,
       "slug": null,
@@ -692,8 +692,8 @@
       "aslug": "2e795f1adf8190ba670d"
     },
     {
-      "spaceId": "",
-      "artistName": "",
+      "spaceId": "s19",
+      "artistName": "常山心",
       "channel": null,
       "slug": null,
       "account": "https://startbahn.org/e8bee78dc8caa7c18684",

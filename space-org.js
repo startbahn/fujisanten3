@@ -3,9 +3,6 @@ window.onload = function () {
 
   for (var i = 0; i < openElements.length; i++) {
     openElements[i].onclick = function () {
-      // var y = window.scrollY;
-      // document.body.style.top = `-` + y + `px`; 
-
       document.body.classList.add('space-popup');
       document.querySelector('.section__space-popup').scrollTo(0, 0);
       var clickId = this.id; //クリックしたスペースの ID(slug)を取得する
@@ -50,8 +47,6 @@ window.onload = function () {
           spaceTime.innerHTML = json.spaceJson[i].date;
           spaceCatch.innerHTML = json.spaceJson[i].description.replace(/\n/g,"<br />");
           spaceImg.src = json.spaceJson[i].bannerImage;
-          
-          
 
           //slug no　と　orgのslugを判定
           // let edges = json.data.fairChannels.edges;
@@ -109,11 +104,6 @@ window.onload = function () {
 
   for (var i = 0; i < closeElements.length; i++) {
     closeElements[i].onclick = function () {
-      // setTimeout(function () {
-      //   const str = document.body.style.top;
-      //   const y = str.slice(1, -2);
-      //   window.scrollTo(0, y);
-      // }, 0);
    
       //いらんDom消す
       document.body.classList.remove('space-popup');

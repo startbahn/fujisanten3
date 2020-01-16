@@ -3,6 +3,9 @@ window.onload = function () {
 
   for (var i = 0; i < openElements.length; i++) {
     openElements[i].onclick = function () {
+      // var y = window.scrollY;
+      // document.body.style.top = `-` + y + `px`; 
+
       document.body.classList.add('space-popup');
       document.querySelector('.section__space-popup').scrollTo(0, 0);
       var clickId = this.id; //クリックしたスペースの ID(slug)を取得する
@@ -33,7 +36,8 @@ window.onload = function () {
       let spaceTime = document.querySelector('.js-space-popup--time');
       let spaceDotw = document.querySelector('.js-space-popup--dotw');
       let spaceArtist = document.querySelector('.section__space-popup--artist');
-
+      let spaceChannel = document.querySelector('.js__space-popup--channel');
+        
       //space のjson
       for (var i in json.spaceJson) {      
         let sId = json.spaceJson[i].spaceId;
@@ -47,7 +51,8 @@ window.onload = function () {
           spaceTime.innerHTML = json.spaceJson[i].date;
           spaceCatch.innerHTML = json.spaceJson[i].description.replace(/\n/g,"<br />");
           spaceImg.src = json.spaceJson[i].bannerImage;
-
+          spaceChannel.href = json.spaceJson[i].channel;
+          
           //slug no　と　orgのslugを判定
           // let edges = json.data.fairChannels.edges;
           // for (let e = 0; e < edges.length; e++) {
@@ -84,14 +89,18 @@ window.onload = function () {
       for (var t = 0; t < json.artistJson.length; t++) {
         let aId = json.artistJson[t].spaceId;
         let art = json.artistJson[t].art;
+        let channel = json.artistJson[t].channel;
 
         if (aId == clickId) {
           let list = document.createElement('a');
-          list.innerHTML = json.artistJson[t].artistName ;
+          list.innerHTML = json.artistJson[t].artistName ;      
           if (art !== null) {
             list.href = json.artistJson[t].art;
             list.setAttribute('target', '_blank'); 
-          }
+          } else if (channel !== null) {
+            list.href = json.artistJson[t].channel;
+            list.setAttribute('target', '_blank'); 
+          } 
           spaceArtist.appendChild(list);
           }
         }}
@@ -104,19 +113,23 @@ window.onload = function () {
 
   for (var i = 0; i < closeElements.length; i++) {
     closeElements[i].onclick = function () {
+      // setTimeout(function () {
+      //   const str = document.body.style.top;
+      //   const y = str.slice(1, -2);
+      //   window.scrollTo(0, y);
+      // }, 0);
    
       //いらんDom消す
       document.body.classList.remove('space-popup');
-      document.body.classList.remove('space-popup');
       document.querySelector('.section__space-popup--artist').innerHTML = '';
-      document.querySelector('.js__space-popup--area').innerHTML = '';
+      document.querySelector('.js__space-popup--channel').href = '';
       document.querySelector('.js__space-popup--name').innerHTML = '';
       document.querySelector('.js-space-popup--info-img').src = '';
       document.querySelector('.js-space-popup--catch').innerHTML = '';
       document.querySelector('.js-space-popup--add').innerHTML = '';
       document.querySelector('.js-space-popup--web').innerHTML = '';
       document.querySelector('.js-space-popup--time').innerHTML = '';
-      // document.querySelector('.js-space-popup--dotw').innerHTML = '';
+      document.querySelector('.js-space-popup--dotw').innerHTML = '';
       document.querySelector('.js-space-popup--map').innerHTML = '';
     }
   }

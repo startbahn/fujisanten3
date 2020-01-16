@@ -664,7 +664,7 @@ section {
       padding-left: 110px;
     }
     &--indent8 {
-      padding-left: 140px;
+      padding-left: 144px;
     }
     .banner {
       display: flex;
@@ -689,16 +689,17 @@ section {
       background: #4c2ee5;
       font-size: 14px;
       text-decoration: none;
-      line-height: 20px;
-      position: relative;
-      color: #65FAD1 !important;
-      padding: 5px 20px 5px 3px;
+      line-height: 24px;
       margin-bottom: 8px;
-      a {
-        color: #65FAD1 !important;
-        text-decoration: underline;
+      padding-top: 4px;
+      p {
+        position: relative;
+        display: inline-block;
+        font-size: 14px;
+        color: #fff;
+        padding-right: 14px;
       }
-      &::after {
+      p::after {
         content: "/";
         color: #fff;
         text-align: center;
@@ -1260,6 +1261,31 @@ section {
   transform: translate(50%, 0);
   box-sizing: border-box;
 }
+.section__space-popup--btn {
+  margin-top: 10px;
+  line-height: 46px;
+  background: #4C2FE5;
+  color: #fff;
+  border-radius: 23px;
+  border: 1px solid #4C2FE5;
+  box-sizing: border-box;
+  text-align: center;
+  width: 160px;
+  font-size: 12px;
+  display: block;
+  text-decoration: none;
+  #section__space-popup--blank {
+      fill: #fff;
+   }
+  &:hover {
+    background: #fff;
+    color: #4C2FE5;
+    #section__space-popup--blank {
+      fill: #4C2FE5;
+   }
+  }
+   
+}
 .link__more {
   float: right;
   color: #fff;
@@ -1653,6 +1679,7 @@ section {
           padding-top: 82.2%;
           margin-right: 0;
           margin-bottom: 10px;
+          overflow: hidden;
           img {
             object-fit: cover;
             }

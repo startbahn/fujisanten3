@@ -64,6 +64,7 @@ html {
 body {
   line-height: 1;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 article, aside, details, figcaption, figure,
@@ -424,13 +425,14 @@ body {
     font-weight: 100;
     margin-bottom: 20px;
     li {
-      margin-bottom: 14px;
+      margin-bottom: 10px;
       &:last-child {
         margin: 20px 0 0;
       }
       a {
         color: #4c2ee5;
         text-decoration: none;
+        min-height: 32px;
         &.startbahn {
           display: flex;
           font-size: 14px;
@@ -576,7 +578,7 @@ section {
     }
   }
 
-  //About section style
+  /* ===== About section style ===== */
   &__about {
     padding-top: 190px;
     &--copy {
@@ -683,41 +685,241 @@ section {
         }
       }
     }
-    .section__about--bgblue{
-      display: inline-block !important;
+  }
+ 
+  &__bgblue {
+    display: inline-block !important;
+    font-size: 14px;
+    background: #4c2ee5;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 24px;
+    margin-bottom: 8px;
+    padding-top: 4px;
+    p {
+      position: relative;
+      display: inline-block;
       font-size: 14px;
-      background: #4c2ee5;
+      color: #fff;
+      padding-right: 14px;
+    }
+    p::after {
+      content: "/";
+      color: #fff;
+      text-align: center;
+      width: 20px;
+      display: inline-block;
+      line-height: 20px;
+      position: absolute;
+      z-index: 1001;
+      top: 50%;
+      margin-top: -10px;
+    }
+    &:last-child:after {
+      display: none;
+    }
+  }
+
+  /* ===== Selection Satelite 共通 style ===== */
+  &__selection,
+  &__satelite  {
+    &--exhibition {
+      margin-top: 60px;
+      &-title {
+        font-size: 24px!important;
+        line-height: 1;
+        padding: 3px;
+        font-family: ゴシックMB101 L, Gothic MB101 Light;
+        & .letter {
+          font-size: 24px!important;
+        }
+      }
+      &-txt {
+        font-size: 24px!important;
+        line-height: 1;
+        margin-bottom: 25px;
+        padding: 3px;
+        font-family: ゴシックMB101 L, Gothic MB101 Light;
+        & .letter {
+          font-size: 24px!important;
+        }
+      }
+      &-discription {
+        margin-top: 15px !important;
+        font-size: 14px !important;
+        line-height: 1.8 !important;
+      }
+      > div {
+        width: 100%;
+        font-family: ゴシックMB101 M, Gothic MB101 Medium;
+      }
+    }
+    &--txt {
+      margin-top: 30px;
+    }
+    &--artist {
       font-size: 14px;
       text-decoration: none;
       line-height: 24px;
       margin-bottom: 8px;
       padding-top: 4px;
-      p {
-        position: relative;
-        display: inline-block;
-        font-size: 14px;
-        color: #fff;
-        padding-right: 14px;
+      color: #fff;
+      margin-top: 30px;
+      div + div {
+        margin-top: 30px;
       }
-      p::after {
+      dt {
+        color:#fff;
+        display: inline-block;
+      }
+      dd {
+        color:#65FAD1;
+      }
+      span:after {
         content: "/";
         color: #fff;
-        text-align: center;
-        width: 20px;
+        width: 16px;
         display: inline-block;
-        line-height: 20px;
-        position: absolute;
-        z-index: 1001;
-        top: 50%;
-        margin-top: -10px;
-      }
-      &:last-child:after {
-        display: none;
+        text-align: center;
       }
     }
   }
 
-  //News section style
+  /* ===== Selection section style ===== */
+  &__selection {
+    &--exhibition {
+      &-discription {
+        color: #fff;
+      }
+    }
+    &--list3 {
+      margin-top: 90px;
+      padding-top: 90px;
+      border-top: 1px solid #d0d0d0;
+      width: 100%;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: stretch;
+      flex-wrap: wrap;
+       //空きを均等割りで最終行を左寄せにするため
+      &:before {
+        content: "";
+        display: block;
+        width: 33%;
+        order: 1;
+      }
+      &:after {
+        content:"";
+        display: block;
+        width: 33%;
+      }
+      &-txt {
+        font-size: 14px !important;
+        margin-top: 26px;
+        font-style: normal;
+        line-height: 1.64;
+        font-family: ゴシックMB101 L, Gothic MB101 Light;
+      }
+      &-artist {
+        font-size: 12px;
+        margin-top: 20px;
+        line-height: 18px;
+        dt {
+          &::before {
+            content: '■';
+            display: inline-block;
+          }
+        &::after {
+          content: '：';
+          display: inline-block;
+          }
+        }
+      }
+      > li {
+        width: 33%;
+        margin: 0 0 80px 0;
+        .section__selection--list3-inr {
+          width: 252px;
+          height: 100%;
+          margin: 0 auto;
+          overflow: hidden;
+          background: #4c2ee5;
+          color: #fff;
+          padding: 10px;
+          box-sizing: border-box;
+          font-family: ゴシックMB101 L, Gothic MB101 Light;
+          display: block;
+        }
+        .section__selection--list3-img {
+          width: 100%;
+          height: auto;
+          overflow: hidden;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+        h4 {
+          font-family: ゴシックMB101 M, Gothic MB101 Medium;
+          font-size: 15px;
+          line-height: 1.64;
+          position: relative;
+          margin-top: 34px;
+          &::after {
+            content: "";
+            height: 1px;
+            width: 100%;
+            background: #ccc;
+            display: block;
+            position: absolute;
+            top: -17px;
+            left: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+     &--selectbox {
+      margin-right: calc((100% - 756px)/6);
+      margin-left: calc((100% - 756px)/6);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 30px 10px 10px;
+      background: #4c2ee5;
+      padding: 10px;
+      color: #fff;
+      > div {
+        width: 46%;
+        > svg {
+          width: 100%;
+          max-width: 382px;
+        }
+        p {
+          font-size: 14px;
+        }
+        &:first-child {
+          order: 1;
+        }
+      }
+    }
+    &--address {
+      font-size: 15px;
+      margin: 30px 0;
+      line-height: 1.66;
+      address {
+        font-style: normal!important;
+      }
+    }
+  }
+
+  /* ===== Satelite section style ===== */
+  &__satelite {
+
+  }
+
+  /* ===== News section style ===== */
   &__news {
     padding: 300px 0;
     min-height: auto;
@@ -737,6 +939,7 @@ section {
       border-bottom: 1px solid #d0d0d0;
       text-decoration: none;
       transition: all 500ms;
+      color: #4c2ee5;
       &[href]:hover {
         .js-bg span.letter {
           color: #4c2ee5;
@@ -777,7 +980,8 @@ section {
       }
     }
   }
-  //News section style
+
+  /* ===== Event section style ===== */
   &__event {
     padding: 300px 0;
     min-height: auto;
@@ -849,7 +1053,7 @@ section {
     }
   }
 
-  //Space section style
+  /* ===== Space section style ===== */
   &__space {
     &--titleh3 {
       text-align: center;
@@ -890,6 +1094,32 @@ section {
         top: 50%;
         right: calc(-200% - 10px);
         display: block;
+      }
+    }
+    &--txt {    
+      font-size: 18px;
+      margin-top: 30px;
+      position: relative;
+      line-height: 1.6;
+      font-family: ゴシックMB101 L, Gothic MB101 Light;  
+      dt {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      dd {
+        word-break: break-all;
+        a {
+          display: inline;
+          color: cornflowerblue;         
+          &:hover {
+            text-decoration: none;
+          }
+          &[href]:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
       }
     }
     &--list3 {
@@ -1000,7 +1230,7 @@ section {
     } 
   }
 
-  //picker section style
+  /* ===== Picker section style ===== */
   &__picker {
     .section__inr {
       position: absolute;
@@ -1027,7 +1257,29 @@ section {
         left: auto;
       }
     }
+    &-pop {
+      border-radius: 25px;
+      background: #fff;
+      display: inline-block;
+      padding: 16px 25px 16px 25px;
+      color: #F53D6E;
+      font-size: 14px;
+      margin-top: 20px;
+      cursor: pointer;
+      box-sizing: border-box;
+      &:after {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-top: 1px solid #F53D6E;
+        border-right: 1px solid #F53D6E;
+        transform: rotate(45deg);
+        margin-left: 4px;
+      }
+    }
   }
+  
   &__picker--wrap {
     display: flex;
     width: calc(75% * 7); /* 人数　*/
@@ -1238,7 +1490,7 @@ section {
   }
 }
 
-// top space detail popup style
+/* ===== Space Popup section style ===== */
 .section__space-popup--inr {
   position: fixed;
   height: 0;
@@ -1275,8 +1527,8 @@ section {
   display: block;
   text-decoration: none;
   #section__space-popup--blank {
-      fill: #fff;
-   }
+    fill: #fff;
+  }
   &:hover {
     background: #fff;
     color: #4C2FE5;
@@ -1284,7 +1536,46 @@ section {
       fill: #4C2FE5;
    }
   }
-   
+}
+.closed-txt {
+  background: #F53C6E;
+  display: inline-block;
+  padding: 8px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+.icon-new {
+  font-style: italic;
+  font-weight: normal;
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 20px;
+  color: #F53C6E;
+  background: #fff;
+  margin-left: 8px;
+}
+.buy-btn {
+  border-radius: 30px;
+  background: #fff;
+  display: inline-block;
+  padding: 0px 25px;
+  color: #4C2FE5;
+  font-size: 14px;
+  margin-top: 10px;
+  height: 46px;
+  line-height: 46px;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 10px 0;
+  svg {
+    margin: 0 0 -1px 5px;
+  }
+  svg g { 
+    fill: #4C2FE5;
+  }
 }
 .link__more {
   float: right;
@@ -1324,6 +1615,40 @@ section {
 .acd-check,
 .acd-check {
   display: none;
+}
+.acd-label{
+  display: block;
+  font-size: 14px;
+  text-align: right;
+  &:before {
+    content: "もっと読む";
+    color: #fff;
+    display: block;
+    margin-bottom: 1px;
+    margin: 10px 20px;
+    padding-right: 20px;
+    background: url(images/icon_more.png) right center no-repeat;
+    background-size: 12px 12px;
+  }
+}
+.section__about--pullwrap{
+  overflow: hidden;
+  padding: 0;
+  height: 0;
+  opacity: 0;
+  transition: .5s;
+  visibility: hidden;
+}
+.acd-check:checked + .acd-label:before {
+  content: "閉じる";
+  background: url(images/icon_close.png) right center no-repeat;
+  background-size: 12px 12px;
+}
+.acd-check:checked + .acd-label + .section__about--pullwrap{
+  height: auto;
+  opacity: 1;
+  padding: 0;
+  visibility: visible;
 }
 
 //ニュース等 記事個別ページ style
@@ -1385,6 +1710,7 @@ section {
     &__space--titleh3 {
       font-size: 70px;
     }
+    &__selection--list3, 
     &__space--list3 {
       padding: 0;
       flex-wrap: wrap;
@@ -1427,6 +1753,10 @@ section {
       font-size: 60px;
     }
   }
+  .icon-new {
+    border:1px solid #F53C6E;
+    margin-top: 8px;
+  }
   .header {
     position: fixed;
     width: 100%;
@@ -1467,7 +1797,9 @@ section {
       margin-bottom: 10px;
       li {
         margin-bottom: 10px;
-        font-size: 50px;
+        font-size: 36px;
+        display: flex;
+        align-items: center;
         &:last-child {
           margin-top: 20px;
           font-size: 20px;
@@ -1515,36 +1847,6 @@ section {
   }
   .article__inr {
     padding: 0 50px;
-  }
-  .acd-label{
-    display: block;
-    font-size: 14px;
-    text-align: right;
-    &:before {
-      content: "もっと読む ↓";
-      color: #fff;
-      display: block;
-      margin-bottom: 1px;
-      padding: 10px;
-    }
-  }
-  .section__about--pullwrap{
-    overflow: hidden;
-    padding: 0;
-    height: 0;
-    opacity: 0;
-    transition: .5s;
-    visibility: hidden;
-  }
-  .acd-check:checked + .acd-label:before {
-    content: "閉じる ↑";
-
-  }
-  .acd-check:checked + .acd-label + .section__about--pullwrap{
-    height: auto;
-    opacity: 1;
-    padding: 0;
-    visibility: visible;
   }
 }
 
@@ -1611,6 +1913,7 @@ section {
         }     
       }
     }
+
     &__space--titleh3 {
       span {
         height: 50px;
@@ -1698,6 +2001,24 @@ section {
         }
       }
     }
+    &__selection {
+      box-sizing: border-box;
+      &--selectbox {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        > div {
+          width: 100%;
+          &:first-child {
+            margin-bottom: 40px;
+          }
+          > svg {
+            max-width: 100%;
+          }
+        }
+      }
+    }
   }
 }
 @media only screen and (max-width: 568px){
@@ -1734,6 +2055,7 @@ section {
         height: 30px;
       }
     }
+    &__selection--list3,
     &__space--list3 {
       &:before{
         width: 48%;
@@ -1744,10 +2066,12 @@ section {
       > li {
         position: relative;
         width: 48%;
+        .section__selection--list3-inr,
         .section__space--list3-inr {
           width: 100%;
           margin: 0 auto;
         }
+        .section__selection--list3-img,
         .section__space--list3-img {
           width: 100%;
           height: auto;       
@@ -1779,3 +2103,7 @@ body {
     }
   }
 }
+
+
+
+//pop 

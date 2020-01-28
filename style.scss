@@ -1331,6 +1331,110 @@ section {
 
   /* ===== Picker section style ===== */
   &__picker {
+    &--catch {
+      margin-top: 20px;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    &-pop {
+      // display: none;
+      position: relative;
+      .black-background {
+        position: fixed;
+        background: rgba(0,0,0, .4);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+      }
+      .section__picker-popup--inr {
+          position: fixed;
+          height: 0;
+          width: calc(100% - 40px);
+          max-width: 880px;
+          z-index: 100000;
+          top: 20px;
+          left: 50%;
+          -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+      }
+      &up {
+        color: #4C2FE5;
+        box-sizing: border-box;
+        padding: 40px;
+        background: #fff;
+        position: fixed;
+        z-index: 10000;
+        width: calc(100% - 40px);
+        max-width: 880px;
+        top: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 20px;
+        overflow-x: scroll;
+        
+        h2 {
+          font-size: 24px;
+          padding-right: 30px;
+        }
+        h3 {
+          font-size: 18px;
+          font-weight: normal;
+          margin-bottom: 25px;
+        }
+        &--select {
+          margin-top: 50px;
+          display: flex;
+          font-size: 14px;
+          overflow: hidden;
+          &-img {
+            margin-right: 60px;
+            width: 52.5%;
+            overflow: hidden;
+            img {
+              width: 100%;
+              top: 0;
+            }
+          }
+        }
+        &--art {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-wrap: wrap;
+          margin-bottom: -80px;
+          li {
+            width: calc((100% - 160px) / 3);
+            margin-right: 80px;
+            margin-bottom: 80px;
+            &:nth-child(3n) {
+              margin-right: 0;
+            }
+            img {
+              width: 100%;
+            }
+          }
+        }
+        &--channel {
+          display: inline-block;
+          margin-top: 16px;
+          font-size: 12px;
+          line-height: 18px;
+          text-decoration: underline;
+        }
+        &--comment {
+          font-size: 14px;
+          line-height: 29px;
+        }
+        &--txt {
+          width: calc(47.5% - 60px);   
+        }
+      }
+    }
+
+
+
     .section__inr {
       position: absolute;
       top: 50%;
@@ -1356,7 +1460,7 @@ section {
         left: auto;
       }
     }
-    &-pop {
+    .btn__picker-pop {
       border-radius: 25px;
       background: #fff;
       display: inline-block;

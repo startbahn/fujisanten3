@@ -1,5 +1,6 @@
 window.onload = function () {
   var openElements = document.getElementsByClassName("ls-space-pup-open");
+  var selectElements = document.getElementsByClassName("ls-picker-pup-open");
 
   for (var i = 0; i < openElements.length; i++) {
     openElements[i].onclick = function () {
@@ -133,4 +134,92 @@ window.onload = function () {
       document.querySelector('.js-space-popup--map').innerHTML = '';
     }
   }
+
+
+for (var s = 0; s < selectElements.length; s++) {
+  selectElements[s].onclick = function () {
+
+    document.body.classList.add('picker-popup');
+    //document.querySelector('.section__pickere-popup').scrollTo(0, 0);
+    var clickPId = this.id; //クリックしたスペースの ID(slug)を取得する
+    const picker = 'pickerjson.json';
+
+    //json読み込み
+    fetch(picker)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (json) {
+
+        //Dom外枠アクセス
+        let popupPicker = document.querySelector('.section__picker-popup');
+
+        //テンプレ複製
+        for (var p = 1; p < json.length; p++) {
+          var clone = popupPicker.firstElementChild.cloneNode(true);
+          popupPicker.appendChild(clone);
+        }
+
+        let pickerImg = document.querySelector('.js__picker--select-img');
+        let pickerTitle = document.querySelector('.js-picker--title');
+        let pickerSize = document.querySelector('.js-picker--size');
+        let pickerName = document.querySelector('.js-picker--name');
+        let pickerChannel = document.querySelector('.js__picker-popup--channel');
+        let pickerComment = document.querySelector('.js-picker-popup--comment');
+
+        //space のjson
+        for (var p in json.pickerJson) {
+          let pId = json.pickerJson[p].id;
+
+          //クリックしたspaceのID一致するIDのjson取得しDom生成
+          if (pId == clickPId) {
+            pickerImg.src = json.pickerJson[p].img;
+            pickerTitle.innerHTML = json.pickerJson[p].title;
+            pickerSize.innerHTML = json.pickerJson[p].size;
+            pickerName.innerHTML = json.pickerJson[p].name;
+            pickerComment.innerHTML = json.pickerJson[p].comment;
+          }
+        }
+
+        //popupのスペースに参加アーティスト取得
+        // for (var t = 0; t < json.selectJson.length; t++) {
+        //   let pId = json.selectJson[t].id;
+        //   let channel = json.selectJson[t].channel;
+        //   console.log(pId);
+
+        //   if (seId == clickId) {
+        //     let list = document.createElement('a');
+        //     list.innerHTML = json.selectJson[t].artistName ;      
+        //     }
+        //   }
+      }
+      );
+  }
+}
+
+//popup window close　
+var closeElements2 = document.getElementsByClassName("ls-picker-pup-close");
+
+for (var s = 0; s < closeElements2.length; s++) {
+  closeElements2[s].onclick = function () {
+    // setTimeout(function () {
+    //   const str = document.body.style.top;
+    //   const y = str.slice(1, -2);
+    //   window.scrollTo(0, y);
+    // }, 0);
+
+    //いらんDom消す
+    document.body.classList.remove('picker-popup');
+    // document.querySelector('.section__space-popup--artist').innerHTML = '';
+    // document.querySelector('.js__space-popup--channel').href = '';
+    // document.querySelector('.js__space-popup--name').innerHTML = '';
+    // document.querySelector('.js-space-popup--info-img').src = '';
+    // document.querySelector('.js-space-popup--catch').innerHTML = '';
+    // document.querySelector('.js-space-popup--add').innerHTML = '';
+    // document.querySelector('.js-space-popup--web').innerHTML = '';
+    // document.querySelector('.js-space-popup--time').innerHTML = '';
+    // document.querySelector('.js-space-popup--dotw').innerHTML = '';
+    // document.querySelector('.js-space-popup--map').innerHTML = '';
+  }
+}
 }

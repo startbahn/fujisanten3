@@ -171,23 +171,6 @@ body {
   }
 }
 
-// top popup 表示style
-body {
-  &.select-pop {
-    height: 100%;
-    overflow: hidden;
-    .selection__popup {
-      display: block;
-    }
-  }
-  &.space-popup {
-    height: 100%;
-    overflow: hidden;
-    .section__space-pop {
-      display: block;
-    }
-  }
-}
 
 /* ================================== 
 3 Elements
@@ -268,6 +251,24 @@ body {
           background-color: #4c2ee5;
         }
       }
+    }
+    .css-bg {//ios　サファリのため
+      background-color: #4c2ee5;
+      line-height: 1.8;
+      display: inline;
+      padding: 6px 0;
+      font-weight: 100;
+      font-size: 14px;
+      color: #fff;
+      &:after {
+        content:"";
+        display: block;
+        height: 20px;
+      }
+    }
+    a[href]:hover .css-bg {
+      background-color: #fff;
+      color: #4c2ee5;
     }
   }
   &.red {
@@ -387,6 +388,23 @@ body {
           background-color: #65FAD1;
         }
       }
+    }
+    .css-bg {
+      background-color: #65FAD1;
+      line-height: 1.8;
+      display: inline;
+      padding: 6px 0;
+      font-weight: normal !important;
+      font-size: 14px;
+      font-family: ゴシックMB101 M, Gothic MB101 Medium;
+      &:after {
+        content:"";
+        display: block;
+        height: 20px;
+      }
+    }
+    a[href]:hover .css-bg {
+      background-color: #fff;
     }
   }
   .section__space--list3-inr:hover {
@@ -621,7 +639,7 @@ section {
       margin-left: 30px;
       font-weight: 100;
       font-size: 110px;
-      z-index: 102;
+      z-index: 98;
       align-self: flex-end;
       transition: all 1500ms;
     }
@@ -1331,13 +1349,13 @@ section {
 
   /* ===== Picker section style ===== */
   &__picker {
-    &--catch {
+    &--detail {
       margin-top: 20px;
       font-size: 12px;
       line-height: 18px;
     }
     &-pop {
-      // display: none;
+      display: none;
       position: relative;
       .black-background {
         position: fixed;
@@ -1877,6 +1895,7 @@ section {
     a {
       color: #65FAD1;
       text-decoration: none;
+      word-break: break-all;
       &:hover {
         text-decoration: underline;
       }
@@ -1888,6 +1907,11 @@ section {
     img {
       width: 100%;
     }
+  }
+  .section__news--list li a h3  {
+    background: #65F8CE;
+    display: inline;
+    font-size: 14px;
   }
 }
 
@@ -1907,6 +1931,9 @@ section {
         }     
       }
     }
+  }
+    .section__news--list li a h3  { //iphone サファリバグ用泣く泣く
+    font-size: 14px!important;
   }
 }
 
@@ -2119,6 +2146,7 @@ section {
 }
 
 @media only screen and (max-width: 768px){
+
 
   .selection__popup {
     overflow: hidden;
@@ -2387,9 +2415,23 @@ section {
 }
 
 
-
-
-
-
-
-//pop 
+// top popup 表示style
+body {
+  &.picker-popup {
+    height: 100%;
+    overflow: hidden;
+    .section__picker-pop {
+      display: block;
+    }
+    .section__picker .section__inr {
+      overflow-y: hidden;
+    }
+  }
+  &.space-popup {
+    height: 100%;
+    overflow: hidden;
+    .section__space-pop {
+      display: block;
+    }
+  }
+}

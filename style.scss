@@ -269,6 +269,24 @@ body {
         }
       }
     }
+    .css-bg {//ios　サファリのため
+      background-color: #4c2ee5;
+      line-height: 1.8;
+      display: inline;
+      padding: 6px 0;
+      font-weight: 100;
+      font-size: 14px;
+      color: #fff;
+      &:after {
+        content:"";
+        display: block;
+        height: 20px;
+      }
+    }
+    a[href]:hover .css-bg {
+      background-color: #fff;
+      color: #4c2ee5;
+    }
   }
   &.red {
     &.is-show {
@@ -387,6 +405,23 @@ body {
           background-color: #65FAD1;
         }
       }
+    }
+    .css-bg {
+      background-color: #65FAD1;
+      line-height: 1.8;
+      display: inline;
+      padding: 6px 0;
+      font-weight: normal !important;
+      font-size: 14px;
+      font-family: ゴシックMB101 M, Gothic MB101 Medium;
+      &:after {
+        content:"";
+        display: block;
+        height: 20px;
+      }
+    }
+    a[href]:hover .css-bg {
+      background-color: #fff;
     }
   }
   .section__space--list3-inr:hover {
@@ -621,7 +656,7 @@ section {
       margin-left: 30px;
       font-weight: 100;
       font-size: 110px;
-      z-index: 102;
+      z-index: 98;
       align-self: flex-end;
       transition: all 1500ms;
     }
@@ -1773,6 +1808,7 @@ section {
     a {
       color: #65FAD1;
       text-decoration: none;
+      word-break: break-all;
       &:hover {
         text-decoration: underline;
       }
@@ -1784,6 +1820,11 @@ section {
     img {
       width: 100%;
     }
+  }
+  .section__news--list li a h3  {
+    background: #65F8CE;
+    display: inline;
+    font-size: 14px;
   }
 }
 
@@ -1803,6 +1844,9 @@ section {
         }     
       }
     }
+  }
+    .section__news--list li a h3  { //iphone サファリバグ用泣く泣く
+    font-size: 14px!important;
   }
 }
 
@@ -2015,6 +2059,7 @@ section {
 }
 
 @media only screen and (max-width: 768px){
+
 
   .selection__popup {
     overflow: hidden;

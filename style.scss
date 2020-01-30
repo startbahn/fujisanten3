@@ -171,7 +171,6 @@ body {
   }
 }
 
-
 /* ================================== 
 3 Elements
 ================================== */
@@ -2147,7 +2146,6 @@ section {
 
 @media only screen and (max-width: 768px){
 
-
   .selection__popup {
     overflow: hidden;
     &--inr {
@@ -2160,8 +2158,6 @@ section {
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       overflow-x: hidden;
-
-      
       .selection__popup--txt {
         padding: 30px 10px 10px 10px;
         .btn__close {
@@ -2413,7 +2409,6 @@ section {
     padding: 0 50px;
   }
 }
-
 
 // top popup 表示style
 body {

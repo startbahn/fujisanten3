@@ -177,22 +177,19 @@ for (var s = 0; s < selectElements.length; s++) {
 
         //popupのスペースに参加アーティスト取得
         for (var s = 0; s < json.selectJson.length; s++) {
-          let seId = json.selectJson[s].selectid;
+          let seId = json.selectJson[s].id;
           let pickerSImg = document.querySelector('.js__picker--select-img');
           let pickerSTitle = document.querySelector('.js-picker--select--title');
           let pickerSSize = document.querySelector('.js-picker--select--size');
           let pickerSName = document.querySelector('.js-picker--select--name');
-
-
-          console.log(seId);
-          console.log(clickPId);
           
           if (seId == clickId) {
-           
-
-            // let list = document.createElement('a');
-            // pickerSImg.src = json.selectJson[s].selectimg;
-            // list.innerHTML = json.selectJson[s].artistName ;
+            console.log(seId);
+            console.log(clickPId);
+            
+            let list = document.createElement('a');
+            pickerSImg.src = json.selectJson[s].selectimg;
+            list.innerHTML = json.selectJson[s].artistName ;
             }
           }
         }

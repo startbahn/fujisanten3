@@ -111,14 +111,8 @@ window.onload = function () {
 
   //popup window close　
   var closeElements = document.getElementsByClassName("ls-space-pup-close");
-
   for (var i = 0; i < closeElements.length; i++) {
     closeElements[i].onclick = function () {
-      // setTimeout(function () {
-      //   const str = document.body.style.top;
-      //   const y = str.slice(1, -2);
-      //   window.scrollTo(0, y);
-      // }, 0);
    
       //いらんDom消す
       document.body.classList.remove('space-popup');
@@ -135,12 +129,12 @@ window.onload = function () {
     }
   }
 
-
+  //Picker select
 for (var s = 0; s < selectElements.length; s++) {
   selectElements[s].onclick = function () {
 
     document.body.classList.add('picker-popup');
-    //document.querySelector('.section__pickere-popup').scrollTo(0, 0);
+    document.querySelector('.section__picker-popup').scrollTo(0, 0);
     var clickPId = this.id; //クリックしたスペースの ID(slug)を取得する
     const picker = 'pickerjson.json';
 
@@ -182,44 +176,46 @@ for (var s = 0; s < selectElements.length; s++) {
         }
 
         //popupのスペースに参加アーティスト取得
-        // for (var t = 0; t < json.selectJson.length; t++) {
-        //   let pId = json.selectJson[t].id;
-        //   let channel = json.selectJson[t].channel;
-        //   console.log(pId);
+        for (var s = 0; s < json.selectJson.length; s++) {
+          let seId = json.selectJson[s].selectid;
+          let pickerSImg = document.querySelector('.js__picker--select-img');
+          let pickerSTitle = document.querySelector('.js-picker--select--title');
+          let pickerSSize = document.querySelector('.js-picker--select--size');
+          let pickerSName = document.querySelector('.js-picker--select--name');
 
-        //   if (seId == clickId) {
-        //     let list = document.createElement('a');
-        //     list.innerHTML = json.selectJson[t].artistName ;      
-        //     }
-        //   }
-      }
+
+          console.log(seId);
+          console.log(clickPId);
+          
+          if (seId == clickId) {
+           
+
+            // let list = document.createElement('a');
+            // pickerSImg.src = json.selectJson[s].selectimg;
+            // list.innerHTML = json.selectJson[s].artistName ;
+            }
+          }
+        }
       );
+    }
   }
-}
 
-//popup window close　
-var closeElements2 = document.getElementsByClassName("ls-picker-pup-close");
+  //popup window close　
+  var closeElements2 = document.getElementsByClassName("ls-picker-pup-close");
 
-for (var s = 0; s < closeElements2.length; s++) {
-  closeElements2[s].onclick = function () {
-    // setTimeout(function () {
-    //   const str = document.body.style.top;
-    //   const y = str.slice(1, -2);
-    //   window.scrollTo(0, y);
-    // }, 0);
+  for (var s = 0; s < closeElements2.length; s++) {
+    closeElements2[s].onclick = function () {
+      // setTimeout(function () {
+      //   const str = document.body.style.top;
+      //   const y = str.slice(1, -2);
+      //   window.scrollTo(0, y);
+      // }, 0);
 
-    //いらんDom消す
-    document.body.classList.remove('picker-popup');
-    // document.querySelector('.section__space-popup--artist').innerHTML = '';
-    // document.querySelector('.js__space-popup--channel').href = '';
-    // document.querySelector('.js__space-popup--name').innerHTML = '';
-    // document.querySelector('.js-space-popup--info-img').src = '';
-    // document.querySelector('.js-space-popup--catch').innerHTML = '';
-    // document.querySelector('.js-space-popup--add').innerHTML = '';
-    // document.querySelector('.js-space-popup--web').innerHTML = '';
-    // document.querySelector('.js-space-popup--time').innerHTML = '';
-    // document.querySelector('.js-space-popup--dotw').innerHTML = '';
-    // document.querySelector('.js-space-popup--map').innerHTML = '';
+      //いらんDom消す
+      document.body.classList.remove('picker-popup');
+      // document.querySelector('.section__space-popup--artist').innerHTML = '';
+      // document.querySelector('.js__space-popup--channel').href = '';
+
+    }
   }
-}
 }

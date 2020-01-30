@@ -66,7 +66,7 @@
   ],
   "selectJson": [
     {
-      "id": "p02",
+      "selectid": "p02",
       "selectimg": "https://bownd.s3.amazonaws.com/uploads/picture/image/965/noguchi_1912_02_01.jpg",
       "selecttitle": "富士百景 紅富士",
       "selectsize": "60x60x60mm",
@@ -74,7 +74,7 @@
       "selecturl": "https://www.b-ownd.com/works/414?from=/artists/8jltZx/works"
     },
     {
-      "id": "p02",
+      "selectid": "p02",
       "selectimg": "https://s3.startbahn.org/uploads/picture/image/16f31922a7c14e/startbahn_image_.jpg",
       "selecttitle": "富士とブルーハワイ",
       "selectsize": "120x120x50mm",
@@ -82,7 +82,7 @@
       "selecturl": "https://startbahn.org/works/7280"
     },
     {
-      "id": "p02",
+      "selectid": "p02",
       "selectimg": "https://s3.startbahn.org/uploads/picture/image/16f357c3565380/startbahn_image_.JPG",
       "selecttitle": "WAVE OF LIGHT",
       "selectsize": "-",
@@ -90,7 +90,7 @@
       "selecturl": "https://startbahn.org/works/2461"
     },
     {
-      "id": "p06",
+      "selectid": "p06",
       "selectimg": "https://s3.startbahn.org/uploads/picture/image/16f357c3565380/startbahn_image_.JPG",
       "selecttitle": "WAVE OF LIGHT",
       "selectsize": "-",

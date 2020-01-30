@@ -127,7 +127,31 @@ function changeColorsClass(str){
   document.body.classList.add(str);
 }
 
+function unholdScroll() {
+  intersected = false;
+  document.body.classList.remove('stop');
+  document.removeEventListener('mousewheel', stopScrolling, {passive: false});
+  picker.removeEventListener('mousewheel', changeDirection);
+}
 
+function reholdScroll() {
+  intersected = true;
+  document.body.classList.add('stop');
+  picker.addEventListener('mousewheel', changeDirection);
+  document.addEventListener('mousewheel', stopScrolling, {passive: false});
+}
+
+Array.from(document.querySelectorAll('.btn__picker-pop')).map(function(ele){
+  ele.addEventListener('click', function(){
+    unholdScroll();
+  });
+})
+
+Array.from(document.querySelectorAll('.ls-picker-pup-close')).map(function(ele){
+  ele.addEventListener('click', function(){
+    reholdScroll();
+  });
+})
 
 window.addEventListener('scroll', function(){
   // console.log(window.pageYOffset, picker.offsetTop, pickerWrap.scrollLeft, ( pickerInner.getBoundingClientRect().width - window.innerWidth));
@@ -171,7 +195,7 @@ navLinks.forEach(function(link){
     document.body.classList.remove('stop');
     document.removeEventListener('mousewheel', stopScrolling, {passive: false});
     picker.removeEventListener('mousewheel', changeDirection);
-  })
+  });
 });
 
 var navlist = document.querySelectorAll('.header__nav--list li');
@@ -184,7 +208,7 @@ navlist.forEach(function(nav){
     } else {
       document.getElementById('js-show-popup-btn').innerHTML = 'MENU';
     }
-  })
+  });
 })
 
 // FIXME: Resize時の対応

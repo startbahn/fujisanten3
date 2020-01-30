@@ -146,7 +146,7 @@ for (var s = 0; s < selectElements.length; s++) {
       .then(function (json) {
 
         //Dom外枠アクセス
-        let popupPicker = document.querySelector('.section__picker-popup');
+        let popupPicker = document.querySelector('.section__picker-pop');
 
         //テンプレ複製
         for (var p = 1; p < json.length; p++) {
@@ -177,20 +177,22 @@ for (var s = 0; s < selectElements.length; s++) {
 
         //popupのスペースに参加アーティスト取得
         for (var s = 0; s < json.selectJson.length; s++) {
-          let seId = json.selectJson[s].id;
-          let pickerSImg = document.querySelector('.js__picker--select-img');
-          let pickerSTitle = document.querySelector('.js-picker--select--title');
-          let pickerSSize = document.querySelector('.js-picker--select--size');
-          let pickerSName = document.querySelector('.js-picker--select--name');
-          
-          if (seId == clickId) {
-            console.log(seId);
-            console.log(clickPId);
-            
-            let list = document.createElement('a');
-            pickerSImg.src = json.selectJson[s].selectimg;
-            list.innerHTML = json.selectJson[s].artistName ;
+          let seId = json.selectJson[s].selectid;
+          let pickerSubTItle = document.querySelector('.js__picker--select-subttl');
+          let pickerArt = document.querySelector('.section__picker-popup--art');
+          let pickerSImg = json.selectJson[s].selectimg;
+          let pickerSTitle = json.selectJson[s].selecttitle;
+          let pickerSName = json.selectJson[s].selectname;
+          let pickerSSize = json.selectJson[s].selectsize;
+          let pickerSUrl = json.selectJson[s].selecturl;
+
+          if (seId == clickPId) {
+            pickerSubTItle.innerHTML = 'PICKER’S SELECTION';
+            for (var m = 0; m < seId.length; m++) {
+              pickerArt.innerHTML = '<li><img src="' + pickerSImg + '" alt="' + pickerSTitle + '"><ul class="section__picker--detail"><li class="js-picker--select--title">' + pickerSTitle + '</li><li class="js-picker--select--size">' + pickerSSize + '</li><li class="js-picker--select--name">' + pickerSName + '</li></ul><a href="' + pickerSUrl + '" class="js__picker-popup--select--channel section__picker-popup--channel" target="_blank">作品を見る</a></li>';
+
             }
+            } 
           }
         }
       );
@@ -202,17 +204,18 @@ for (var s = 0; s < selectElements.length; s++) {
 
   for (var s = 0; s < closeElements2.length; s++) {
     closeElements2[s].onclick = function () {
-      // setTimeout(function () {
-      //   const str = document.body.style.top;
-      //   const y = str.slice(1, -2);
-      //   window.scrollTo(0, y);
-      // }, 0);
 
       //いらんDom消す
       document.body.classList.remove('picker-popup');
-      // document.querySelector('.section__space-popup--artist').innerHTML = '';
-      // document.querySelector('.js__space-popup--channel').href = '';
 
+      document.querySelector('.js__picker--select-img').innerHTML = '';
+      document.querySelector('.js-picker--title').innerHTML = '';
+      document.querySelector('.js-picker--size').innerHTML = '';
+      document.querySelector('.js-picker--name').innerHTML = '';
+      document.querySelector('.js__picker--select-subttl').innerHTML = '';
+      document.querySelector('.js__picker-popup--channel').innerHTML = '';
+      document.querySelector('.js-picker-popup--comment').innerHTML = '';
+      document.querySelector('.section__picker-popup--art').innerHTML = '';
     }
   }
 }

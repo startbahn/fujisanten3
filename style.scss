@@ -1873,7 +1873,7 @@ section {
   visibility: visible;
 }
 
-//ニュース等 記事個別ページ style
+//ニュース等 記事個別ページ style 
 .article {
   &__inr {
     max-width: 1010px;
@@ -1883,13 +1883,42 @@ section {
   &__title {
     font-size: 24px;
     margin-bottom: 30px;
+    line-height: 1.5;
   }
   &__content {
     margin: 0 40px;
     color: #fff;
-   > p {
-      margin-bottom: 37px;
-      line-height: 1.5;
+    h2 {
+      margin: 50px 0 20px;
+      font-size: 24px;
+      line-height: 1.4;
+    }
+    h3 {
+      margin: 40px 0 15px;
+      font-size: 22px;
+      line-height: 1.4;
+    }
+    p {
+      margin-bottom: 20px;
+      line-height: 1.7;
+      font-family: ゴシックMB101 L, Gothic MB101 Light;
+      &.note {
+        font-size: 12px;
+        padding-left: 12px;
+        position: relative;
+        &:after {
+          position: absolute;
+          content: "*";
+          width:12px;
+          text-align: center;
+          display: inline-block;
+          left: 0;
+          top: 2px;
+        }
+      }
+      & + .note {
+        margin-top: -16px;
+      }
     }
     a {
       color: #65FAD1;

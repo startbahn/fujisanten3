@@ -25,7 +25,6 @@ TABLE OF CONTENTS:
 	Widgets
 	Comments
 
-
 --------------------------------------------------------------*/
 /* ================================== 
 1. Resset 
@@ -167,24 +166,6 @@ body {
       bottom: -8px;
       left: 0;
       z-index: -1;
-    }
-  }
-}
-
-// top popup 表示style
-body {
-  &.select-pop {
-    height: 100%;
-    overflow: hidden;
-    .selection__popup {
-      display: block;
-    }
-  }
-  &.space-popup {
-    height: 100%;
-    overflow: hidden;
-    .section__space-pop {
-      display: block;
     }
   }
 }
@@ -415,7 +396,7 @@ body {
       font-size: 14px;
       font-family: ゴシックMB101 M, Gothic MB101 Medium;
       &:after {
-        content:"";
+        content:　"";
         display: block;
         height: 20px;
       }
@@ -518,6 +499,8 @@ body {
       text-decoration: none;
       svg {
         transition: all 1500ms;
+        width: 118px;
+        height: 154px;
       }
     }
   }
@@ -1366,6 +1349,111 @@ section {
 
   /* ===== Picker section style ===== */
   &__picker {
+    &--detail {
+      margin-top: 20px;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    &-pop {
+      display: none;
+      position: relative;
+      .black-background {
+        position: fixed;
+        background: rgba(0,0,0, .4);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+      }
+      .section__picker-popup--inr {
+          position: fixed;
+          height: 0;
+          width: calc(100% - 40px);
+          max-width: 880px;
+          z-index: 100000;
+          top: 20px;
+          left: 50%;
+          -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+      }
+      &up {
+        color: #4C2FE5;
+        box-sizing: border-box;
+        padding: 40px;
+        background: #fff;
+        position: fixed;
+        z-index: 10000;
+        width: calc(100% - 40px);
+        max-width: 880px;
+        top: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 20px;
+        overflow-x: scroll;
+        
+        h2 {
+          font-size: 24px;
+          padding-right: 30px;
+        }
+        h3 {
+          font-size: 18px;
+          font-weight: normal;
+          margin-bottom: 25px;
+        }
+        &--select {
+          margin: 50px 0 40px 0;
+          display: flex;
+          font-size: 14px;
+          overflow: hidden;
+          &-img {
+            margin-right: 60px;
+            width: 52.5%;
+            overflow: hidden;
+            img {
+              width: 100%;
+              top: 0;
+            }
+          }
+        }
+      
+        &--art {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-wrap: wrap;
+          margin-bottom: -80px;
+          > li {
+            width: calc((100% - 160px) / 3);
+            margin-right: 80px;
+            margin-bottom: 80px;
+            &:nth-child(3n) {
+              margin-right: 0;
+            }
+            img {
+              width: 100%;
+            }
+          }
+        }
+        &--channel {
+          display: inline-block;
+          margin-top: 16px;
+          font-size: 12px;
+          line-height: 18px;
+          text-decoration: underline;
+          background: url(images/blank.png) right center no-repeat;
+          background-size: 16px 16px;
+          padding-right: 20px;;
+        }
+        &--comment {
+          font-size: 14px;
+          line-height: 29px;
+        }
+        &--txt {
+          width: calc(47.5% - 60px);   
+        }
+      }
+    }
     .section__inr {
       position: absolute;
       top: 50%;
@@ -1391,7 +1479,7 @@ section {
         left: auto;
       }
     }
-    &-pop {
+    .btn__picker-pop {
       border-radius: 25px;
       background: #fff;
       display: inline-block;
@@ -1647,7 +1735,6 @@ section {
   transform: translate(50%, 0);
   box-sizing: border-box;
   stroke: #4c2fe5;
-
 }
 .section__space-popup--btn {
   margin-top: 10px;
@@ -1823,7 +1910,7 @@ section {
         &:after {
           position: absolute;
           content: "*";
-          width:12px;
+          width: 12px;
           text-align: center;
           display: inline-block;
           left: 0;
@@ -1874,7 +1961,7 @@ section {
       }
     }
   }
-    .section__news--list li a h3  { //iphone サファリバグ用泣く泣く
+  .section__news--list li a h3  { //iphone サファリバグ用泣く泣く
     font-size: 14px!important;
   }
 }
@@ -1981,7 +2068,6 @@ section {
       .selection__popup--txt {
         max-width: 360px;
       }
-
     }
   }
   section {
@@ -2003,7 +2089,12 @@ section {
       z-index: 100;
       width: 65px;
       height: auto;
+      a svg {
+       width: 65px;
+       height: 65px;
+      }
     }
+
     &__menu--btn {
       display: block;
       z-index: 200;
@@ -2088,8 +2179,6 @@ section {
 }
 
 @media only screen and (max-width: 768px){
-
-
   .selection__popup {
     overflow: hidden;
     &--inr {
@@ -2102,8 +2191,6 @@ section {
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       overflow-x: hidden;
-
-      
       .selection__popup--txt {
         padding: 30px 10px 10px 10px;
         .btn__close {
@@ -2179,7 +2266,6 @@ section {
         }     
       }
     }
-
     &__space--titleh3 {
       span {
         height: 50px;
@@ -2286,6 +2372,26 @@ section {
       }
     }
   }
+  .section__picker-popup--select {
+    display: block;
+    &-img {
+      margin-right: 0;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+  .section__picker-popup--txt {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .section__picker-popup--art > li {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 40px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 @media only screen and (max-width: 568px){
   section {
@@ -2354,12 +2460,29 @@ section {
   .list__page .section__inr {
     padding: 0 50px;
   }
+  .section__picker-popup--art > li {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
-
-
-
-
-
-
-//pop 
+// top popup 表示style
+body {
+  &.picker-popup {
+    height: 100%;
+    overflow: hidden;
+    .section__picker-pop {
+      display: block;
+    }
+    .section__picker .section__inr {
+      overflow-y: hidden;
+    }
+  }
+  &.space-popup {
+    height: 100%;
+    overflow: hidden;
+    .section__space-pop {
+      display: block;
+    }
+  }
+}

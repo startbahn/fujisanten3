@@ -25,7 +25,6 @@ TABLE OF CONTENTS:
 	Widgets
 	Comments
 
-
 --------------------------------------------------------------*/
 /* ================================== 
 1. Resset 
@@ -500,6 +499,8 @@ body {
       text-decoration: none;
       svg {
         transition: all 1500ms;
+        width: 118px;
+        height: 154px;
       }
     }
   }
@@ -2089,7 +2090,12 @@ section {
       z-index: 100;
       width: 65px;
       height: auto;
+      a svg {
+       width: 65px;
+       height: 65px;
+      }
     }
+
     &__menu--btn {
       display: block;
       z-index: 200;

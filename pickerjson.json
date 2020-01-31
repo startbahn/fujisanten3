@@ -90,6 +90,14 @@
       "selecturl": "https://startbahn.org/works/8030"
     },
     {
+      "selectid": "p02",
+      "selectimg": "https://s3.startbahn.org/uploads/picture/image/16fad38d7ce229/startbahn_image_.jpeg",
+      "selecttitle": "富士京",
+      "selectsize": "1200x1700x50mm",
+      "selectname": "堀内粋",
+      "selecturl": "https://startbahn.org/works/7470"
+    },
+    {
       "selectid": "p06",
       "selectimg": "https://s3.startbahn.org/uploads/picture/image/16ff994444fc3/startbahn_image_.jpeg",
       "selecttitle": "水色尽くし",
@@ -99,6 +107,14 @@
     },
     {
       "selectid": "p06",
+      "selectimg": "https://s3.startbahn.org/uploads/picture/image/16fad38d7ce229/startbahn_image_.jpeg",
+      "selecttitle": "富士京",
+      "selectsize": "1200x1700x50mm",
+      "selectname": "堀内粋",
+      "selecturl": "https://startbahn.org/works/7470"
+    },
+    {
+      "selectid": "p07",
       "selectimg": "https://s3.startbahn.org/uploads/picture/image/16fad38d7ce229/startbahn_image_.jpeg",
       "selecttitle": "富士京",
       "selectsize": "1200x1700x50mm",

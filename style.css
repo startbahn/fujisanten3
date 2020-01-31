@@ -25,7 +25,6 @@ TABLE OF CONTENTS:
 	Widgets
 	Comments
 
-
 --------------------------------------------------------------*/
 /* ================================== 
 1. Resset 
@@ -565,6 +564,8 @@ body .section__space--list3-inr:hover {
 .header__title a svg {
   -webkit-transition: all 1500ms;
   transition: all 1500ms;
+  width: 118px;
+  height: 154px;
 }
 
 .header__menu--btn {
@@ -2448,6 +2449,10 @@ section {
     z-index: 100;
     width: 65px;
     height: auto;
+  }
+  .header__title a svg {
+    width: 65px;
+    height: 65px;
   }
   .header__menu--btn {
     display: block;

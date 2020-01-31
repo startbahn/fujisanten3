@@ -40,7 +40,7 @@
       "id": "p07",
       "img": "https://s3.startbahn.org/uploads/picture/image/16f357c3565380/startbahn_image_.JPG",
       "title": "WAVE OF LIGHT ",
-      "size": "-",
+      "size": "ー",
       "name": "新造真人(米神ミヅカブラ)",
       "url": "https://startbahn.org/works/2461",
       "comment": "「生命性」をテーマに作品を作り出すアーティスト。 江戸時代の遊び「尽くし」をコンセプトに生み出された本作品。部屋に敷き詰められた様々な水色のものたち。プレゼントされたものや拾い集めてきたものなど様々。ものを通して様々な時間がひとつの空間に流れてストーリーが生まれる。それは人と人が交わり、人間の感性すなわち生命性によって生まれるストーリーです。 新造さんの作品を見ていると、現代における技術社会において、私たち人間がどのように生き抜いていくべきなのかを考えさせられます。"
@@ -49,7 +49,7 @@
       "id": "p01",
       "img": "https://s3.startbahn.org/uploads/picture/image/16fb8304c8335/startbahn_image_.jpg",
       "title": "有明富士",
-      "size": "- x85x85mm",
+      "size": "ー x85x85mm",
       "name": "花牟禮有基(SHI-TEN Coffee)",
       "url": "https://startbahn.org/works/7488",
       "comment": "長い時間のうちに山は溶け、互いに混ざり合い、別の山に変化するだろう。人間のスケールではフィクションでしかないことも、地球のスケールでみれば現実かもしれない。ハイブリッド富士のもつ、その不思議なタイムトラベルの感覚に惹かれました。"
@@ -85,7 +85,7 @@
       "selectid": "p02",
       "selectimg": "https://s3.startbahn.org/uploads/picture/image/16f357c3565380/startbahn_image_.JPG",
       "selecttitle": "WAVE OF LIGHT",
-      "selectsize": "-",
+      "selectsize": "ー",
       "selectname": "新造真人",
       "selecturl": "https://startbahn.org/works/2461"
     },
@@ -93,7 +93,7 @@
       "selectid": "p06",
       "selectimg": "https://s3.startbahn.org/uploads/picture/image/16f357c3565380/startbahn_image_.JPG",
       "selecttitle": "WAVE OF LIGHT",
-      "selectsize": "-",
+      "selectsize": "ー",
       "selectname": "新造真人",
       "selecturl": "https://startbahn.org/works/2461"
     },
@@ -133,7 +133,7 @@
       "selectid": "p03",
       "selectimg": "https://s3.startbahn.org/uploads/picture/image/16f372d2a9edb/startbahn_image_.jpg",
       "selecttitle": "The Biggest BULE -好きは、青い- ",
-      "selectsize": null,
+      "selectsize": "ー",
       "selectname": "佐久間 鑑",
       "selecturl": "https://startbahn.org/works/7314"
     },
@@ -157,7 +157,7 @@
       "selectid": "p01",
       "selectimg": "https://s3.startbahn.org/uploads/picture/image/16fb81d559b24/startbahn_image_.jpg",
       "selecttitle": "阿蘇富士",
-      "selectsize": "- x85x85mm",
+      "selectsize": "ー x85x85mm",
       "selectname": "花牟禮　有基",
       "selecturl": "https://startbahn.org/works/7487"
     },

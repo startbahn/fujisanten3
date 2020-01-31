@@ -130,8 +130,8 @@ window.onload = function () {
   }
 
   //Picker select
-for (var s = 0; s < selectElements.length; s++) {
-  selectElements[s].onclick = function () {
+  for (var s = 0; s < selectElements.length; s++) {
+    selectElements[s].onclick = function () {
 
     document.body.classList.add('picker-popup');
     document.querySelector('.section__picker-popup').scrollTo(0, 0);
@@ -172,6 +172,7 @@ for (var s = 0; s < selectElements.length; s++) {
             pickerSize.innerHTML = json.pickerJson[p].size;
             pickerName.innerHTML = json.pickerJson[p].name;
             pickerComment.innerHTML = json.pickerJson[p].comment;
+            pickerChannel.href = json.pickerJson[p].url;
           }
         }
 
@@ -185,13 +186,12 @@ for (var s = 0; s < selectElements.length; s++) {
           let pickerSName = json.selectJson[s].selectname;
           let pickerSSize = json.selectJson[s].selectsize;
           let pickerSUrl = json.selectJson[s].selecturl;
-
+          
           if (seId == clickPId) {
             pickerSubTItle.innerHTML = 'PICKER’S SELECTION';
-            for (var m = 0; m < seId.length; m++) {
-              pickerArt.innerHTML = '<li><img src="' + pickerSImg + '" alt="' + pickerSTitle + '"><ul class="section__picker--detail"><li class="js-picker--select--title">' + pickerSTitle + '</li><li class="js-picker--select--size">' + pickerSSize + '</li><li class="js-picker--select--name">' + pickerSName + '</li></ul><a href="' + pickerSUrl + '" class="js__picker-popup--select--channel section__picker-popup--channel" target="_blank">作品を見る</a></li>';
-
-            }
+            let list2 = document.createElement('li');
+            list2.innerHTML = '<img src="' + pickerSImg + '" alt="' + pickerSTitle + '"><ul class="section__picker--detail"><li class="js-picker--select--title">' + pickerSTitle + '</li><li class="js-picker--select--size">' + pickerSSize + '</li><li class="js-picker--select--name">' + pickerSName + '</li></ul><a href="' + pickerSUrl + '" class="js__picker-popup--select--channel section__picker-popup--channel" target="_blank">作品を見る</a>';
+            pickerArt.appendChild(list2);
             } 
           }
         }
@@ -207,13 +207,12 @@ for (var s = 0; s < selectElements.length; s++) {
 
       //いらんDom消す
       document.body.classList.remove('picker-popup');
-
       document.querySelector('.js__picker--select-img').innerHTML = '';
       document.querySelector('.js-picker--title').innerHTML = '';
       document.querySelector('.js-picker--size').innerHTML = '';
       document.querySelector('.js-picker--name').innerHTML = '';
       document.querySelector('.js__picker--select-subttl').innerHTML = '';
-      document.querySelector('.js__picker-popup--channel').innerHTML = '';
+      document.querySelector('.js__picker-popup--channel').src = '';
       document.querySelector('.js-picker-popup--comment').innerHTML = '';
       document.querySelector('.section__picker-popup--art').innerHTML = '';
     }

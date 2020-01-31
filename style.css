@@ -1706,6 +1706,9 @@ section {
   font-size: 12px;
   line-height: 18px;
   text-decoration: underline;
+  background: url(images/blank.png) right center no-repeat;
+  background-size: 16px 16px;
+  padding-right: 20px;
 }
 
 .section__picker-popup--comment {
@@ -2707,6 +2710,26 @@ section {
   .section__selection--selectbox > div > svg {
     max-width: 100%;
   }
+  .section__picker-popup--select {
+    display: block;
+  }
+  .section__picker-popup--select-img {
+    margin-right: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .section__picker-popup--txt {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .section__picker-popup--art > li {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 40px;
+  }
+  .section__picker-popup--art > li:last-child {
+    margin-right: 0;
+  }
 }
 
 @media only screen and (max-width: 568px) {
@@ -2763,6 +2786,10 @@ section {
   }
   .list__page .section__inr {
     padding: 0 50px;
+  }
+  .section__picker-popup--art > li {
+    width: 100%;
+    margin-right: 0;
   }
 }
 

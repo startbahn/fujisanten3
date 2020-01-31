@@ -397,7 +397,7 @@ body {
       font-size: 14px;
       font-family: ゴシックMB101 M, Gothic MB101 Medium;
       &:after {
-        content:"";
+        content:　"";
         display: block;
         height: 20px;
       }
@@ -1453,9 +1453,6 @@ section {
         }
       }
     }
-
-
-
     .section__inr {
       position: absolute;
       top: 50%;
@@ -1737,7 +1734,6 @@ section {
   transform: translate(50%, 0);
   box-sizing: border-box;
   stroke: #4c2fe5;
-
 }
 .section__space-popup--btn {
   margin-top: 10px;
@@ -2178,7 +2174,6 @@ section {
 }
 
 @media only screen and (max-width: 768px){
-
   .selection__popup {
     overflow: hidden;
     &--inr {
@@ -2266,7 +2261,6 @@ section {
         }     
       }
     }
-
     &__space--titleh3 {
       span {
         height: 50px;

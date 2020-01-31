@@ -439,7 +439,7 @@ body.green .css-bg {
 }
 
 body.green .css-bg:after {
-  content: "";
+  content: 　 "";
   display: block;
   height: 20px;
 }

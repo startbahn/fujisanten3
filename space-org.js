@@ -207,7 +207,7 @@ window.onload = function () {
 
       //いらんDom消す
       document.body.classList.remove('picker-popup');
-      document.querySelector('.js__picker--select-img').innerHTML = '';
+      document.querySelector('.js__picker--select-img').src = '';
       document.querySelector('.js-picker--title').innerHTML = '';
       document.querySelector('.js-picker--size').innerHTML = '';
       document.querySelector('.js-picker--name').innerHTML = '';

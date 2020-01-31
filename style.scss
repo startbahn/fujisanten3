@@ -1910,7 +1910,7 @@ section {
         &:after {
           position: absolute;
           content: "*";
-          width:12px;
+          width: 12px;
           text-align: center;
           display: inline-block;
           left: 0;
@@ -1961,7 +1961,7 @@ section {
       }
     }
   }
-    .section__news--list li a h3  { //iphone サファリバグ用泣く泣く
+  .section__news--list li a h3  { //iphone サファリバグ用泣く泣く
     font-size: 14px!important;
   }
 }
@@ -2068,7 +2068,6 @@ section {
       .selection__popup--txt {
         max-width: 360px;
       }
-
     }
   }
   section {

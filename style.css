@@ -477,9 +477,6 @@ body .section__space--list3-inr:hover {
 
 .selection__popup--inr {
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   max-width: 1012px;
   width: calc(100% - 40px);
   top: 50%;
@@ -1895,7 +1892,6 @@ section {
 
 .section__space-pop {
   display: none;
-  position: relative;
 }
 
 .section__space-pop .black-background {
@@ -1910,8 +1906,6 @@ section {
 
 .section__space-popup {
   color: #4C2FE5;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 40px;
   background: #fff;
   position: fixed;
@@ -1938,17 +1932,12 @@ section {
 
 .section__space-popup--info {
   margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-size: 14px;
 }
 
 .section__space-popup--info-img {
   margin-right: 60px;
-  width: 52.5%;
-  height: 0;
-  padding-top: 42.25%;
+  width: 100%;
   position: relative;
 }
 
@@ -1959,7 +1948,8 @@ section {
 }
 
 .section__space-popup--info-txt {
-  width: calc(47.5% - 60px);
+  margin-top: 30px;
+  width: 100%;
 }
 
 .section__space-popup--info p {

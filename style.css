@@ -1045,14 +1045,6 @@ section {
   text-decoration: none;
 }
 
-.section__selection--artist dd a:after, .section__satelite--artist dd a:after {
-  content: "/";
-  color: #fff;
-  width: 16px;
-  display: inline-block;
-  text-align: center;
-}
-
 .section__selection--artist dd span, .section__satelite--artist dd span {
   color: #65FAD1;
 }

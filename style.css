@@ -1201,6 +1201,7 @@ section {
 
 .section__selection--selectbox > div p {
   font-size: 14px;
+  font-family: ゴシックMB101 L, Gothic MB101 Light;
 }
 
 .section__selection--selectbox > div:first-child {

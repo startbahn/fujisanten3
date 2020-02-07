@@ -1626,16 +1626,10 @@ section {
       &--info {
         margin-top: 50px;
         font-size: 14px;
-
         &-img {
           margin-right: 60px;
           width: 100%;
           position: relative;
-          img {
-            position: absolute;
-            width: 100%;
-            top: 0;
-          }
         }
         &-txt {
           margin-top: 30px;
@@ -2324,9 +2318,6 @@ section {
           margin-right: 0;
           margin-bottom: 10px;
           overflow: hidden;
-          img {
-            object-fit: cover;
-            }
           }
         &-txt {
           width: 100%;
@@ -2473,5 +2464,13 @@ body {
     .section__space-pop {
       display: block;
     }
+  }
+}
+
+.section__space-popup--theta {
+  display: none;
+  position: relative;
+  &.fuck {
+    display: block;
   }
 }

@@ -19,6 +19,7 @@ window.onload = function () {
        }) 
       .then(function (json) {
 
+
       //Dom外枠アクセス
       let popupSpace = document.querySelector('.section__space-popup');
 
@@ -35,25 +36,30 @@ window.onload = function () {
       let spaceAdd = document.querySelector('.js-space-popup--add');
       let spaceWeb = document.querySelector('.js-space-popup--web');
       let spaceTime = document.querySelector('.js-space-popup--time');
-      let spaceDotw = document.querySelector('.js-space-popup--dotw');
+      //let spaceDotw = document.querySelector('.js-space-popup--dotw');
       let spaceArtist = document.querySelector('.section__space-popup--artist');
       let spaceChannel = document.querySelector('.js__space-popup--channel');
+
+      var tId = clickId.slice(1);
+      var element = document.getElementById(tId);
+      element.classList.add('fuck');
         
+
+       
       //space のjson
       for (var i in json.spaceJson) {      
         let sId = json.spaceJson[i].spaceId;
 
         //クリックしたspaceのID一致するIDのjson取得しDom生成
         if (sId  == clickId) {
+
           spaceName.innerHTML = json.spaceJson[i].spaceName;
           spaceAdd.innerHTML = json.spaceJson[i].address;
           spaceWeb.innerHTML = json.spaceJson[i].web;
           spaceWeb.href = json.spaceJson[i].web;
           spaceTime.innerHTML = json.spaceJson[i].date;
           spaceCatch.innerHTML = json.spaceJson[i].description.replace(/\n/g,"<br />");
-          //spaceImg.src = json.spaceJson[i].bannerImage;
           spaceChannel.href = json.spaceJson[i].channel;
-          
 
           //COMTOPIA流Google MAP表示方法
           var geocoder = new google.maps.Geocoder();
@@ -100,21 +106,21 @@ window.onload = function () {
   }
 
   //popup window close　
-  var closeElements = document.getElementsByClassName("ls-space-pup-close");
+  let closeElements = document.getElementsByClassName("ls-space-pup-close");
   for (var i = 0; i < closeElements.length; i++) {
     closeElements[i].onclick = function () {
    
       //いらんDom消す
       document.body.classList.remove('space-popup');
+      document.querySelector('.fuck').classList.remove('fuck');
       document.querySelector('.section__space-popup--artist').innerHTML = '';
       document.querySelector('.js__space-popup--channel').href = '';
       document.querySelector('.js__space-popup--name').innerHTML = '';
-      document.querySelector('.js-space-popup--info-img').src = '';
+      //document.querySelector('.js-space-popup--info-img').src = '';
       document.querySelector('.js-space-popup--catch').innerHTML = '';
       document.querySelector('.js-space-popup--add').innerHTML = '';
       document.querySelector('.js-space-popup--web').innerHTML = '';
       document.querySelector('.js-space-popup--time').innerHTML = '';
-      document.querySelector('.js-space-popup--dotw').innerHTML = '';
       document.querySelector('.js-space-popup--map').innerHTML = '';
     }
   }

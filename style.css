@@ -1941,12 +1941,6 @@ section {
   position: relative;
 }
 
-.section__space-popup--info-img img {
-  position: absolute;
-  width: 100%;
-  top: 0;
-}
-
 .section__space-popup--info-txt {
   margin-top: 30px;
   width: 100%;
@@ -2663,10 +2657,6 @@ section {
     margin-bottom: 10px;
     overflow: hidden;
   }
-  .section__space-popup--info-img img {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   .section__space-popup--info-txt {
     width: 100%;
   }
@@ -2799,6 +2789,15 @@ body.space-popup {
 }
 
 body.space-popup .section__space-pop {
+  display: block;
+}
+
+.section__space-popup--theta {
+  display: none;
+  position: relative;
+}
+
+.section__space-popup--theta.fuck {
   display: block;
 }
 /*# sourceMappingURL=style.css.map */

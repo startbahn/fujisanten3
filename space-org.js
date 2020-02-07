@@ -14,11 +14,10 @@ window.onload = function () {
 
       //json読み込み
       fetch(fujisan)
-       .then(function (response) {
-         return response.json();
-       }) 
+      .then(function (response) {
+        return response.json();
+      }) 
       .then(function (json) {
-
 
       //Dom外枠アクセス
       let popupSpace = document.querySelector('.section__space-popup');
@@ -28,26 +27,21 @@ window.onload = function () {
         var clone = popupSpace.firstElementChild.cloneNode(true);
         popupSpace.appendChild(clone);
       }
+      let spaceTheta = document.getElementById('theta');
+      spaceTheta.innerHTML = '<iframe src="theta/' + clickId + '.html" ></iframe>'; 
 
       let spaceArea = document.querySelector('.js__space-popup--area');
       let spaceName = document.querySelector('.js__space-popup--name');
-      let spaceImg = document.querySelector('.js-space-popup--info-img');
       let spaceCatch = document.querySelector('.js-space-popup--catch');
       let spaceAdd = document.querySelector('.js-space-popup--add');
       let spaceWeb = document.querySelector('.js-space-popup--web');
       let spaceTime = document.querySelector('.js-space-popup--time');
-      //let spaceDotw = document.querySelector('.js-space-popup--dotw');
       let spaceArtist = document.querySelector('.section__space-popup--artist');
       let spaceChannel = document.querySelector('.js__space-popup--channel');
+      
 
-      var tId = clickId.slice(1);
-      var element = document.getElementById(tId);
-      element.classList.add('fuck');
-        
-
-       
       //space のjson
-      for (var i in json.spaceJson) {      
+      for (var i in json.spaceJson) {
         let sId = json.spaceJson[i].spaceId;
 
         //クリックしたspaceのID一致するIDのjson取得しDom生成
@@ -65,19 +59,20 @@ window.onload = function () {
           var geocoder = new google.maps.Geocoder();
           var address = json.spaceJson[i].address;
           geocoder.geocode({ 'address': address, 'language': 'ja' }, function (results, status) {
-            if (status == google.maps.GeocoderStatus.OK) {
-              var latlng = results[0].geometry.location;//緯度と経度
-              var mapOpt = {
-                center: latlng,
-                zoom: 15,//地図倍率
-                mapTypeId: google.maps.MapTypeId.ROADMAP//
-              };
-              var map = new google.maps.Map(document.getElementById('google_map'), mapOpt);
-              var marker = new google.maps.Marker({//マーカー
-                position: map.getCenter(),
-                map: map
-              });
-            } else { }
+            
+          if (status == google.maps.GeocoderStatus.OK) {
+            var latlng = results[0].geometry.location;//緯度と経度
+            var mapOpt = {
+              center: latlng,
+              zoom: 15,//地図倍率
+              mapTypeId: google.maps.MapTypeId.ROADMAP//
+            };
+            var map = new google.maps.Map(document.getElementById('google_map'), mapOpt);
+            var marker = new google.maps.Marker({//マーカー
+              position: map.getCenter(),
+              map: map
+            });
+          } else { }
           });
         }
       }
@@ -112,11 +107,10 @@ window.onload = function () {
    
       //いらんDom消す
       document.body.classList.remove('space-popup');
-      document.querySelector('.fuck').classList.remove('fuck');
+      spaceTheta.innerHTML = '';
       document.querySelector('.section__space-popup--artist').innerHTML = '';
       document.querySelector('.js__space-popup--channel').href = '';
       document.querySelector('.js__space-popup--name').innerHTML = '';
-      //document.querySelector('.js-space-popup--info-img').src = '';
       document.querySelector('.js-space-popup--catch').innerHTML = '';
       document.querySelector('.js-space-popup--add').innerHTML = '';
       document.querySelector('.js-space-popup--web').innerHTML = '';

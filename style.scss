@@ -564,6 +564,7 @@ body {
     left: 50%;
     margin-left: -40px;
     bottom: 60px;
+    
   }
 }
 .info {
@@ -1629,7 +1630,7 @@ section {
         font-size: 14px;
         .section__space-popup--info-theta {
           width: 100% !important;
-          min-height: 478px;
+          min-height: 480px;
           overflow: hidden;
           position: relative;
           > iframe {
@@ -1639,7 +1640,7 @@ section {
             height: 100%;
             min-height: 478px;
             margin-right: 0;
-            margin-bottom: 10px;
+            overflow: hidden;
           }
         }
         &-img {
@@ -2178,6 +2179,9 @@ section {
 }
 
 @media only screen and (max-width: 768px){
+  .btn__close {
+    top: 20px;
+  }
   .selection__popup {
     overflow: hidden;
     &--inr {
@@ -2192,9 +2196,6 @@ section {
       overflow-x: hidden;
       .selection__popup--txt {
         padding: 30px 10px 10px 10px;
-        .btn__close {
-          top: 15px;
-        }
         p {
           line-height: 12px;
           margin-top: -18px;
@@ -2326,6 +2327,8 @@ section {
       }
     }
     &__space-popup {
+      box-sizing: border-box;
+      padding: 30px 20px;
       &--info {
         display: block;
         &-txt {

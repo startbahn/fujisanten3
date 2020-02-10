@@ -477,9 +477,6 @@ body .section__space--list3-inr:hover {
 
 .selection__popup--inr {
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   max-width: 1012px;
   width: calc(100% - 40px);
   top: 50%;
@@ -1896,7 +1893,6 @@ section {
 
 .section__space-pop {
   display: none;
-  position: relative;
 }
 
 .section__space-pop .black-background {
@@ -1911,8 +1907,6 @@ section {
 
 .section__space-popup {
   color: #4C2FE5;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 40px;
   background: #fff;
   position: fixed;
@@ -1938,29 +1932,36 @@ section {
 }
 
 .section__space-popup--info {
-  margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-top: 10px;
   font-size: 14px;
+}
+
+.section__space-popup--info .section__space-popup--info-theta {
+  width: 100% !important;
+  min-height: 480px;
+  overflow: hidden;
+  position: relative;
+}
+
+.section__space-popup--info .section__space-popup--info-theta > iframe {
+  position: absolute;
+  top: 0;
+  width: 100% !important;
+  height: 100%;
+  min-height: 478px;
+  margin-right: 0;
+  overflow: hidden;
 }
 
 .section__space-popup--info-img {
   margin-right: 60px;
-  width: 52.5%;
-  height: 0;
-  padding-top: 42.25%;
+  width: 100%;
   position: relative;
 }
 
-.section__space-popup--info-img img {
-  position: absolute;
-  width: 100%;
-  top: 0;
-}
-
 .section__space-popup--info-txt {
-  width: calc(47.5% - 60px);
+  margin-top: 30px;
+  width: 100%;
 }
 
 .section__space-popup--info p {
@@ -2527,6 +2528,9 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
+  .btn__close {
+    top: 20px;
+  }
   .selection__popup {
     overflow: hidden;
   }
@@ -2543,9 +2547,6 @@ section {
   }
   .selection__popup--inr .selection__popup--txt {
     padding: 30px 10px 10px 10px;
-  }
-  .selection__popup--inr .selection__popup--txt .btn__close {
-    top: 15px;
   }
   .selection__popup--inr .selection__popup--txt p {
     line-height: 12px;
@@ -2664,19 +2665,13 @@ section {
   .section__picker--person-txt h3 {
     margin: 40px 0 20px;
   }
+  .section__space-popup {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 30px 20px;
+  }
   .section__space-popup--info {
     display: block;
-  }
-  .section__space-popup--info-img {
-    width: 100% !important;
-    padding-top: 82.2%;
-    margin-right: 0;
-    margin-bottom: 10px;
-    overflow: hidden;
-  }
-  .section__space-popup--info-img img {
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .section__space-popup--info-txt {
     width: 100%;
@@ -2810,6 +2805,15 @@ body.space-popup {
 }
 
 body.space-popup .section__space-pop {
+  display: block;
+}
+
+.section__space-popup--theta {
+  display: none;
+  position: relative;
+}
+
+.section__space-popup--theta.fuck {
   display: block;
 }
 /*# sourceMappingURL=style.css.map */

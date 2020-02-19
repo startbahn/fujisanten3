@@ -102,22 +102,25 @@ window.onload = function () {
 
   //popup window close　
   let closeElements = document.getElementsByClassName("ls-space-pup-close");
-  for (var i = 0; i < closeElements.length; i++) {
-    closeElements[i].onclick = function () {
-   
-      //いらんDom消す
-      document.body.classList.remove('space-popup');
-      spaceTheta.innerHTML = '';
-      document.querySelector('.section__space-popup--artist').innerHTML = '';
-      document.querySelector('.js__space-popup--channel').href = '';
-      document.querySelector('.js__space-popup--name').innerHTML = '';
-      document.querySelector('.js-space-popup--catch').innerHTML = '';
-      document.querySelector('.js-space-popup--add').innerHTML = '';
-      document.querySelector('.js-space-popup--web').innerHTML = '';
-      document.querySelector('.js-space-popup--time').innerHTML = '';
-      document.querySelector('.js-space-popup--map').innerHTML = '';
+
+    for (var i = 0; i < closeElements.length; i++) {
+      closeElements[i].onclick = function () {
+    
+        //いらんDom消す
+        document.body.classList.remove('space-popup');
+        
+        document.querySelector('.section__space-popup--artist').innerHTML = '';
+        document.querySelector('.js__space-popup--channel').href = '';
+        document.querySelector('.js__space-popup--name').innerHTML = '';
+        document.querySelector('.js-space-popup--catch').innerHTML = '';
+        document.querySelector('.js-space-popup--add').innerHTML = '';
+        document.querySelector('.js-space-popup--web').innerHTML = '';
+        document.querySelector('.js-space-popup--time').innerHTML = '';
+        document.querySelector('.js-space-popup--map').innerHTML = '';
+        document.getElementById('theta').innerHTML = '';
+      }
     }
-  }
+  
 
   //Picker select
   for (var s = 0; s < selectElements.length; s++) {

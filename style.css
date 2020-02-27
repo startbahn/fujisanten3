@@ -963,22 +963,23 @@ section {
   display: none;
 }
 
-.section__selection--exhibition, .section__satelite--exhibition {
+.section__selection--exhibition {
   margin-top: 60px;
 }
 
-.section__selection--exhibition-title, .section__satelite--exhibition-title {
+.section__selection--exhibition-title {
   font-size: 24px !important;
   line-height: 1.3;
   padding: 3px;
   font-family: ゴシックMB101 L, Gothic MB101 Light;
+  margin-bottom: 8px;
 }
 
-.section__selection--exhibition-title .letter, .section__satelite--exhibition-title .letter {
+.section__selection--exhibition-title .letter {
   font-size: 24px !important;
 }
 
-.section__selection--exhibition-txt, .section__satelite--exhibition-txt {
+.section__selection--exhibition-txt {
   font-size: 24px !important;
   line-height: 1;
   margin-bottom: 25px;
@@ -986,26 +987,26 @@ section {
   font-family: ゴシックMB101 L, Gothic MB101 Light;
 }
 
-.section__selection--exhibition-txt .letter, .section__satelite--exhibition-txt .letter {
+.section__selection--exhibition-txt .letter {
   font-size: 24px !important;
 }
 
-.section__selection--exhibition-discription, .section__satelite--exhibition-discription {
+.section__selection--exhibition-discription {
   margin-top: 15px !important;
   font-size: 14px !important;
   line-height: 1.8 !important;
 }
 
-.section__selection--exhibition > div, .section__satelite--exhibition > div {
+.section__selection--exhibition > div {
   width: 100%;
   font-family: ゴシックMB101 M, Gothic MB101 Medium;
 }
 
-.section__selection--txt, .section__satelite--txt {
+.section__selection--txt {
   margin-top: 30px;
 }
 
-.section__selection--artist, .section__satelite--artist {
+.section__selection--artist {
   font-size: 14px;
   text-decoration: none;
   line-height: 24px;
@@ -1015,7 +1016,7 @@ section {
   margin-top: 30px;
 }
 
-.section__selection--artist > div, .section__satelite--artist > div {
+.section__selection--artist > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1025,37 +1026,73 @@ section {
           flex-flow: column;
 }
 
-.section__selection--artist div + div, .section__satelite--artist div + div {
+.section__selection--artist div + div {
   margin-top: 30px;
 }
 
-.section__selection--artist dt, .section__satelite--artist dt {
+.section__selection--artist dt {
   color: #fff;
 }
 
-.section__selection--artist dd, .section__satelite--artist dd {
+.section__selection--artist dd {
   display: block;
 }
 
-.section__selection--artist dd a, .section__satelite--artist dd a {
+.section__selection--artist dd a {
   color: #65FAD1;
   text-decoration: none;
 }
 
-.section__selection--artist dd span, .section__satelite--artist dd span {
+.section__selection--artist dd span {
   color: #65FAD1;
 }
 
-.section__selection--artist dd a.buy-btn, .section__satelite--artist dd a.buy-btn {
+.section__selection--artist dd a.buy-btn {
   color: #4c2ee5;
 }
 
-.section__selection--artist span:after, .section__satelite--artist span:after {
+.section__selection--artist span:after {
   content: "/";
   color: #fff;
   width: 16px;
   display: inline-block;
   text-align: center;
+}
+
+.section__satelite--artist {
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 24px;
+  margin-bottom: 8px;
+  padding-top: 4px;
+  margin-top: 30px;
+}
+
+.section__satelite--artist > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.section__satelite--artist div + div {
+  margin-top: 30px;
+}
+
+.section__satelite--artist dt {
+  margin-bottom: 8px;
+}
+
+.section__satelite--artist dd {
+  display: block;
+  font-family: ゴシックMB101 L, Gothic MB101 Light;
+}
+
+.section__satelite--artist dd a.buy-btn {
+  color: #4c2ee5;
 }
 
 .section__selection--exhibition-discription {
